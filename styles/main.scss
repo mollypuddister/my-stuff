@@ -1,8 +1,10 @@
 // $breakpoints: ();
 
-
-@import 'scss/styles';
-
 // helpers
 @import 'scss/helpers/variables';
 @import 'scss/helpers/mixins';
+
+
+
+//main styles
+@import 'scss/styles';
