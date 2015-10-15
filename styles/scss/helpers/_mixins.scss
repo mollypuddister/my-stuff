@@ -1,0 +1,51 @@
+// media queries
+	@function get-media($key){
+		 
+		@return map-get($breakpoints, $key);
+
+	}
+
+	@mixin respond-to($query) {
+
+		@if $query == mobile {
+
+			@media #{ get-media(mobile) } { @content; }
+			
+
+		} @if $query == desktop {
+
+			@media #{ get-media(desktop) } { @content; }
+			
+
+		} @if $query == small {
+
+			@media #{ get-media(small) } { @content; }
+			
+
+		} @if $query == medium {
+
+			@media #{ get-media(medium) } { @content; }
+
+		} @if $query == large {
+
+			@media #{ get-media(large) } { @content; }
+
+		} @if $query == xlarge {
+
+			@media #{ get-media(xlarge) } { @content; }
+
+		} @if $query == retina {
+
+			@media #{ get-media(retina) } { @content; }
+
+		} @if $query == retina_tablet {
+
+			@media #{ get-media(retina_tablet) } { @content; }
+
+		} @if $query == touch {
+
+			@media #{ get-media(touch) } { @content; };
+
+		}	
+
+	}
