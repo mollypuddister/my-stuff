@@ -1,10 +1,28 @@
+/* line 1, scss/base/_global.scss */
+html {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 8, scss/base/_global.scss */
+body {
+  min-width: 640px;
+}
+/* line 11, scss/base/_global.scss */
+body.home {
+  height: 100%;
+}
+
 /* line 1, scss/_styles.scss */
 nav {
   position: fixed;
+  z-index: 10000;
   width: 100%;
   top: 0;
   left: 0;
-  height: 160px;
+  height: 180px;
 }
 /* line 9, scss/_styles.scss */
 nav a {
@@ -21,10 +39,50 @@ nav a#menu-toggle {
   top: 0;
   right: 0;
 }
-
+/* line 22, scss/_styles.scss */
+nav a#menu-toggle .burger {
+  position: relative;
+  width: 36px;
+  height: 7px;
+  margin: 14px 0;
+  background: #000;
+}
 /* line 29, scss/_styles.scss */
+nav a#menu-toggle .burger:before, nav a#menu-toggle .burger:after {
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 7px;
+  content: '';
+  background: #000;
+}
+/* line 37, scss/_styles.scss */
+nav a#menu-toggle .burger:before {
+  top: -14px;
+}
+/* line 40, scss/_styles.scss */
+nav a#menu-toggle .burger:after {
+  top: 14px;
+}
+
+/* line 49, scss/_styles.scss */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* line 56, scss/_styles.scss */
 .home main {
   width: 100%;
   height: 100%;
-  padding-top: 160px;
+}
+/* line 61, scss/_styles.scss */
+.home article {
+  height: 100%;
+  background: #eeeeee;
+}
+/* line 65, scss/_styles.scss */
+.home article .project {
+  position: relative;
+  top: 40%;
 }

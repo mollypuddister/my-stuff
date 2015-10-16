@@ -1,0 +1,14 @@
+html {
+	box-sizing: border-box;
+	font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	min-width: 640px;
+
+	&.home {
+		height: 100%;
+	}
+}
