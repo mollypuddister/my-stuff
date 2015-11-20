@@ -49,6 +49,15 @@ nav {
 		}
 	}
 
+	#menu {
+		position: fixed;
+		z-index: 100;
+		width: 200px;
+		height: 100%;
+		background: black;
+
+	}
+
 }
 
 .container {
