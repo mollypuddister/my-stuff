@@ -1,7 +1,29 @@
-// $breakpoints: ();
+$breakpoints: (
+
+		"mobile"	:	"only screen and (max-width : 656px)",
+
+		"desktop"	:	"only screen and (min-width : 657px)",
+
+		"small"		:	"only screen and (min-width : 657px) and (max-width : 1024px)",
+
+		"medium"	:	"only screen and (min-width : 1025px) and (max-width : 1240px)",
+
+		"large"		:	"only screen and (min-width : 1241px)"
+
+		// "xlarge"	:	"only screen and (min-width : 1840px)",
+
+		// "retina"	:	"only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx)",
+
+		// "retina_tablet"	:	"only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width : 768px), only screen and ( min-resolution: 192dpi) and (min-width : 768px), only screen and ( min-resolution: 2dppx) and (min-width : 768px)",
+
+		// "touch"		:	"only screen"
+
+		
+	);
 
 // base
 @import 'scss/base/global';
+@import 'scss/base/typography';
 
 // helpers
 @import 'scss/helpers/variables';

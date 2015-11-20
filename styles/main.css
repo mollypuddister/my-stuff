@@ -6,83 +6,122 @@ html {
   width: 100%;
 }
 
-/* line 8, scss/base/_global.scss */
-body {
-  min-width: 640px;
-}
 /* line 11, scss/base/_global.scss */
 body.home {
   height: 100%;
+}
+
+/* line 4, scss/base/_typography.scss */
+html {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* line 9, scss/base/_typography.scss */
+body {
+  font: 1rem/1 Baskerville, Garamond, Georgia, "Times New Roman", serif;
 }
 
 /* line 1, scss/_styles.scss */
 nav {
   position: fixed;
   z-index: 10000;
-  width: 100%;
   top: 0;
   left: 0;
-  height: 180px;
+  width: 100%;
 }
-/* line 9, scss/_styles.scss */
+/* line 8, scss/_styles.scss */
 nav a {
   position: absolute;
-  padding: 100px;
+  padding: 50px;
 }
-/* line 13, scss/_styles.scss */
+@media only screen and (min-width: 657px) {
+  /* line 8, scss/_styles.scss */
+  nav a {
+    padding: 80px;
+  }
+}
+/* line 17, scss/_styles.scss */
 nav a#logo {
   top: 0;
   left: 0;
+  font: 2rem/1 Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
 }
-/* line 18, scss/_styles.scss */
+/* line 25, scss/_styles.scss */
 nav a#menu-toggle {
   top: 0;
   right: 0;
 }
-/* line 22, scss/_styles.scss */
+/* line 29, scss/_styles.scss */
 nav a#menu-toggle .burger {
-  position: relative;
   width: 36px;
   height: 7px;
+  position: relative;
   margin: 14px 0;
   background: #000;
 }
-/* line 29, scss/_styles.scss */
+/* line 35, scss/_styles.scss */
 nav a#menu-toggle .burger:before, nav a#menu-toggle .burger:after {
-  position: absolute;
-  display: block;
   width: 36px;
   height: 7px;
+  position: absolute;
+  display: block;
   content: '';
   background: #000;
 }
-/* line 37, scss/_styles.scss */
+/* line 42, scss/_styles.scss */
 nav a#menu-toggle .burger:before {
   top: -14px;
 }
-/* line 40, scss/_styles.scss */
+/* line 45, scss/_styles.scss */
 nav a#menu-toggle .burger:after {
   top: 14px;
 }
 
-/* line 49, scss/_styles.scss */
+/* line 54, scss/_styles.scss */
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 40px;
+}
+@media only screen and (min-width: 657px) {
+  /* line 54, scss/_styles.scss */
+  .container {
+    padding: 0 80px;
+  }
 }
 
-/* line 56, scss/_styles.scss */
+/* line 66, scss/_styles.scss */
 .home main {
   width: 100%;
   height: 100%;
 }
-/* line 61, scss/_styles.scss */
+/* line 70, scss/_styles.scss */
 .home article {
   height: 100%;
   background: #eeeeee;
 }
-/* line 65, scss/_styles.scss */
+/* line 74, scss/_styles.scss */
 .home article .project {
   position: relative;
   top: 40%;
+}
+/* line 78, scss/_styles.scss */
+.home article .project .strip {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: #a8a8a8;
+}
+/* line 87, scss/_styles.scss */
+.home article .project h1 {
+  font: 10rem/1 Baskerville, Garamond, Georgia, "Times New Roman", serif;
+}
+/* line 91, scss/_styles.scss */
+.home article .project h3 {
+  font: 1.5rem/1 Helvetica, Arial, sans-serif;
 }

@@ -49,3 +49,18 @@
 		}	
 
 	}
+
+
+//size 
+	@mixin size($width, $height: $width) {
+		width: $width;
+		height: $height;
+	}
+
+//horizontal and vertical align
+	@mixin alignment($position, $top:null, $left:null, $transform...) {
+		position: $position;
+		top: $top;
+		left: $left;
+		transform: $transform;
+	}	
