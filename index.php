@@ -5,9 +5,7 @@
 <?php require 'includes/head.php';?>
 
 <body class="home">
-
-
-  		
+		
 
 	<header>
 		<a id="logo">Molly Puddister</a>
@@ -40,8 +38,8 @@
 	<nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
 		<button class="c-menu__close close"><img src="images/close.svg" alt="Close"></button>
 		<ul id="menu" class="c-menu__items">
-			<li><a href="/">Work</a></li>
-			<li><a href="/about">Me</a></li>
+			<li><a class="nav-work" href="/">Work</a></li>
+			<li><a class="nav-me" href="/about">Me</a></li>
 		</ul>		
 	</nav><!-- /c-menu push-right -->
 

@@ -64,3 +64,55 @@
 		left: $left;
 		transform: $transform;
 	}	
+
+
+//fonts
+	@each $font-face in GT-Sectra-Display-Super-Italic, GT-Walsheim-Bold  {
+		@font-face {
+				font-family: $font-face; font-style: normal; font-weight: normal;
+				src: url('../fonts/#{$font-face}.eot');
+				src: url('../fonts/#{$font-face}.eot?') format('eot'),
+					url('../fonts/#{$font-face}.woff') format('woff'),
+					url('../fonts/#{$font-face}.ttf')  format('truetype');
+		}
+	}
+
+	//mixin
+	@mixin display($font, $style: normal, $weight: normal) {
+		font-family: $font, Baskerville, Garamond, Georgia, "Times New Roman", serif;
+		font-style:  $style;
+		font-weight: $weight;
+	}
+
+	@mixin highlight($font, $style: normal, $weight: bold) {
+		font-family: $font, Helvetica, Arial, Segoe UI, sans-serif;
+		font-style:  $style;
+		font-weight: $weight;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

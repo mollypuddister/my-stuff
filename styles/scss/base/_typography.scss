@@ -1,12 +1,16 @@
-$sans: Helvetica, Arial, sans-serif;
-$serif: Baskerville, Garamond, Georgia, "Times New Roman", serif;
+$body: 'Mate', Georgia, serif;
 
 html {
-	font-size: 16px;
-	line-height: 1;
+	font-size: 20px;
+	line-height: 1.5;
 }
 
 body {
-	font: 1rem/1 $serif;
+	font: 1rem/1.5 $body;
+	overflow: hidden;
 }
+
+h1 { @include display(GT-Sectra-Display-Super-Italic, normal, normal); }
+
+h3, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, bold); }
 

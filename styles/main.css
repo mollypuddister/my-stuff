@@ -1,3 +1,17 @@
+@font-face {
+  font-family: GT-Sectra-Display-Super-Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GT-Sectra-Display-Super-Italic.eot");
+  src: url("../fonts/GT-Sectra-Display-Super-Italic.eot?") format("eot"), url("../fonts/GT-Sectra-Display-Super-Italic.woff") format("woff"), url("../fonts/GT-Sectra-Display-Super-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: GT-Walsheim-Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GT-Walsheim-Bold.eot");
+  src: url("../fonts/GT-Walsheim-Bold.eot?") format("eot"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/GT-Walsheim-Bold.ttf") format("truetype");
+}
 /* line 1, scss/base/_global.scss */
 html {
   box-sizing: border-box;
@@ -6,25 +20,44 @@ html {
   width: 100%;
 }
 
-/* line 11, scss/base/_global.scss */
+/* line 10, scss/base/_global.scss */
 body.home {
   height: 100%;
 }
 
-/* line 16, scss/base/_global.scss */
+/* line 15, scss/base/_global.scss */
 a {
   color: black;
 }
-
-/* line 4, scss/base/_typography.scss */
-html {
-  font-size: 16px;
-  line-height: 1;
+/* line 18, scss/base/_global.scss */
+a:hover {
+  color: #fb3f3c;
 }
 
-/* line 9, scss/base/_typography.scss */
+/* line 3, scss/base/_typography.scss */
+html {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* line 8, scss/base/_typography.scss */
 body {
-  font: 1rem/1 Baskerville, Garamond, Georgia, "Times New Roman", serif;
+  font: 1rem/1.5 "Mate", Georgia, serif;
+  overflow: hidden;
+}
+
+/* line 13, scss/base/_typography.scss */
+h1 {
+  font-family: GT-Sectra-Display-Super-Italic, Baskerville, Garamond, Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 15, scss/base/_typography.scss */
+h3, #logo, nav ul li {
+  font-family: GT-Walsheim-Bold, Helvetica, Arial, Segoe UI, sans-serif;
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* line 1, scss/_styles.scss */
@@ -37,55 +70,36 @@ header {
 /* line 8, scss/_styles.scss */
 header a, header button {
   position: absolute;
-  padding: 50px;
+  margin: 50px;
 }
 @media only screen and (min-width: 657px) {
   /* line 8, scss/_styles.scss */
   header a, header button {
-    padding: 80px;
+    margin: 100px;
   }
 }
 /* line 17, scss/_styles.scss */
 header a#logo, header button#logo {
   top: 0;
   left: 0;
-  font: 2rem/1 Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   text-transform: uppercase;
 }
-
-/* line 29, scss/_styles.scss */
-nav {
-  width: 80%;
-}
-@media only screen and (min-width: 657px) {
-  /* line 29, scss/_styles.scss */
-  nav {
-    width: 196px;
-  }
-}
-/* line 36, scss/_styles.scss */
-nav #menu {
-  z-index: 100;
-  height: 100%;
-  background: black;
-}
-
-/* line 46, scss/_styles.scss */
-.menu-toggle {
+/* line 24, scss/_styles.scss */
+header a.menu-toggle, header button.menu-toggle {
   top: 0;
   right: 0;
 }
-/* line 51, scss/_styles.scss */
-.menu-toggle .burger {
+/* line 29, scss/_styles.scss */
+header a.menu-toggle .burger, header button.menu-toggle .burger {
   width: 36px;
   height: 7px;
   position: relative;
   margin: 14px 0;
   background: #000;
 }
-/* line 57, scss/_styles.scss */
-.menu-toggle .burger:before, .menu-toggle .burger:after {
+/* line 35, scss/_styles.scss */
+header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header button.menu-toggle .burger:before, header button.menu-toggle .burger:after {
   width: 36px;
   height: 7px;
   position: absolute;
@@ -93,73 +107,115 @@ nav #menu {
   content: '';
   background: #000;
 }
-/* line 64, scss/_styles.scss */
-.menu-toggle .burger:before {
+/* line 42, scss/_styles.scss */
+header a.menu-toggle .burger:before, header button.menu-toggle .burger:before {
   top: -14px;
 }
-/* line 67, scss/_styles.scss */
-.menu-toggle .burger:after {
+/* line 45, scss/_styles.scss */
+header a.menu-toggle .burger:after, header button.menu-toggle .burger:after {
   top: 14px;
 }
 
-/* line 74, scss/_styles.scss */
-.close {
-  padding: 50px;
+/* line 57, scss/_styles.scss */
+nav {
+  width: 80%;
+  background: black;
 }
 @media only screen and (min-width: 657px) {
-  /* line 74, scss/_styles.scss */
-  .close {
-    padding: 80px;
+  /* line 57, scss/_styles.scss */
+  nav {
+    width: 196px;
   }
 }
-/* line 81, scss/_styles.scss */
-.close img {
+/* line 65, scss/_styles.scss */
+nav #menu {
+  z-index: 100;
+  height: 100%;
+  background: black;
+}
+/* line 72, scss/_styles.scss */
+nav #menu li {
+  font: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+/* line 78, scss/_styles.scss */
+nav #menu li a {
+  color: white;
+}
+/* line 86, scss/_styles.scss */
+nav .close {
+  margin: 50px;
+  width: 36px;
+  height: 36px;
+}
+@media only screen and (min-width: 657px) {
+  /* line 86, scss/_styles.scss */
+  nav .close {
+    margin: 100px;
+  }
+}
+/* line 94, scss/_styles.scss */
+nav .close img {
   width: 36px;
   height: 36px;
 }
 
-/* line 87, scss/_styles.scss */
+/* line 101, scss/_styles.scss */
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
 @media only screen and (min-width: 657px) {
-  /* line 87, scss/_styles.scss */
+  /* line 101, scss/_styles.scss */
   .container {
     padding: 0 80px;
   }
 }
 
-/* line 99, scss/_styles.scss */
+/* line 113, scss/_styles.scss */
 .home main {
   width: 100%;
   height: 100%;
 }
-/* line 103, scss/_styles.scss */
+/* line 118, scss/_styles.scss */
+.home nav #menu li a.nav-work {
+  color: #fb3f3c;
+}
+/* line 123, scss/_styles.scss */
 .home article {
   height: 100%;
   background: #eeeeee;
 }
-/* line 107, scss/_styles.scss */
+/* line 127, scss/_styles.scss */
 .home article .project {
   position: relative;
   top: 40%;
 }
-/* line 111, scss/_styles.scss */
+/* line 131, scss/_styles.scss */
 .home article .project .strip {
   display: block;
-  position: relative;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 2px;
   background: #a8a8a8;
 }
-/* line 120, scss/_styles.scss */
-.home article .project h1 {
-  font: 10rem/1 Baskerville, Garamond, Georgia, "Times New Roman", serif;
+@media only screen and (min-width: 657px) {
+  /* line 131, scss/_styles.scss */
+  .home article .project .strip {
+    width: calc(100% - 160px);
+  }
 }
-/* line 124, scss/_styles.scss */
+/* line 144, scss/_styles.scss */
+.home article .project h1 {
+  font-size: 7.5rem;
+  line-height: 1;
+}
+/* line 150, scss/_styles.scss */
 .home article .project h3 {
-  font: 1.5rem/1 Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
 }

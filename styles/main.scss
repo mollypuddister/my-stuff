@@ -21,15 +21,13 @@ $breakpoints: (
 		
 	);
 
-// base
-@import 'scss/base/global';
-@import 'scss/base/typography';
-
 // helpers
 @import 'scss/helpers/variables';
 @import 'scss/helpers/mixins';
 
-
+// base
+@import 'scss/base/global';
+@import 'scss/base/typography';
 
 //main styles
 @import 'scss/styles';

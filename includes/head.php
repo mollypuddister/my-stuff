@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=640, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Mate:400,400italic' rel='stylesheet' type='text/css'>
+	
 	<!-- styles -->
 	
 		<!-- vendor styles -->
@@ -18,6 +21,8 @@
 
 		<!-- main stylesheet -->
 		<link rel="stylesheet" href="styles/main.css">
+
+
 
 	
 

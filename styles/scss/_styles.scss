@@ -7,20 +7,48 @@ header {
 	
 	a, button {
 		position: absolute;
-		padding: 50px;
+		margin: 50px;
 
 			@include respond-to(desktop) {
-				padding: 80px;
+				margin: 100px;
 			}
 
 
 		&#logo {
 			top: 0;
 			left: 0;
-			font: 2rem/1 $sans;
-			font-size: 2em;
+			font-size: 1.6em;
 			text-transform: uppercase;
 		}
+
+		&.menu-toggle {
+			// position: fixed;
+			top: 0;
+			right: 0;
+
+			.burger {
+				@include size(36px, 7px);
+				position: relative;
+				margin: 14px 0;
+				background: #000;
+
+				&:before, &:after {
+					@include size(36px, 7px);
+					position: absolute;
+					display: block;
+					content: '';
+					background: #000;
+				}
+				&:before {
+					top: -14px;
+				}
+				&:after {
+					top: 14px;
+				}
+			}
+
+		}
+
 
 	}
 
@@ -28,6 +56,7 @@ header {
 
 nav {
 	width: 80%;
+	background: black;
 
 		@include respond-to(desktop) {
 			width: 196px;
@@ -40,57 +69,42 @@ nav {
 		height: 100%;
 		background: black;
 
-	}
-}
+		li {
+			font: 1.5rem;			
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px;
 
-.menu-toggle {
-	// position: fixed;
-	top: 0;
-	right: 0;
+			a {
+				color: white;
+			}
 
-	.burger {
-		@include size(36px, 7px);
-		position: relative;
-		margin: 14px 0;
-		background: #000;
-
-		&:before, &:after {
-			@include size(36px, 7px);
-			position: absolute;
-			display: block;
-			content: '';
-			background: #000;
 		}
-		&:before {
-			top: -14px;
-		}
-		&:after {
-			top: 14px;
-		}
+		
 	}
 
-}
-
-.close {
-	padding: 50px;
-
-		@include respond-to(desktop) {
-			padding: 80px;
-		}
-
-	img {
+	.close {
+		margin: 50px;
 		@include size(36px);
-	}
-}
 
+			@include respond-to(desktop) {
+				margin: 100px;
+			}
+
+		img {
+			@include size(36px);
+		}
+	}
+
+}
 
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 $container-pad_mb;
 
 		@include respond-to(desktop) {
-			padding: 0 80px;
+			padding: 0 $container-pad_dt;
 		}
 }
 
@@ -98,6 +112,12 @@ nav {
 	
 	main {
 		@include size(100%);
+	}
+
+	nav {
+		#menu li a.nav-work {
+			color: $colour_highlight;
+		}
 	}
 
 	article {
@@ -110,19 +130,26 @@ nav {
 
 			.strip {
 				display: block;
-				position: relative;
+				position: absolute;
 				top: 0;
 				width: 100%;
 				height: 2px;
 				background: #a8a8a8;
+
+				@include respond-to(desktop) {
+					width: calc(100% - #{2 * $container-pad_dt});
+				}
 			}
 
 			h1 {
-				font: 10rem/1 $serif;
+				font-size: 7.5rem;
+				line-height: 1;
+
 			}
 
 			h3 {
-				font: 1.5rem/1 $sans;
+				font-size: 1.5rem;
+				line-height: 1;
 			}
 
 		}

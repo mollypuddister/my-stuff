@@ -313,7 +313,7 @@ img {
   .c-menu--slide-right,
   .c-menu--push-left,
   .c-menu--push-right {
-    width: 196px;
+    width: 236px;
   }
 }
 
@@ -354,7 +354,7 @@ img {
 .c-menu--push-right .c-menu__close {
   display: block;
   /*padding: 12px 24px;*/
-  width: 100%;
+  /*width: 100%;*/
 }
 
 /**
@@ -400,7 +400,7 @@ img {
   .c-menu--push-right {
     /*-webkit-transform: translateX(196px); /*300*/
         /*-ms-transform: translateX(196px);*/
-            transform: translateX(196px);
+            transform: translateX(236px);
   }
 }
 
@@ -515,19 +515,19 @@ img {
  * which case, the wrapper has to be pushed by the respective distance.
  */
 .o-wrapper.has-push-left {
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
+  /*-webkit-transform: translateX(100%);*/
+      /*-ms-transform: translateX(100%);*/
           transform: translateX(100%);
 }
 @media all and (min-width: 320px) {
   .o-wrapper.has-push-left {
-    -webkit-transform: translateX(196px);
-        -ms-transform: translateX(196px);
-            transform: translateX(196px);
+    /*-webkit-transform: translateX(196px);*/
+        /*-ms-transform: translateX(196px);*/
+            transform: translateX(236px);
   }
 }
 
-.o-wrapper.has-push-right {
+/*.o-wrapper.has-push-right {
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -550,7 +550,7 @@ img {
   -webkit-transform: translateY(-60px);
       -ms-transform: translateY(-60px);
           transform: translateY(-60px);
-}
+}*/
 
 /**
  * Body states.
@@ -595,7 +595,7 @@ body.has-active-menu {
   overflow: hidden;
   width: 0;
   height: 0;
-  background-color: #000;
+  background-color: #fb3f3c;
   opacity: 0;
   -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
           transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
