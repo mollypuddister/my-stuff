@@ -11,6 +11,11 @@ body.home {
   height: 100%;
 }
 
+/* line 16, scss/base/_global.scss */
+a {
+  color: black;
+}
+
 /* line 4, scss/base/_typography.scss */
 html {
   font-size: 16px;
@@ -23,47 +28,64 @@ body {
 }
 
 /* line 1, scss/_styles.scss */
-nav {
-  position: fixed;
+header {
   z-index: 10000;
   top: 0;
   left: 0;
   width: 100%;
 }
 /* line 8, scss/_styles.scss */
-nav a {
+header a, header button {
   position: absolute;
   padding: 50px;
 }
 @media only screen and (min-width: 657px) {
   /* line 8, scss/_styles.scss */
-  nav a {
+  header a, header button {
     padding: 80px;
   }
 }
 /* line 17, scss/_styles.scss */
-nav a#logo {
+header a#logo, header button#logo {
   top: 0;
   left: 0;
   font: 2rem/1 Helvetica, Arial, sans-serif;
   font-size: 2em;
   text-transform: uppercase;
 }
-/* line 25, scss/_styles.scss */
-nav a#menu-toggle {
+
+/* line 29, scss/_styles.scss */
+nav {
+  width: 80%;
+}
+@media only screen and (min-width: 657px) {
+  /* line 29, scss/_styles.scss */
+  nav {
+    width: 196px;
+  }
+}
+/* line 36, scss/_styles.scss */
+nav #menu {
+  z-index: 100;
+  height: 100%;
+  background: black;
+}
+
+/* line 46, scss/_styles.scss */
+.menu-toggle {
   top: 0;
   right: 0;
 }
-/* line 29, scss/_styles.scss */
-nav a#menu-toggle .burger {
+/* line 51, scss/_styles.scss */
+.menu-toggle .burger {
   width: 36px;
   height: 7px;
   position: relative;
   margin: 14px 0;
   background: #000;
 }
-/* line 35, scss/_styles.scss */
-nav a#menu-toggle .burger:before, nav a#menu-toggle .burger:after {
+/* line 57, scss/_styles.scss */
+.menu-toggle .burger:before, .menu-toggle .burger:after {
   width: 36px;
   height: 7px;
   position: absolute;
@@ -71,52 +93,60 @@ nav a#menu-toggle .burger:before, nav a#menu-toggle .burger:after {
   content: '';
   background: #000;
 }
-/* line 42, scss/_styles.scss */
-nav a#menu-toggle .burger:before {
+/* line 64, scss/_styles.scss */
+.menu-toggle .burger:before {
   top: -14px;
 }
-/* line 45, scss/_styles.scss */
-nav a#menu-toggle .burger:after {
+/* line 67, scss/_styles.scss */
+.menu-toggle .burger:after {
   top: 14px;
 }
-/* line 52, scss/_styles.scss */
-nav #menu {
-  position: fixed;
-  z-index: 100;
-  width: 200px;
-  height: 100%;
-  background: black;
+
+/* line 74, scss/_styles.scss */
+.close {
+  padding: 50px;
+}
+@media only screen and (min-width: 657px) {
+  /* line 74, scss/_styles.scss */
+  .close {
+    padding: 80px;
+  }
+}
+/* line 81, scss/_styles.scss */
+.close img {
+  width: 36px;
+  height: 36px;
 }
 
-/* line 63, scss/_styles.scss */
+/* line 87, scss/_styles.scss */
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
 @media only screen and (min-width: 657px) {
-  /* line 63, scss/_styles.scss */
+  /* line 87, scss/_styles.scss */
   .container {
     padding: 0 80px;
   }
 }
 
-/* line 75, scss/_styles.scss */
+/* line 99, scss/_styles.scss */
 .home main {
   width: 100%;
   height: 100%;
 }
-/* line 79, scss/_styles.scss */
+/* line 103, scss/_styles.scss */
 .home article {
   height: 100%;
   background: #eeeeee;
 }
-/* line 83, scss/_styles.scss */
+/* line 107, scss/_styles.scss */
 .home article .project {
   position: relative;
   top: 40%;
 }
-/* line 87, scss/_styles.scss */
+/* line 111, scss/_styles.scss */
 .home article .project .strip {
   display: block;
   position: relative;
@@ -125,11 +155,11 @@ nav #menu {
   height: 2px;
   background: #a8a8a8;
 }
-/* line 96, scss/_styles.scss */
+/* line 120, scss/_styles.scss */
 .home article .project h1 {
   font: 10rem/1 Baskerville, Garamond, Georgia, "Times New Roman", serif;
 }
-/* line 100, scss/_styles.scss */
+/* line 124, scss/_styles.scss */
 .home article .project h3 {
   font: 1.5rem/1 Helvetica, Arial, sans-serif;
 }
