@@ -276,7 +276,7 @@ img {
  */
 .c-menu {
   position: fixed;
-  z-index: 200;
+  /*z-index: 200;*/
   /*background-color: #67b5d1;*/
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;

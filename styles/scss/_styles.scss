@@ -1,5 +1,5 @@
 header {
-	// position: fixed;
+	position: fixed;
 	z-index: 10000;		
 	top: 0;
 	left: 0;
@@ -57,6 +57,7 @@ header {
 nav {
 	width: 80%;
 	background: black;
+	z-index: 10000;
 
 		@include respond-to(desktop) {
 			width: 196px;

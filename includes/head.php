@@ -13,14 +13,17 @@
 	<!-- styles -->
 	
 		<!-- vendor styles -->
-		<!-- slide push menu -->
-  		<link rel="stylesheet" href="styles/vendor/Slide-Push-Menus-master/css/style.css">
+			<!-- slide push menu -->
+			<link rel="stylesheet" type="text/css" href="styles/vendor/Slide-Push-Menus-master/css/style.css">
+			
+			<!-- full page scroll -->
+			<link rel="stylesheet" type="text/css" href="styles/vendor/fullPage.js-master/jquery.fullPage.css" />
 
 		<!-- html5 reset -->
-		<link rel="stylesheet" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
 
 		<!-- main stylesheet -->
-		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 
 
 

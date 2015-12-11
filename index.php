@@ -18,10 +18,10 @@
 				
 	</header>
 
-
-	<main>
+	
+	<main id="fullpage">
 		
-		<article>
+		<article class="section">
 			<div class="container project">				
 				<a href="projects/project.php">
 					<h1>contest</h1>
@@ -30,46 +30,51 @@
 				</a>				
 			</div>				
 		</article>
+		<article class="section">
+			<div class="container project">				
+				<a href="projects/project.php">
+					<h1>another one</h1>
+					<h3>2014</h3>
+					<span class="strip"></span>
+				</a>				
+			</div>				
+		</article>
 	</main>
 
 
-
-
-	<nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
-		<button class="c-menu__close close"><img src="images/close.svg" alt="Close"></button>
-		<ul id="menu" class="c-menu__items">
-			<li><a class="nav-work" href="/">Work</a></li>
-			<li><a class="nav-me" href="/about">Me</a></li>
-		</ul>		
-	</nav><!-- /c-menu push-right -->
-
-
-	<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
-
+	<?php require 'includes/nav.php';?>
 
 	<!-- vendor scripts -->
 		<!-- slide push menu -->
 		<script src="js/vendor/Slide-Push-Menus-master/dist/menu.js"></script>
 		<script>
 		
-		/**
-		* Slide right instantiation and action.
-		*/
-		var slideRight = new Menu({
-			//wrapper: '#o-wrapper',
-			type: 'slide-right',
-			menuOpenerClass: '.menu-toggle',
-			maskId: '#c-mask'
+			/**
+			* Slide right instantiation and action.
+			*/
+			var slideRight = new Menu({
+				//wrapper: '#o-wrapper',
+				type: 'slide-right',
+				menuOpenerClass: '.menu-toggle',
+				maskId: '#c-mask'
+			});
+
+			var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+			slideRightBtn.addEventListener('click', function(e) {
+				e.preventDefault;
+				slideRight.open();
+		 	});
+
+		</script>
+
+		<!-- full page scroll -->
+		<script type="text/javascript" src="js/vendor/fullPage.js-master/articljquery.fullPage.js"></script>
+
+		<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
 		});
-
-		var slideRightBtn = document.querySelector('#c-button--slide-right');
-	  
-		slideRightBtn.addEventListener('click', function(e) {
-			e.preventDefault;
-			slideRight.open();
-	 	});
-
-		
 		</script>
 
 </body>
