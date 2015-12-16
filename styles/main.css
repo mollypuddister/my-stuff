@@ -15,21 +15,24 @@
 /* line 1, scss/base/_global.scss */
 html {
   box-sizing: border-box;
-  font-smoothing: antialiased;
   height: 100%;
   width: 100%;
 }
 
-/* line 10, scss/base/_global.scss */
+/* line 8, scss/base/_global.scss */
+body {
+  font-smoothing: subpixel-antialiased;
+}
+/* line 11, scss/base/_global.scss */
 body.home {
   height: 100%;
 }
 
-/* line 15, scss/base/_global.scss */
+/* line 16, scss/base/_global.scss */
 a {
   color: black;
 }
-/* line 18, scss/base/_global.scss */
+/* line 19, scss/base/_global.scss */
 a:hover {
   color: #fb3f3c;
 }
@@ -57,13 +60,13 @@ h1 {
 h3, #logo, nav ul li {
   font-family: GT-Walsheim-Bold, Helvetica, Arial, Segoe UI, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* line 1, scss/_styles.scss */
 header {
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -131,72 +134,81 @@ nav {
 }
 /* line 66, scss/_styles.scss */
 nav #menu {
-  z-index: 100;
+  z-index: 1000;
   height: 100%;
   background: black;
+  margin-top: 230px;
 }
-/* line 73, scss/_styles.scss */
+/* line 72, scss/_styles.scss */
 nav #menu li {
-  font: 1.5rem;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
 }
-/* line 79, scss/_styles.scss */
+@media only screen and (min-width: 657px) {
+  /* line 72, scss/_styles.scss */
+  nav #menu li {
+    font-size: 1rem;
+  }
+}
+/* line 82, scss/_styles.scss */
 nav #menu li a {
   color: white;
 }
-/* line 87, scss/_styles.scss */
+/* line 90, scss/_styles.scss */
 nav .close {
-  margin: 50px;
   width: 36px;
   height: 36px;
+  position: absolute;
+  right: 0;
+  margin: 50px;
 }
 @media only screen and (min-width: 657px) {
-  /* line 87, scss/_styles.scss */
+  /* line 90, scss/_styles.scss */
   nav .close {
     margin: 100px;
   }
 }
-/* line 95, scss/_styles.scss */
+/* line 102, scss/_styles.scss */
 nav .close img {
   width: 36px;
   height: 36px;
 }
 
-/* line 102, scss/_styles.scss */
+/* line 109, scss/_styles.scss */
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
 @media only screen and (min-width: 657px) {
-  /* line 102, scss/_styles.scss */
+  /* line 109, scss/_styles.scss */
   .container {
     padding: 0 80px;
   }
 }
 
-/* line 114, scss/_styles.scss */
+/* line 121, scss/_styles.scss */
 .home main {
   width: 100%;
   height: 100%;
 }
-/* line 119, scss/_styles.scss */
+/* line 126, scss/_styles.scss */
 .home nav #menu li a.nav-work {
   color: #fb3f3c;
 }
-/* line 124, scss/_styles.scss */
+/* line 131, scss/_styles.scss */
 .home article {
   height: 100%;
   background: #eeeeee;
 }
-/* line 128, scss/_styles.scss */
+/* line 135, scss/_styles.scss */
 .home article .project {
   position: relative;
   top: 40%;
 }
-/* line 132, scss/_styles.scss */
+/* line 139, scss/_styles.scss */
 .home article .project .strip {
   display: block;
   position: absolute;
@@ -206,17 +218,17 @@ nav .close img {
   background: #a8a8a8;
 }
 @media only screen and (min-width: 657px) {
-  /* line 132, scss/_styles.scss */
+  /* line 139, scss/_styles.scss */
   .home article .project .strip {
     width: calc(100% - 160px);
   }
 }
-/* line 145, scss/_styles.scss */
+/* line 152, scss/_styles.scss */
 .home article .project h1 {
   font-size: 7.5rem;
   line-height: 1;
 }
-/* line 151, scss/_styles.scss */
+/* line 158, scss/_styles.scss */
 .home article .project h3 {
   font-size: 1.5rem;
   line-height: 1;

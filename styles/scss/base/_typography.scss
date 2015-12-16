@@ -12,5 +12,5 @@ body {
 
 h1 { @include display(GT-Sectra-Display-Super-Italic, normal, normal); }
 
-h3, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, bold); }
+h3, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, normal); }
 

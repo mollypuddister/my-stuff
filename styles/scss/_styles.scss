@@ -1,6 +1,6 @@
 header {
 	position: fixed;
-	z-index: 10000;		
+	z-index: 100;		
 	top: 0;
 	left: 0;
 	width: 100%;	
@@ -8,7 +8,7 @@ header {
 	a, button {
 		position: absolute;
 		margin: 50px;
-
+		
 			@include respond-to(desktop) {
 				margin: 100px;
 			}
@@ -64,17 +64,20 @@ nav {
 		}
 	
 	#menu {
-		// position: fixed;
-		z-index: 100;
-		// width: 200px;
+		z-index: 1000;
 		height: 100%;
 		background: black;
+		margin-top: 230px;
 
 		li {
-			font: 1.5rem;			
+			font-size: 3rem;			
 			text-align: center;
 			text-transform: uppercase;
 			padding: 10px;
+
+				@include respond-to(desktop) {
+					font-size: 1rem;	
+				}
 
 			a {
 				color: white;
@@ -85,8 +88,12 @@ nav {
 	}
 
 	.close {
-		margin: 50px;
 		@include size(36px);
+		// @include alignment(relative, null, 50%, translateX(-50%));
+		position: absolute;
+		right: 0;	
+		margin: 50px;
+		
 
 			@include respond-to(desktop) {
 				margin: 100px;

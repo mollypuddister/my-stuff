@@ -69,7 +69,7 @@
 		</script>
 
 		<!-- full page scroll -->
-		<script type="text/javascript" src="js/vendor/fullPage.js-master/articljquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/vendor/fullPage.js-master/jquery.fullPage.js"></script>
 
 		<script>
 		$(document).ready(function() {
