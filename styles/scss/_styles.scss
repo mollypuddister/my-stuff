@@ -70,7 +70,7 @@ nav {
 		margin-top: 230px;
 
 		li {
-			font-size: 3rem;			
+			font-size: 2rem;			
 			text-align: center;
 			text-transform: uppercase;
 			padding: 10px;
@@ -147,17 +147,35 @@ nav {
 				@include respond-to(desktop) {
 					width: calc(100% - #{2 * $container-pad_dt});
 				}
+			}			
+
+		}
+
+	}
+
+}
+
+.project {
+
+	article {
+		overflow: hidden;
+
+		header {
+			position: static;
+			// margin-top: 25%;
+
+			.hero {
+				max-height: 600px;
+				
+				img {
+					@include size(100%, auto);
+				}
 			}
 
-			h1 {
-				font-size: 7.5rem;
-				line-height: 1;
-
-			}
-
-			h3 {
-				font-size: 1.5rem;
-				line-height: 1;
+			.title {
+				position: relative;
+				top: 0;
+				background: white;
 			}
 
 		}

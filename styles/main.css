@@ -63,6 +63,18 @@ h3, #logo, nav ul li {
   font-weight: normal;
 }
 
+/* line 17, scss/base/_typography.scss */
+h1 {
+  font-size: 7.5rem;
+  line-height: 1;
+}
+
+/* line 23, scss/base/_typography.scss */
+h3 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
 /* line 1, scss/_styles.scss */
 header {
   position: fixed;
@@ -141,7 +153,7 @@ nav #menu {
 }
 /* line 72, scss/_styles.scss */
 nav #menu li {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
@@ -223,13 +235,27 @@ nav .close img {
     width: calc(100% - 160px);
   }
 }
-/* line 152, scss/_styles.scss */
-.home article .project h1 {
-  font-size: 7.5rem;
-  line-height: 1;
+
+/* line 160, scss/_styles.scss */
+.project article {
+  overflow: hidden;
 }
-/* line 158, scss/_styles.scss */
-.home article .project h3 {
-  font-size: 1.5rem;
-  line-height: 1;
+/* line 163, scss/_styles.scss */
+.project article header {
+  position: static;
+}
+/* line 167, scss/_styles.scss */
+.project article header .hero {
+  max-height: 600px;
+}
+/* line 170, scss/_styles.scss */
+.project article header .hero img {
+  width: 100%;
+  height: auto;
+}
+/* line 175, scss/_styles.scss */
+.project article header .title {
+  position: relative;
+  top: 0;
+  background: white;
 }

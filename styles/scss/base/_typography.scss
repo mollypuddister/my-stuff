@@ -14,3 +14,13 @@ h1 { @include display(GT-Sectra-Display-Super-Italic, normal, normal); }
 
 h3, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, normal); }
 
+h1 {
+	font-size: 7.5rem;
+	line-height: 1;
+
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1;
+}

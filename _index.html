@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Molly Puddister</title>
+	<meta name="description" content="Molly Puddister's work as a UI/UX Designer">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+	<meta name="viewport" content="width=640, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Mate:400,400italic' rel='stylesheet' type='text/css'>
+	
+	<!-- styles -->
+	
+		<!-- vendor styles -->
+			<!-- slide push menu -->
+			<link rel="stylesheet" type="text/css" href="styles/vendor/Slide-Push-Menus-master/css/style.css">
+			
+			<!-- full page scroll -->
+			<link rel="stylesheet" type="text/css" href="styles/vendor/fullPage.js-master/jquery.fullPage.css" />
+
+		<!-- html5 reset -->
+		<link rel="stylesheet" type="text/css" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
+
+		<!-- main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+
+
+	
+
+	<!-- jQuery -->
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- modernizr -->
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+</head>
+
+
+
+<body class="home">
+	
+	<header>
+		<a id="logo">Molly Puddister</a>
+
+		<button id="c-button--slide-right" class="menu-toggle" href="#">
+			<div class="burger"></div>
+		</button>
+		
+	</header>
+
+	<main id="fullpage">
+		
+		<article class="section">
+			<div class="container project">				
+				<a href="projects/project.php">
+					<h1>contest</h1>
+					<h3>2014</h3>
+					<span class="strip"></span>
+				</a>				
+			</div>				
+		</article>
+		<article class="section">
+			<div class="container project">				
+				<a href="projects/project.php">
+					<h1>another one</h1>
+					<h3>2014</h3>
+					<span class="strip"></span>
+				</a>				
+			</div>				
+		</article>
+	</main>
+
+
+	
+	<!-- site nav -->
+	<nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
+		<button class="c-menu__close close"><img src="images/close.svg" alt="close"></button>
+		<ul id="menu" class="c-menu__items">
+			<li><a class="nav-work" href="./">Work</a></li>
+			<li><a class="nav-me" href="/about">Me</a></li>
+		</ul>		
+	</nav>
+
+	<!-- nav open overlay -->
+	<div id="c-mask" class="c-mask"></div>
+
+	<!-- vendor scripts -->
+		<!-- slide push menu -->
+		<script src="js/vendor/Slide-Push-Menus-master/dist/menu.js"></script>
+		<script>
+		
+			/**
+			* Slide right instantiation and action.
+			*/
+			var slideRight = new Menu({
+				//wrapper: '#o-wrapper',
+				type: 'slide-right',
+				menuOpenerClass: '.menu-toggle',
+				maskId: '#c-mask'
+			});
+
+			var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+			slideRightBtn.addEventListener('click', function(e) {
+				e.preventDefault;
+				slideRight.open();
+		 	});
+
+		</script>
+
+		<!-- full page scroll -->
+		<script type="text/javascript" src="js/vendor/fullPage.js-master/jquery.fullPage.js"></script>
+
+		<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+		</script>
+		
+</body>
+
+</html>

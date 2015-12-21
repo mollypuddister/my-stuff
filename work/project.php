@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-
-<html>
-
 <?php require '../includes/projects-head.php';?>
 
-<body class="home">
+<body class="project">
 	
-	<nav>
-		<a id="logo">Molly Puddister</a>
-		<a id="menu-toggle" href="#">
-			<div class="burger"></div>
-		</a>
-	</nav>
+	<?php require '../includes/header.php';?>
 
 	<main>
 		
 		<article>
-			<div class="container project">				
-				<h1>contest</h1>
-				<h3>2014</h3>
-				<span class="strip"></span>
+			<header>
+				<div class="hero">
+					<img src="http://lorempixel.com/1240/800/abstract/" alt="">	
+				</div>
+				<div class="title container">
+					<h1>contest</h1>
+					<h3>2014</h3>
+				</div>
+			</header>	
+				
 			</div>				
 		</article>
+
 	</main>
 
-	
+
+	<?php require '../includes/nav.php';?>
+
+	<?php require '../includes/scripts.php';?>	
+
 </body>
 
 </html>
