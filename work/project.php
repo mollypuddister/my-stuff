@@ -11,7 +11,7 @@
 				<div class="hero">
 					<img src="http://lorempixel.com/1240/800/abstract/" alt="">	
 				</div>
-				<div class="title container">
+				<div class="title">
 					<h1>contest</h1>
 					<h3>2014</h3>
 				</div>
