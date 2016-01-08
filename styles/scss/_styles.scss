@@ -158,27 +158,75 @@ nav {
 .project {
 
 	article {
-		overflow: hidden;
+		// overflow: hidden;
+		.container {
+			max-width: 980px;
+		}
 
-		header {
+		> header {
 			position: static;
+			height: 620px;
+			background: $colour_highlight;
+			
 			// margin-top: 25%;
 
-			.hero {
-				max-height: 600px;
+			// .hero {
+			// 	max-height: 600px;
 				
-				img {
-					@include size(100%, auto);
-					trans
+			// 	img {
+			// 		@include size(100%, auto);
+					
+			// 	}
+			// }
+
+			.title {
+				@include alignment(relative, 50%, null, translateY(-50%));
+				padding-top: 60px;
+			}
+
+
+		}
+
+		> section {			
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		aside {
+			padding-top: 3rem;
+			
+			@include respond-to(desktop) {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+			
+		}
+
+		.tidbit {
+			padding: 0 3rem 1rem 0;
+
+
+				@include respond-to(desktop) {
+				}
+
+			> {
+				display: inline;
+
+				@include respond-to(desktop) {
+					display: block;
 				}
 			}
 
-			.title {
-				position: relative;
-				top: 0;
-				background: white;
-			}
+			.tidbit-detail {
+				font-size: 1.4em;
 
+
+				@include respond-to(desktop) {
+					font-size: 0.9em;
+					padding-top: 0.8rem;
+				}
+			}
 		}
 
 	}

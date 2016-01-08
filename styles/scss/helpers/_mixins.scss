@@ -92,10 +92,37 @@
 
 
 
+// ---------- control directives ----------
 
+// projects
 
+	$cases_map: (
 
+		ebaySweepstakes:	#85b716,
+		legoFriends:		#1296d7,
+		richMedia:			#000000,
+		ebayGraphics:		#eae5e1,
+		ebayFrance:			#b9d8fa,
+		bpl:				#8347b0,
+		bmo:				#0077c4,
+		ebayClassifieds:	#8acadd,
+		terrainTwister:		#b7c9dd,
+		orion:				#f3f9ff,
 
+	);
+
+	// each key, value in object
+	@each $case, $bgcolour in $cases_map {
+		
+		#case_#{$case} {
+
+			.case_hero {
+				position: relative;
+				background-color: black;
+			}
+		}
+
+	}
 
 
 
