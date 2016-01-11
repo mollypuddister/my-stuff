@@ -3,8 +3,8 @@
 <nav id="c-menu--slide-right" class="c-menu c-menu--push-right">
 	<!-- <button class="c-menu__close close"><img src="images/close.svg" alt="close"></button> -->
 	<ul id="menu" class="c-menu__items">
-		<li><a class="nav-work" href="./">Work</a></li>
-		<li><a class="nav-me" href="/about">Me</a></li>
+		<li><a class="nav-work" href="./">work</a></li>
+		<li><a class="nav-me" href="/about">me</a></li>
 	</ul>		
 </nav><!-- /c-menu push-right -->
 
