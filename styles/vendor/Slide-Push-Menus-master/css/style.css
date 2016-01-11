@@ -567,7 +567,7 @@ body.has-active-menu {
  */
 .c-menu__close {
   color: #fff;
-  background-color: black;
+  background-color: transparent;
   font-size: 14px;
   border: none;
   box-shadow: none;

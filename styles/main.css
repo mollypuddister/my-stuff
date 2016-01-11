@@ -83,16 +83,25 @@ html {
 body {
   font-smoothing: subpixel-antialiased;
   min-height: 100%;
+  background: #FFF5E2;
+  color: #2b2b2b;
 }
 
-/* line 17, scss/base/_global.scss */
+/* line 19, scss/base/_global.scss */
 a {
-  color: black;
+  color: #2b2b2b;
   text-decoration: none;
+  cursor: pointer;
 }
-/* line 21, scss/base/_global.scss */
+/* line 24, scss/base/_global.scss */
 a:hover {
   color: #fb3f3c;
+}
+
+/* line 30, scss/base/_global.scss */
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* line 3, scss/base/_typography.scss */
@@ -104,29 +113,29 @@ html {
 /* line 8, scss/base/_typography.scss */
 body {
   font: 1em/1.5 "Mate", Georgia, serif;
-  overflow: hidden;
 }
 
-/* line 13, scss/base/_typography.scss */
+/* line 12, scss/base/_typography.scss */
 h1 {
   font-family: GT-Sectra-Display-Super-Italic, Baskerville, Garamond, Georgia, "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 15, scss/base/_typography.scss */
+/* line 14, scss/base/_typography.scss */
 h3, h4, #logo, nav ul li {
   font-family: GT-Walsheim-Bold, Helvetica, Arial, Segoe UI, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 17, scss/base/_typography.scss */
+/* line 16, scss/base/_typography.scss */
 p {
   font: 1.8em/1.5 "Mate", Georgia, serif;
+  color: #555555;
 }
 @media only screen and (min-width: 657px) {
-  /* line 17, scss/base/_typography.scss */
+  /* line 16, scss/base/_typography.scss */
   p {
     font: 1em/1.5 "Mate", Georgia, serif;
   }
@@ -194,7 +203,7 @@ header a.menu-toggle .burger, header button.menu-toggle .burger {
   height: 7px;
   position: relative;
   margin: 14px 0;
-  background: #000;
+  background: #2b2b2b;
 }
 /* line 35, scss/_styles.scss */
 header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header button.menu-toggle .burger:before, header button.menu-toggle .burger:after {
@@ -203,7 +212,7 @@ header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header 
   position: absolute;
   display: block;
   content: '';
-  background: #000;
+  background: #2b2b2b;
 }
 /* line 42, scss/_styles.scss */
 header a.menu-toggle .burger:before, header button.menu-toggle .burger:before {
@@ -216,9 +225,11 @@ header a.menu-toggle .burger:after, header button.menu-toggle .burger:after {
 
 /* line 57, scss/_styles.scss */
 nav {
-  width: 80%;
-  background: black;
+  width: 80% 100%;
+  height: 80% 100%;
   z-index: 10000;
+  overflow: hidden;
+  background: black;
 }
 @media only screen and (min-width: 657px) {
   /* line 57, scss/_styles.scss */
@@ -226,11 +237,10 @@ nav {
     width: 196px;
   }
 }
-/* line 66, scss/_styles.scss */
+/* line 67, scss/_styles.scss */
 nav #menu {
   z-index: 1000;
   height: 100%;
-  background: black;
   margin-top: 230px;
 }
 /* line 72, scss/_styles.scss */
@@ -274,12 +284,12 @@ nav .close img {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 2rem;
 }
 @media only screen and (min-width: 657px) {
   /* line 109, scss/_styles.scss */
   .container {
-    padding: 0 80px;
+    padding: 0 4rem;
   }
 }
 
@@ -295,85 +305,113 @@ nav .close img {
 /* line 131, scss/_styles.scss */
 .home article {
   height: 100%;
-  background: #eeeeee;
 }
-/* line 135, scss/_styles.scss */
+/* line 134, scss/_styles.scss */
 .home article .project {
   position: relative;
   top: 40%;
 }
-/* line 139, scss/_styles.scss */
+/* line 138, scss/_styles.scss */
 .home article .project .strip {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
   height: 2px;
-  background: #a8a8a8;
+  background: #2b2b2b;
 }
 @media only screen and (min-width: 657px) {
-  /* line 139, scss/_styles.scss */
+  /* line 138, scss/_styles.scss */
   .home article .project .strip {
-    width: calc(100% - 160px);
+    width: calc(100% - 8rem);
   }
 }
 
-/* line 162, scss/_styles.scss */
+/* line 161, scss/_styles.scss */
 .project article .container {
   max-width: 980px;
 }
-/* line 166, scss/_styles.scss */
+/* line 165, scss/_styles.scss */
 .project article > header {
   position: static;
   height: 620px;
   background: #fb3f3c;
 }
-/* line 182, scss/_styles.scss */
+/* line 181, scss/_styles.scss */
 .project article > header .title {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   padding-top: 60px;
 }
-/* line 190, scss/_styles.scss */
+/* line 189, scss/_styles.scss */
 .project article > section {
   padding-top: 4rem;
+}
+/* line 194, scss/_styles.scss */
+.project article > section:last-child {
   padding-bottom: 4rem;
 }
-/* line 195, scss/_styles.scss */
+/* line 198, scss/_styles.scss */
 .project article aside {
   padding-top: 3rem;
 }
 @media only screen and (min-width: 657px) {
-  /* line 195, scss/_styles.scss */
+  /* line 198, scss/_styles.scss */
   .project article aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-/* line 206, scss/_styles.scss */
+/* line 209, scss/_styles.scss */
 .project article .tidbit {
   padding: 0 3rem 1rem 0;
 }
-/* line 213, scss/_styles.scss */
+/* line 216, scss/_styles.scss */
 .project article .tidbit > {
   display: inline;
 }
 @media only screen and (min-width: 657px) {
-  /* line 213, scss/_styles.scss */
+  /* line 216, scss/_styles.scss */
   .project article .tidbit > {
     display: block;
   }
 }
-/* line 221, scss/_styles.scss */
+/* line 224, scss/_styles.scss */
 .project article .tidbit .tidbit-detail {
   font-size: 1.4em;
 }
 @media only screen and (min-width: 657px) {
-  /* line 221, scss/_styles.scss */
+  /* line 224, scss/_styles.scss */
   .project article .tidbit .tidbit-detail {
     font-size: 0.9em;
     padding-top: 0.8rem;
+  }
+}
+/* line 235, scss/_styles.scss */
+.project article .photo-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 657px) {
+  /* line 235, scss/_styles.scss */
+  .project article .photo-grid {
+    flex-direction: row;
+  }
+}
+/* line 244, scss/_styles.scss */
+.project article .photo-grid > figure {
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+@media only screen and (min-width: 657px) {
+  /* line 244, scss/_styles.scss */
+  .project article .photo-grid > figure {
+    flex: 0 0 50%;
+    padding: 1rem;
   }
 }

@@ -7,7 +7,6 @@ html {
 
 body {
 	font: 1em/1.5 $body;
-	overflow: hidden;
 }
 
 h1 { @include display(GT-Sectra-Display-Super-Italic, normal, normal); }
@@ -16,6 +15,7 @@ h3, h4, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, normal);
 
 p {
 	font: 1.8em/1.5 $body;
+	color: $colour_text-body;
 	@include respond-to(desktop) {
 		font: 1em/1.5 $body;
 	}

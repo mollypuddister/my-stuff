@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 #require 'toolkit'
-require 'sass-json-vars'
+# require 'sass-json-vars'
 
 #Folder settings
 relative_assets = true      #because we're not working from the root

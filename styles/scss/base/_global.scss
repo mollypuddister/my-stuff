@@ -9,17 +9,25 @@ body {
 	// min-width: 640px;
 	font-smoothing: subpixel-antialiased;
 	min-height: 100%;
+	background: $colour_background;
+	color: $colour_mineshaft;
 	// &.home {
 	// 	height: 100%;
 	// }
 }
 
 a {
-	color: black;
+	color: $colour_mineshaft;
 	text-decoration: none;
+	cursor: pointer;
 
 	&:hover {
-		color: $colour_highlight;
+		color: $colour_coralred;
 	}
 	
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
