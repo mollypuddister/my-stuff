@@ -95,10 +95,9 @@
 
 		var slideRightBtn = document.querySelector('#c-button--slide-right');
 
-		slideRightBtn.addEventListener('click', function(e) {
-			e.preventDefault;
-			slideRight.open();
-	 	});
+	 	slideRightBtn.onclick = function() {
+			slideRight.toggle();
+	 	};
 
 	</script>
 
