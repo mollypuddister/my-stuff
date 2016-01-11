@@ -4,6 +4,8 @@
 	
 	<?php require 'includes/header.php';?>
 
+	<?php require 'includes/nav.php';?>
+
 	<main id="fullpage">
 		
 		<article class="section">
@@ -26,8 +28,6 @@
 		</article>
 	</main>
 
-
-	<?php require 'includes/nav.php';?>
 
 	<?php require 'includes/scripts.php';?>	
 

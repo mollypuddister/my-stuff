@@ -51,8 +51,9 @@
     // this.wrapper = document.querySelector(this.options.wrapper);
     this.mask = document.querySelector(this.options.maskId);
     this.menu = document.querySelector('#c-menu--' + this.options.type);
-    this.closeBtn = this.menu.querySelector('.c-menu__close');
+    this.closeBtn = this.menu.querySelector('.close');
     this.menuOpeners = document.querySelectorAll(this.options.menuOpenerClass);
+    this.slideRightBtn = document.querySelector('#c-button--slide-right');
     this._initEvents();
   };
 
@@ -61,10 +62,10 @@
    */
   Menu.prototype._initEvents = function() {
     // Event for clicks on the close button inside the menu.
-    this.closeBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.close();
-    }.bind(this));
+    // this.closeBtn.addEventListener('click', function(e) {
+    //   e.preventDefault();
+    //   this.close();
+    // }.bind(this));
 
     // Event for clicks on the mask.
     this.mask.addEventListener('click', function(e) {
@@ -76,13 +77,21 @@
   /**
    * Open Menu.
    */
-  Menu.prototype.open = function() {
-    this.body.classList.add('has-active-menu');
-    // this.wrapper.classList.add('has-' + this.options.type);
-    this.menu.classList.add('is-active');
-    this.mask.classList.add('is-active');
-    this.disableMenuOpeners();
+
+  Menu.prototype.toggle = function() {
+    this.body.classList.toggle('has-active-menu');
+    this.menu.classList.toggle('is-active');
+    this.mask.classList.toggle('is-active');
+    this.slideRightBtn.classList.toggle('close');
   };
+
+  // Menu.prototype.open = function() {
+  //   this.body.classList.add('has-active-menu');
+  //   // this.wrapper.classList.add('has-' + this.options.type);
+  //   this.menu.classList.add('is-active');
+  //   this.mask.classList.add('is-active');
+  //   this.disableMenuOpeners();
+  // };
 
   /**
    * Close Menu.

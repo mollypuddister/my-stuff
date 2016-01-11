@@ -1,12 +1,12 @@
 header {
-	position: fixed;
-	z-index: 100;		
+	position: absolute;
+	// z-index: 100;	
 	top: 0;
 	left: 0;
 	width: 100%;	
 	
 	a, button {
-		position: absolute;
+		position: fixed;
 		margin: 50px;
 		
 			@include respond-to(desktop) {
@@ -22,15 +22,16 @@ header {
 		}
 
 		&.menu-toggle {
-			// position: fixed;
 			top: 0;
 			right: 0;
+			z-index: 100000;
 
 			.burger {
 				@include size(36px, 7px);
 				position: relative;
 				margin: 14px 0;
 				background: $colour_mineshaft;
+				transition: all 0.3s;
 
 				&:before, &:after {
 					@include size(36px, 7px);
@@ -38,13 +39,33 @@ header {
 					display: block;
 					content: '';
 					background: $colour_mineshaft;
+					transition: all 0.3s;
 				}
-				&:before {
-					top: -14px;
+				&:before 	{ top: -14px; }
+				&:after 	{ top: 14px; }
+
+				&:hover {
+					&:before 	{ top: -15px; }
+					&:after		{ top: 15px; }
+					
 				}
-				&:after {
-					top: 14px;
+			}
+
+			&.close {
+
+				.burger {
+					background: transparent;
+
+					&:before, &:after {
+						background: $colour_background;
+						top: 0;
+					}
+					
+					&:before 	{ transform: rotate(-45deg); }
+					&:after 	{ transform: rotate(45deg); }
+
 				}
+
 			}
 
 		}
