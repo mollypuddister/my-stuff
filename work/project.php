@@ -8,37 +8,47 @@
 
 		<article>
 			<header>		
-				<div class="container title">
+				<div class="container slim title ">
 					<h1>contest</h1>
 					<h3>2014</h3>
 				</div>				
 			</header>
 			
-			<section class="container">
-				<p>
-					My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-				</p>
+			<section class="text">
+				<div class="container slim">
+					<p>
+						My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+					</p>
 
-				<aside>
-					<div class="tidbit agency">
-						<h4>Agency</h4>
-						<p class="tidbit-detail">Visible Media Inc.</p>
-					</div>
+					<aside>
+						<div class="tidbit agency">
+							<h4>Agency</h4>
+							<p class="tidbit-detail">Visible Media Inc.</p>
+						</div>
 
-					<div class="tidbit role">
-						<h4>Role</h4>
-						<p  class="tidbit-detail">UI UX, Project Management</p>
-					</div>
-					
-				</aside>
+						<div class="tidbit role">
+							<h4>Role</h4>
+							<p class="tidbit-detail">UI UX, Project Management</p>
+						</div>
+						
+					</aside>
+				</div>
 
 			</section>
 
-			<section class="container photo-padding">
-				<img src="http://lorempixel.com/1240/800/abstract/">
+			<section>
+				<div class="container">
+					<img src="http://lorempixel.com/1240/800/abstract/" alt="">
+				</div>
 			</section>
 
-			<section class="container photo-grid">
+			<section class="photo-mat">
+				<div class="container">
+					<img src="http://lorempixel.com/1240/800/abstract/" alt="">
+				</div>
+			</section>
+
+			<section class="photo-grid">
 				<figure> 
 					<img src="http://lorempixel.com/800/1000/abstract/">
 				</figure>
@@ -47,14 +57,16 @@
 				</figure>
 			</section>
 
-			<section class="photo-fullw">
-				<img src="http://lorempixel.com/1240/800/abstract/">
+			<section class="text">
+				<div class="container slim">
+					<p>
+						My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+					</p>
+				</div>
 			</section>
 
-			<section class="container">
-				<p>
-					My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-				</p>
+			<section>
+				<img src="http://lorempixel.com/1240/800/abstract/">
 			</section>
 
 		</article>

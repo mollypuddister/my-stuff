@@ -9,7 +9,7 @@
 	<main id="fullpage">
 		
 		<article class="section">
-			<div class="container project">				
+			<div class="hero">				
 				<a href="work/project.php">
 					<h1>contest</h1>
 					<h3>2014</h3>
@@ -18,7 +18,7 @@
 			</div>				
 		</article>
 		<article class="section">
-			<div class="container project">				
+			<div class="hero">				
 				<a href="work/project.php">
 					<h1>another one</h1>
 					<h3>2014</h3>
@@ -26,6 +26,7 @@
 				</a>				
 			</div>				
 		</article>
+		
 	</main>
 
 
