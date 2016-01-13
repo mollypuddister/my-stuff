@@ -8,27 +8,35 @@
 
 	<main id="fullpage">
 		
-		<article class="section">
+		<article class="section uno">
 			<div class="hero">				
-				<a href="work/project.php">
+				<a href="project.php">
 					<h1>contest</h1>
-					<h3>2014</h3>
+					<h4>2014</h4>
 					<span class="strip"></span>
 				</a>				
 			</div>				
 		</article>
-		<article class="section">
+		<article class="section dos">
 			<div class="hero">				
-				<a href="work/project.php">
+				<a href="project.php">
 					<h1>another one</h1>
-					<h3>2014</h3>
+					<h4>2014</h4>
+					<span class="strip"></span>
+				</a>				
+			</div>				
+		</article>
+		<article class="section tres">
+			<div class="hero">				
+				<a href="project.php">
+					<h1>another one</h1>
+					<h4>2014</h4>
 					<span class="strip"></span>
 				</a>				
 			</div>				
 		</article>
 		
 	</main>
-
 
 	<?php require 'includes/scripts.php';?>	
 

@@ -9,13 +9,21 @@ body {
 	font: 1em/1.5 $body;
 }
 
-h1 { @include display(GT-Sectra-Display-Super-Italic, normal, normal); }
+h1, h2 { 
+	@include display(GT-Sectra-Display-Super-Italic, normal, normal); 
+	letter-spacing: -1px; 
+	text-transform: lowercase;
+}
 
-h3, h4, #logo, nav ul li { @include highlight(GT-Walsheim-Bold, normal, normal); }
+h3, h4, h5, #logo, nav ul li { 
+	@include highlight(GT-Walsheim-Bold, normal, normal); 
+	text-transform: uppercase; 
+}
 
 p {
 	font: 1.8em/1.5 $body;
 	color: $colour_text-body;
+	margin: 1rem 0 2rem;
 	@include respond-to(desktop) {
 		font: 1em/1.5 $body;
 	}
@@ -23,22 +31,36 @@ p {
 
 h1 {
 	font-size: 7.5em;
-	line-height: 1;
+	line-height: 0.8;
 	margin-bottom: 1rem;
+	padding-top: 2rem;
+}
+
+h2 {
+	font-size: 5em;
+	line-height: 0.8;
+	margin: 1rem 0;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.6em;
 	line-height: 1;
+	margin: 0.5rem 0;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	line-height: 1;
-	text-transform: uppercase;
-	margin-bottom: 1em;
+	margin: 0.5rem 0;
+}
+
+h5 {
+	font-size: 1.3em;
+	line-height: 1;
+	margin-bottom: 0.2em;
 
 	@include respond-to(desktop) {
 		font-size: 1em;
+		margin-bottom: 1em;
 	}
 }

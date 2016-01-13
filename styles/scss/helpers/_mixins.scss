@@ -94,32 +94,29 @@
 
 // ---------- control directives ----------
 
-// projects
+// colour map
 
-	$cases_map: (
+	$colour_map: (
 
-		ebaySweepstakes:	#85b716,
-		legoFriends:		#1296d7,
-		richMedia:			#000000,
-		ebayGraphics:		#eae5e1,
-		ebayFrance:			#b9d8fa,
-		bpl:				#8347b0,
-		bmo:				#0077c4,
-		ebayClassifieds:	#8acadd,
-		terrainTwister:		#b7c9dd,
-		orion:				#f3f9ff,
-
+		uno:		$colour_coralred,
+		dos:		$colour_aquamarine,
+		tres:		$colour_pizazz,
+		quattro:	$colour_sazerac,
 	);
 
 	// each key, value in object
-	@each $case, $bgcolour in $cases_map {
+	@each $option, $bgcolour in $colour_map {
 		
-		#case_#{$case} {
+		.home article.#{$option} {
+			background-color: #{$bgcolour};
+		}
 
-			.case_hero {
-				position: relative;
-				background-color: black;
-			}
+		section.next.#{$option} a:hover {
+			background-color: #{$bgcolour};
+		}
+
+		.project article.#{$option} > header {
+			background-color: #{$bgcolour};
 		}
 
 	}
