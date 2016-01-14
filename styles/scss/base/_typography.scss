@@ -3,6 +3,10 @@ $body: 'Mate', Georgia, serif;
 html {
 	font-size: 20px;
 	line-height: 1.5;
+
+	@include respond-to(large) {
+		font-size: 25px;
+	}
 }
 
 body {
@@ -27,18 +31,23 @@ p {
 	@include respond-to(desktop) {
 		font: 1em/1.5 $body;
 	}
+
 }
 
 h1 {
 	font-size: 7.5em;
-	line-height: 0.8;
-	margin-bottom: 1rem;
+	line-height: 1;
+	margin-bottom: 1.5rem;
 	padding-top: 2rem;
+
+	@include respond-to(desktop) {
+		margin-bottom: 2.5rem;
+	}
 }
 
 h2 {
 	font-size: 5em;
-	line-height: 0.8;
+	line-height: 1;
 	margin: 1rem 0;
 }
 

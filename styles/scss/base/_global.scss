@@ -27,3 +27,19 @@ img {
 	height: auto;
 	vertical-align: top;
 }
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 $container-spacing_mb;
+
+	@include respond-to(desktop) {
+		padding: 0 $container-spacing_dt;
+	}
+
+	&.slim {
+		max-width: 980px;
+	}
+
+
+}
