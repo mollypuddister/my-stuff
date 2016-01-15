@@ -28,8 +28,8 @@
 						</div>
 
 						<div class="tidbit role">
-							<h5>Role</h5>
-							<p class="tidbit-detail">UI UX, Project Management</p>
+							<h5>My Role</h5>
+							<p class="tidbit-detail">UI UX, Project Management. A bunch of text if I did many things on the project to describe what I did.</p>
 						</div>
 						
 					</aside>

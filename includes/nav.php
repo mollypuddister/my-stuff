@@ -5,7 +5,14 @@
 	<ul id="menu" class="c-menu__items">
 		<li><a class="nav-work" href="index.php">work</a></li>
 		<li><a class="nav-about" href="about.php">me</a></li>
-	</ul>		
+	</ul>	
+	<div id="meta">
+		<p>	Copyright 2016 
+			<br/>Designed & Developed 
+			<br/>by Molly Puddister
+		</p>
+	</div>
+		
 </nav><!-- /c-menu push-right -->
 
 <!-- nav open overlay -->

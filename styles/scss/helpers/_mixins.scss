@@ -107,7 +107,7 @@
 	// each key, value in object
 	@each $option, $bgcolour in $colour_map {
 		
-		.home article.#{$option} {
+		#home article.#{$option} {
 			background-color: #{$bgcolour};
 		}
 

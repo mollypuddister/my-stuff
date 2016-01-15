@@ -23,6 +23,20 @@
 
 	<!-- full page scroll -->
 	<script type="text/javascript" src="js/vendor/fullPage.js-master/jquery.fullPage.js"></script>
+	<script>
+
+		$(document).ready(function() {
+			$.fn.fullpage({
+				fixedElements: '#section-down'
+			});
+		});
+
+		$('#section-down').click(function(){
+		    $.fn.fullpage.moveSectionDown();
+		});
+
+		
+	</script>
 
 	<script>
 	$(document).ready(function() {
