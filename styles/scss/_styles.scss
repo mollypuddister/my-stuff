@@ -1,8 +1,12 @@
+//-------------------------------------------------//
+//	page header
+//-------------------------------------------------//
 header {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;	
+	height: 0;
 	
 	a, button {
 		position: fixed;
@@ -72,6 +76,10 @@ header {
 
 }
 
+
+//-------------------------------------------------//
+//	navigation
+//-------------------------------------------------//
 nav {
 	@include size(80% 100%);
 	z-index: 10000;
@@ -117,23 +125,11 @@ nav {
 
 }
 
-.container {
-	max-width: 1600px;
-	margin: 0 auto;
-	padding: 0 $container-spacing_mb;
 
-	@include respond-to(desktop) {
-		padding: 0 $container-spacing_dt;
-	}
-
-	&.slim {
-		max-width: 980px;
-	}
-
-
-}
-
-.home {
+//-------------------------------------------------//
+//	home page
+//-------------------------------------------------//
+#home {
 	
 	main {
 		@include size(100%);
@@ -146,18 +142,21 @@ nav {
 	}
 
 	article {
+		display: flex;
 		height: 100%;
+		align-items: center;
 		// background: url('http://lorempixel.com/1240/800/abstract/') no-repeat center center fixed;
 		// background-size: cover;
 		
 		.hero {
 			position: relative;
-			top: 40%; 
+			flex: 1;
+			width: 100%;
 			z-index: 1;
-			margin: 0 2rem;
+			margin: 4rem 2rem 0;
 
 			@include respond-to(desktop) {
-				margin: 0 4rem;
+				margin: 2rem 4rem 0;
 			}
 
 			.strip {
@@ -190,140 +189,129 @@ nav {
 
 }
 
-.project {
+//-------------------------------------------------//
+//	projects and about page
+//-------------------------------------------------//
+article {
 
-	article {
+	> header {
+		position: static;
+		height: 620px;
 
-		> header {
-			position: static;
-			height: 620px;
-
-			.title {
-				@include alignment(relative, 50%, null, translateY(-50%));
-				padding-top: 60px;
-			}
-
-		}		
-
-	}
-
-	section {
-		margin: $container-spacing_mb*2 0;
-
-		@include respond-to(small) {
-			margin: $container-spacing_dt 0;
-		}
-		@include respond-to(medium) {
-			margin: $container-spacing_dt*2 0;
-		}
-		@include respond-to(large) {
-			margin: $container-spacing_dt*2 0;
+		.title {
+			@include alignment(relative, 50%, null, translateY(-50%));
+			padding-top: 3rem;
 		}
 
-		// types of sections
-		&.text {
-			// margin: $container-spacing_mb*2 0;
-				
-			@include respond-to(desktop) {
-				margin: $container-spacing_dt*2 0;
-			}
-
-		}
-
-		&.photo-grid {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			
-			margin-left: $container-spacing_mb;
-			margin-right: $container-spacing_mb;
-
-
-			@include respond-to(small) {
-				margin-left: $container-spacing_dt/1.5;
-				margin-right: $container-spacing_dt/1.5;
-
-			}
-
-			@include respond-to(medium) {
-				margin: 0 $container-spacing_dt/2;
-			}
-
-			@include respond-to(desktop) {
-				flex-direction: row;
-				margin-bottom: $container-spacing_dt;
-
-			}
-			
-			> figure {
-				flex: 1;
-				flex-direction: column;
-				box-sizing: border-box;
-				padding-bottom: $container-spacing_mb;
-				align-items: center;
-
-				&:last-child {
-					padding-bottom: 0;
-				}
-
-				@include respond-to(desktop) {
-					flex: 0 0 50%;
-				}
-
-				@include respond-to(small) {
-					padding: 0 $container-spacing_dt/4;
-				}
-
-				@include respond-to(medium) {
-					padding: 0 $container-spacing_dt/2;
-				}
-
-				@include respond-to(large) {
-					padding: 0 $container-spacing_dt/2;
-				}
-			}
-
-		}
-
-		&.photo-mat {
-			padding: $container-spacing_mb*2 0;
-			background: $colour_sazerac;
-
-			@include respond-to(small) {
-				padding: $container-spacing_dt 0;
-			}
-			@include respond-to(medium) {
-				padding: $container-spacing_dt*2 0;
-			}
-			@include respond-to(large) {
-				padding: $container-spacing_dt*2 0;
-			}
-
-		}
-
-		&.next {
-			margin-bottom: 0;
-			padding: 0;
-
-			a {
-				position: relative;
-				display: block;
-				width: 100%;
-				height: 400px;
-				transition: background $speed*2;
-			}
-
-			.container {
-				@include alignment(relative, 50%, null, translateY(-50%));
-				padding-bottom: 2rem;
-			}
-
-		}
-
-	} //section
+	}		
 
 }
 
+section {
+	margin: $container-spacing_mb*2 0;
+
+	@include respond-to(small) {
+		margin: $container-spacing_dt 0;
+	}
+	@include respond-to(medium) {
+		margin: $container-spacing_dt*2 0;
+	}
+	@include respond-to(large) {
+		margin: $container-spacing_dt*2 0;
+	}
+
+
+	// types of sections
+	&.text {
+			
+		@include respond-to(desktop) {
+			margin: $container-spacing_dt*2 0;
+		}
+
+	}
+
+	&.photo-grid {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		margin-left: $container-spacing_mb;
+		margin-right: $container-spacing_mb;
+
+		@include respond-to(desktop) {
+			flex-direction: row;
+			margin-bottom: $container-spacing_dt;
+		}
+
+		@include respond-to(small) {
+			margin-left: $container-spacing_dt/1.5;
+			margin-right: $container-spacing_dt/1.5;
+
+		}
+
+		@include respond-to(medium) {
+			margin: 0 $container-spacing_dt/2;
+		}
+
+		> figure {
+			flex: 1;
+			padding-bottom: $container-spacing_mb;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			@include respond-to(small) {
+				padding: 0 $container-spacing_dt/4;
+			}
+
+			@include respond-to(medium) {
+				padding: 0 $container-spacing_dt/2;
+			}
+
+			@include respond-to(large) {
+				padding: 0 $container-spacing_dt/2;
+			}
+		}
+
+	}
+
+	&.photo-mat {
+		padding: $container-spacing_mb*2 0;
+		background: $colour_sazerac;
+
+		@include respond-to(small) {
+			padding: $container-spacing_dt 0;
+		}
+		@include respond-to(medium) {
+			padding: $container-spacing_dt*2 0;
+		}
+		@include respond-to(large) {
+			padding: $container-spacing_dt*2 0;
+		}
+
+	}
+
+	&.next {
+		margin-bottom: 0;
+		padding: 0;
+
+		a {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 400px;
+			transition: background $speed*2;
+		}
+
+		.container {
+			@include alignment(relative, 50%, null, translateY(-50%));
+			padding-bottom: 2rem;
+		}
+
+	}
+
+} //section
 
 aside {
 	padding-top: 3rem;
@@ -355,5 +343,107 @@ aside {
 			font-size: 0.9em;
 		}
 	}			
+
+}
+
+//-------------------------------------------------//
+//	specific to about page
+//-------------------------------------------------//
+#about {
+	transition: width $speed;
+
+	#menu li a.nav-about {
+		color: $colour_coralred;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+
+		@include respond-to(medium) {
+			flex-direction: row;
+		}
+		
+		> section {
+			margin: 0;
+			flex: 1;
+
+			@include respond-to(medium) {
+				flex: 0 0 50%;
+			}			
+		}
+
+		#intro {
+			background: $colour_aquamarine;
+			padding-top: 8rem;
+
+			@include respond-to(large) {
+				padding-top: 4rem;
+			}
+
+			.container {
+	
+				@include respond-to(desktop) {
+					position: relative;					
+					z-index: 100;
+				}
+
+				@include respond-to(small) {
+					left: 30%;
+				}
+				
+				@include respond-to(medium) {
+					left: 40%;
+				}
+
+				@include respond-to(large) {
+					left: 50%;
+				}
+				
+			}
+
+		}
+
+		#mugshot {
+			background: $colour_aquamarine url('../images/mugshot.jpg') no-repeat center center;
+			background-size: cover;
+			opacity: 0;
+			transition: opacity $speed*2;
+
+			&:hover {				
+				opacity: 1;
+			}
+
+		}
+
+	}
+
+	.text {
+		
+		@include respond-to(medium) {
+			position: relative;	
+			left: 50%;		
+			width: 50%;
+			margin: 4rem 0;
+		}
+		@include respond-to(large) {
+			position: relative;	
+			left: 50%;		
+			width: 50%;
+			margin: 4rem 0;
+		}
+
+		.container {
+			@include respond-to(medium) {
+				padding-left: 0;
+			}
+			@include respond-to(large) {
+				padding-left: 0;
+			}
+		}
+	}
+	
+
+
 
 }

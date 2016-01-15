@@ -100,18 +100,41 @@ img {
   vertical-align: top;
 }
 
+/* line 31, scss/base/_global.scss */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 767px) {
+  /* line 31, scss/base/_global.scss */
+  .container {
+    padding: 0 4rem;
+  }
+}
+/* line 40, scss/base/_global.scss */
+.container.slim {
+  max-width: 980px;
+}
+
 /* line 3, scss/base/_typography.scss */
 html {
   font-size: 20px;
   line-height: 1.5;
 }
+@media only screen and (min-width: 1600px) {
+  /* line 3, scss/base/_typography.scss */
+  html {
+    font-size: 25px;
+  }
+}
 
-/* line 8, scss/base/_typography.scss */
+/* line 12, scss/base/_typography.scss */
 body {
   font: 1em/1.5 "Mate", Georgia, serif;
 }
 
-/* line 12, scss/base/_typography.scss */
+/* line 16, scss/base/_typography.scss */
 h1, h2 {
   font-family: GT-Sectra-Display-Super-Italic, Baskerville, Garamond, Georgia, "Times New Roman", serif;
   font-style: normal;
@@ -120,7 +143,7 @@ h1, h2 {
   text-transform: lowercase;
 }
 
-/* line 18, scss/base/_typography.scss */
+/* line 22, scss/base/_typography.scss */
 h3, h4, h5, #logo, nav ul li {
   font-family: GT-Walsheim-Bold, Helvetica, Arial, Segoe UI, sans-serif;
   font-style: normal;
@@ -128,93 +151,100 @@ h3, h4, h5, #logo, nav ul li {
   text-transform: uppercase;
 }
 
-/* line 23, scss/base/_typography.scss */
+/* line 27, scss/base/_typography.scss */
 p {
   font: 1.8em/1.5 "Mate", Georgia, serif;
   color: #555555;
   margin: 1rem 0 2rem;
 }
-@media only screen and (min-width: 657px) {
-  /* line 23, scss/base/_typography.scss */
+@media only screen and (min-width: 767px) {
+  /* line 27, scss/base/_typography.scss */
   p {
     font: 1em/1.5 "Mate", Georgia, serif;
   }
 }
 
-/* line 32, scss/base/_typography.scss */
+/* line 37, scss/base/_typography.scss */
 h1 {
   font-size: 7.5em;
-  line-height: 0.8;
-  margin-bottom: 1rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
   padding-top: 2rem;
 }
+@media only screen and (min-width: 767px) {
+  /* line 37, scss/base/_typography.scss */
+  h1 {
+    margin-bottom: 2.5rem;
+  }
+}
 
-/* line 39, scss/base/_typography.scss */
+/* line 48, scss/base/_typography.scss */
 h2 {
   font-size: 5em;
-  line-height: 0.8;
+  line-height: 1;
   margin: 1rem 0;
 }
 
-/* line 45, scss/base/_typography.scss */
+/* line 54, scss/base/_typography.scss */
 h3 {
   font-size: 1.6em;
   line-height: 1;
   margin: 0.5rem 0;
 }
 
-/* line 51, scss/base/_typography.scss */
+/* line 60, scss/base/_typography.scss */
 h4 {
   font-size: 1.4em;
   line-height: 1;
   margin: 0.5rem 0;
 }
 
-/* line 57, scss/base/_typography.scss */
+/* line 66, scss/base/_typography.scss */
 h5 {
   font-size: 1.3em;
   line-height: 1;
   margin-bottom: 0.2em;
 }
-@media only screen and (min-width: 657px) {
-  /* line 57, scss/base/_typography.scss */
+@media only screen and (min-width: 767px) {
+  /* line 66, scss/base/_typography.scss */
   h5 {
     font-size: 1em;
     margin-bottom: 1em;
   }
 }
 
-/* line 1, scss/_styles.scss */
+/* line 4, scss/_styles.scss */
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 0;
 }
-/* line 7, scss/_styles.scss */
+/* line 11, scss/_styles.scss */
 header a, header button {
   position: fixed;
   margin: 50px;
 }
-@media only screen and (min-width: 657px) {
-  /* line 7, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 11, scss/_styles.scss */
   header a, header button {
     margin: 4rem;
   }
 }
-/* line 16, scss/_styles.scss */
+/* line 20, scss/_styles.scss */
 header a#logo, header button#logo {
   top: 0;
   left: 0;
   z-index: 1;
 }
-/* line 22, scss/_styles.scss */
+/* line 26, scss/_styles.scss */
 header a.menu-toggle, header button.menu-toggle {
   top: 0;
   right: 0;
   z-index: 100000;
 }
-/* line 27, scss/_styles.scss */
+/* line 31, scss/_styles.scss */
 header a.menu-toggle .burger, header button.menu-toggle .burger {
   width: 36px;
   height: 7px;
@@ -222,7 +252,7 @@ header a.menu-toggle .burger, header button.menu-toggle .burger {
   margin: 14px 0;
   background: #2b2b2b;
 }
-/* line 33, scss/_styles.scss */
+/* line 37, scss/_styles.scss */
 header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header button.menu-toggle .burger:before, header button.menu-toggle .burger:after {
   width: 36px;
   height: 7px;
@@ -232,41 +262,41 @@ header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header 
   background: #2b2b2b;
   transition: top 0.2s;
 }
-/* line 42, scss/_styles.scss */
+/* line 46, scss/_styles.scss */
 header a.menu-toggle .burger:before, header button.menu-toggle .burger:before {
   top: -14px;
 }
-/* line 43, scss/_styles.scss */
+/* line 47, scss/_styles.scss */
 header a.menu-toggle .burger:after, header button.menu-toggle .burger:after {
   top: 14px;
 }
-/* line 47, scss/_styles.scss */
+/* line 51, scss/_styles.scss */
 header a.menu-toggle:hover .burger:before, header button.menu-toggle:hover .burger:before {
   top: -16px;
 }
-/* line 48, scss/_styles.scss */
+/* line 52, scss/_styles.scss */
 header a.menu-toggle:hover .burger:after, header button.menu-toggle:hover .burger:after {
   top: 16px;
 }
-/* line 53, scss/_styles.scss */
+/* line 57, scss/_styles.scss */
 header a.menu-toggle.close .burger, header button.menu-toggle.close .burger {
   background: transparent;
 }
-/* line 56, scss/_styles.scss */
+/* line 60, scss/_styles.scss */
 header a.menu-toggle.close .burger:before, header a.menu-toggle.close .burger:after, header button.menu-toggle.close .burger:before, header button.menu-toggle.close .burger:after {
   background: #FFF5E2;
   top: 0;
 }
-/* line 61, scss/_styles.scss */
+/* line 65, scss/_styles.scss */
 header a.menu-toggle.close .burger:before, header button.menu-toggle.close .burger:before {
   transform: rotate(-45deg);
 }
-/* line 62, scss/_styles.scss */
+/* line 66, scss/_styles.scss */
 header a.menu-toggle.close .burger:after, header button.menu-toggle.close .burger:after {
   transform: rotate(45deg);
 }
 
-/* line 75, scss/_styles.scss */
+/* line 83, scss/_styles.scss */
 nav {
   width: 80% 100%;
   height: 80% 100%;
@@ -274,93 +304,79 @@ nav {
   overflow: hidden;
   background: black;
 }
-@media only screen and (min-width: 657px) {
-  /* line 75, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 83, scss/_styles.scss */
   nav {
     width: 196px;
   }
 }
-/* line 85, scss/_styles.scss */
+/* line 93, scss/_styles.scss */
 nav #menu {
   z-index: 1000;
   height: 100%;
   margin-top: 300px;
 }
-@media only screen and (min-width: 657px) {
-  /* line 85, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 93, scss/_styles.scss */
   nav #menu {
     margin-top: 230px;
   }
 }
-/* line 94, scss/_styles.scss */
+/* line 102, scss/_styles.scss */
 nav #menu li {
   padding: 0 2rem;
   font-size: 3.5em;
   text-align: right;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 657px) {
-  /* line 94, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 102, scss/_styles.scss */
   nav #menu li {
     padding: 0 4rem;
     font-size: 2em;
   }
 }
-/* line 107, scss/_styles.scss */
+/* line 115, scss/_styles.scss */
 nav #menu a {
   color: #FFF5E2;
   transition: color 0.4s 0.13333s;
 }
-/* line 111, scss/_styles.scss */
+/* line 119, scss/_styles.scss */
 nav #menu a:hover {
   color: #fb3f3c;
 }
 
-/* line 120, scss/_styles.scss */
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-@media only screen and (min-width: 657px) {
-  /* line 120, scss/_styles.scss */
-  .container {
-    padding: 0 4rem;
-  }
-}
-/* line 129, scss/_styles.scss */
-.container.slim {
-  max-width: 980px;
-}
-
-/* line 138, scss/_styles.scss */
-.home main {
+/* line 134, scss/_styles.scss */
+#home main {
   width: 100%;
   height: 100%;
 }
-/* line 143, scss/_styles.scss */
-.home nav #menu li a.nav-work {
+/* line 139, scss/_styles.scss */
+#home nav #menu li a.nav-work {
   color: #fb3f3c;
 }
-/* line 148, scss/_styles.scss */
-.home article {
+/* line 144, scss/_styles.scss */
+#home article {
+  display: flex;
   height: 100%;
+  align-items: center;
 }
-/* line 153, scss/_styles.scss */
-.home article .hero {
+/* line 151, scss/_styles.scss */
+#home article .hero {
   position: relative;
-  top: 40%;
+  flex: 1;
+  width: 100%;
   z-index: 1;
-  margin: 0 2rem;
+  margin: 4rem 2rem 0;
 }
-@media only screen and (min-width: 657px) {
-  /* line 153, scss/_styles.scss */
-  .home article .hero {
-    margin: 0 4rem;
+@media only screen and (min-width: 767px) {
+  /* line 151, scss/_styles.scss */
+  #home article .hero {
+    margin: 2rem 4rem 0;
   }
 }
-/* line 163, scss/_styles.scss */
-.home article .hero .strip {
+/* line 162, scss/_styles.scss */
+#home article .hero .strip {
   width: 100%;
   height: 2px;
   display: block;
@@ -370,19 +386,19 @@ nav #menu a:hover {
   z-index: -1;
   background: #2b2b2b;
 }
-@media only screen and (min-width: 657px) {
-  /* line 163, scss/_styles.scss */
-  .home article .hero .strip {
+@media only screen and (min-width: 767px) {
+  /* line 162, scss/_styles.scss */
+  #home article .hero .strip {
     transition: width 0.4s 0.4s, height 0.4s, background 0.8s;
   }
 }
-/* line 178, scss/_styles.scss */
-.home article .hero a:hover .strip {
+/* line 177, scss/_styles.scss */
+#home article .hero a:hover .strip {
   background: white;
 }
-@media only screen and (min-width: 657px) {
-  /* line 178, scss/_styles.scss */
-  .home article .hero a:hover .strip {
+@media only screen and (min-width: 767px) {
+  /* line 177, scss/_styles.scss */
+  #home article .hero a:hover .strip {
     width: 80%;
     height: 100%;
     transition: width 0.4s, height 0.4s 0.4s, background 0.8s;
@@ -390,186 +406,286 @@ nav #menu a:hover {
 }
 
 /* line 197, scss/_styles.scss */
-.project article > header {
+article > header {
   position: static;
   height: 620px;
 }
 /* line 201, scss/_styles.scss */
-.project article > header .title {
+article > header .title {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  padding-top: 60px;
+  padding-top: 3rem;
 }
+
 /* line 210, scss/_styles.scss */
-.project section {
+section {
   margin: 4rem 0;
 }
-@media only screen and (min-width: 657px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* line 210, scss/_styles.scss */
-  .project section {
+  section {
     margin: 4rem 0;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1240px) {
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
   /* line 210, scss/_styles.scss */
-  .project section {
+  section {
     margin: 8rem 0;
   }
 }
-@media only screen and (min-width: 1241px) {
+@media only screen and (min-width: 1600px) {
   /* line 210, scss/_styles.scss */
-  .project section {
+  section {
     margin: 8rem 0;
   }
 }
-@media only screen and (min-width: 657px) {
-  /* line 224, scss/_styles.scss */
-  .project section.text {
+@media only screen and (min-width: 767px) {
+  /* line 225, scss/_styles.scss */
+  section.text {
     margin: 8rem 0;
   }
 }
 /* line 233, scss/_styles.scss */
-.project section.photo-grid {
+section.photo-grid {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-@media only screen and (min-width: 657px) and (max-width: 1024px) {
+@media only screen and (min-width: 767px) {
   /* line 233, scss/_styles.scss */
-  .project section.photo-grid {
-    margin-left: 2.66667rem;
-    margin-right: 2.66667rem;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1240px) {
-  /* line 233, scss/_styles.scss */
-  .project section.photo-grid {
-    margin: 0 2rem;
-  }
-}
-@media only screen and (min-width: 657px) {
-  /* line 233, scss/_styles.scss */
-  .project section.photo-grid {
+  section.photo-grid {
     flex-direction: row;
     margin-bottom: 4rem;
   }
 }
-/* line 258, scss/_styles.scss */
-.project section.photo-grid > figure {
-  flex: 1;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding-bottom: 2rem;
-  align-items: center;
-}
-/* line 265, scss/_styles.scss */
-.project section.photo-grid > figure:last-child {
-  padding-bottom: 0;
-}
-@media only screen and (min-width: 657px) {
-  /* line 258, scss/_styles.scss */
-  .project section.photo-grid > figure {
-    flex: 0 0 50%;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 233, scss/_styles.scss */
+  section.photo-grid {
+    margin-left: 2.66667rem;
+    margin-right: 2.66667rem;
   }
 }
-@media only screen and (min-width: 657px) and (max-width: 1024px) {
-  /* line 258, scss/_styles.scss */
-  .project section.photo-grid > figure {
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 233, scss/_styles.scss */
+  section.photo-grid {
+    margin: 0 2rem;
+  }
+}
+/* line 256, scss/_styles.scss */
+section.photo-grid > figure {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+/* line 260, scss/_styles.scss */
+section.photo-grid > figure:last-child {
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 256, scss/_styles.scss */
+  section.photo-grid > figure {
     padding: 0 1rem;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1240px) {
-  /* line 258, scss/_styles.scss */
-  .project section.photo-grid > figure {
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 256, scss/_styles.scss */
+  section.photo-grid > figure {
     padding: 0 2rem;
   }
 }
-@media only screen and (min-width: 1241px) {
-  /* line 258, scss/_styles.scss */
-  .project section.photo-grid > figure {
+@media only screen and (min-width: 1600px) {
+  /* line 256, scss/_styles.scss */
+  section.photo-grid > figure {
     padding: 0 2rem;
   }
 }
-/* line 288, scss/_styles.scss */
-.project section.photo-mat {
+/* line 279, scss/_styles.scss */
+section.photo-mat {
   padding: 4rem 0;
   background: #FFF5E2;
 }
-@media only screen and (min-width: 657px) and (max-width: 1024px) {
-  /* line 288, scss/_styles.scss */
-  .project section.photo-mat {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 279, scss/_styles.scss */
+  section.photo-mat {
     padding: 4rem 0;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1240px) {
-  /* line 288, scss/_styles.scss */
-  .project section.photo-mat {
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 279, scss/_styles.scss */
+  section.photo-mat {
     padding: 8rem 0;
   }
 }
-@media only screen and (min-width: 1241px) {
-  /* line 288, scss/_styles.scss */
-  .project section.photo-mat {
+@media only screen and (min-width: 1600px) {
+  /* line 279, scss/_styles.scss */
+  section.photo-mat {
     padding: 8rem 0;
   }
 }
-/* line 304, scss/_styles.scss */
-.project section.next {
+/* line 295, scss/_styles.scss */
+section.next {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 308, scss/_styles.scss */
-.project section.next a {
+/* line 299, scss/_styles.scss */
+section.next a {
   position: relative;
   display: block;
   width: 100%;
   height: 400px;
   transition: background 0.8s;
 }
-/* line 316, scss/_styles.scss */
-.project section.next .container {
+/* line 307, scss/_styles.scss */
+section.next .container {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   padding-bottom: 2rem;
 }
 
-/* line 328, scss/_styles.scss */
+/* line 316, scss/_styles.scss */
 aside {
   padding-top: 3rem;
 }
-@media only screen and (min-width: 657px) {
-  /* line 328, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 316, scss/_styles.scss */
   aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-/* line 337, scss/_styles.scss */
+/* line 325, scss/_styles.scss */
 aside .tidbit {
   padding: 0 3rem 1rem 0;
 }
-/* line 340, scss/_styles.scss */
+/* line 328, scss/_styles.scss */
 aside .tidbit > {
   display: inline;
 }
-@media only screen and (min-width: 657px) {
-  /* line 340, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 328, scss/_styles.scss */
   aside .tidbit > {
     display: block;
   }
 }
-/* line 350, scss/_styles.scss */
+/* line 338, scss/_styles.scss */
 aside .tidbit-detail {
   font-size: 1.5em;
 }
-@media only screen and (min-width: 657px) {
-  /* line 350, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 338, scss/_styles.scss */
   aside .tidbit-detail {
     font-size: 0.9em;
+  }
+}
+
+/* line 352, scss/_styles.scss */
+#about {
+  transition: width 0.4s;
+}
+/* line 355, scss/_styles.scss */
+#about #menu li a.nav-about {
+  color: #fb3f3c;
+}
+/* line 359, scss/_styles.scss */
+#about header {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 359, scss/_styles.scss */
+  #about header {
+    flex-direction: row;
+  }
+}
+/* line 367, scss/_styles.scss */
+#about header > section {
+  margin: 0;
+  flex: 1;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 367, scss/_styles.scss */
+  #about header > section {
+    flex: 0 0 50%;
+  }
+}
+/* line 376, scss/_styles.scss */
+#about header #intro {
+  background: #56fce5;
+  padding-top: 8rem;
+}
+@media only screen and (min-width: 1600px) {
+  /* line 376, scss/_styles.scss */
+  #about header #intro {
+    padding-top: 4rem;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 384, scss/_styles.scss */
+  #about header #intro .container {
+    position: relative;
+    z-index: 100;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 384, scss/_styles.scss */
+  #about header #intro .container {
+    left: 30%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 384, scss/_styles.scss */
+  #about header #intro .container {
+    left: 40%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 384, scss/_styles.scss */
+  #about header #intro .container {
+    left: 50%;
+  }
+}
+/* line 407, scss/_styles.scss */
+#about header #mugshot {
+  background: #56fce5 url("../images/mugshot.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+/* line 413, scss/_styles.scss */
+#about header #mugshot:hover {
+  opacity: 1;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 421, scss/_styles.scss */
+  #about .text {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    margin: 4rem 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 421, scss/_styles.scss */
+  #about .text {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    margin: 4rem 0;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 436, scss/_styles.scss */
+  #about .text .container {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 436, scss/_styles.scss */
+  #about .text .container {
+    padding-left: 0;
   }
 }

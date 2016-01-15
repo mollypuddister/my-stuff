@@ -1,14 +1,14 @@
 $breakpoints: (
 
-		"mobile"	:	"only screen and (max-width : 656px)",
+		"mobile"	:	"only screen and (max-width : 767px)",
 
-		"desktop"	:	"only screen and (min-width : 657px)",
+		"desktop"	:	"only screen and (min-width : 767px)",
 
-		"small"		:	"only screen and (min-width : 657px) and (max-width : 1024px)",
+		"small"		:	"only screen and (min-width : 768px) and (max-width : 1024px)",
 
-		"medium"	:	"only screen and (min-width : 1025px) and (max-width : 1240px)",
+		"medium"	:	"only screen and (min-width : 1025px) and (max-width : 1599px)",
 
-		"large"		:	"only screen and (min-width : 1241px)"
+		"large"		:	"only screen and (min-width : 1600px)"
 
 		// "xlarge"	:	"only screen and (min-width : 1840px)",
 
