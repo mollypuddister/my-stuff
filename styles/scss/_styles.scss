@@ -10,7 +10,7 @@ header {
 	
 	a, button {
 		position: fixed;
-		margin: 50px;
+		margin: 2.5rem;
 		
 			@include respond-to(desktop) {
 				margin: 4rem;
@@ -229,28 +229,54 @@ nav {
 		}		
 
 	}
+	
+	
+}
 
-	#section-down {
-		@include alignment(fixed, null, 50%, translateX(-50%));
-		bottom: 1rem;		
-		z-index: 100;
-		
+#controls {
+	position: fixed;	
+	bottom: 3rem;
+	right: 0;
+	z-index: 100;
+	margin-right: $container-spacing_mb;
 
-		#arrow {
-			@include size(2rem);			
-		
-			polygon {
-				transition: fill $speed;
-			}
-			
-			&:hover polygon {
-				fill: $colour_mineshaft;
-			}
-			
-		}
-
+	@include respond-to(desktop) {
+		margin-right: $container-spacing_dt;
 	}
 
+	a {
+		display: block;
+	}
+
+}
+
+#section-down {
+	// @include alignment(fixed, null, 50%, translateX(-50%));
+	// position: absolute;
+	// bottom: 1rem;		
+	// z-index: 100;
+}
+
+#section-up .arrow {
+	// transform: rotate(180deg);
+}
+
+.arrow {
+	@include size(1.5rem);			
+
+	polygon {
+		transition: fill $speed;
+	}
+	
+	&:hover polygon {
+		fill: $colour_mineshaft;
+	}
+
+	#section-up & {
+		transform: rotate(180deg);
+		margin-bottom: 0.5rem;
+	}
+	
 }
 
 //-------------------------------------------------//

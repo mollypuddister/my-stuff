@@ -5,7 +5,12 @@
 	<?php require 'includes/header.php';?>
 	<?php require 'includes/nav.php';?>
 
-	<a id="section-down"><?php require 'images/arrow.svg';?></a>
+	<div id="controls">
+		<a id="section-up"><?php require 'images/arrow.svg';?></a>
+		<a id="section-down"><?php require 'images/arrow.svg';?></a>	
+	</div>
+	
+
 
 	<!-- <a href=""><img id="section-down" src="images/arrow.svg"></a> -->
 
