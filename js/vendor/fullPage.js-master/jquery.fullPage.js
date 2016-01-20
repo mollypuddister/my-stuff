@@ -150,7 +150,7 @@
 
 
             //events
-            afterLoad: null,
+            afterLoad: '#section-up',
             onLeave: null,
             afterRender: null,
             afterResize: null,

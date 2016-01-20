@@ -26,20 +26,35 @@
 						My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
 					</p>
 
-					<p>If you don't know, now you know.</p>
-					
-					<aside>
-						<h5><a href="">Twitter</a></h5>
-						<h5>LinkedIn</h5>
-						<div class="tidbit">
-							<h5>email</h5>
-							<a class="tidbit-detail" href="mailto:mollypuddister@gmail.com">mollypuddister@gmail.com</a>
-						</div>						
-					</aside>
-
+					<p>If you don't know, now you know.</p>	
 					
 				</div>
+			</section>
 
+			<section id="contact" class="text">	
+
+				<div class="container slim">	
+					<h1 class="chat">talk to me</h1>				
+					
+					<aside>
+						<!-- <div class="container slim"> -->
+						<div class="tidbit">
+							<h5><a href="https://twitter.com/mollypudd">Twitter<?php require 'images/arrow.svg';?></a></h5>
+						</div>
+
+						<div class="tidbit">
+							<h5><a href="https://www.linkedin.com/in/molly-puddister-87257720">LinkedIn<?php require 'images/arrow.svg';?></a></h5>
+						</div>
+
+						<div class="tidbit email">
+							<h5>email</h5>
+							<a class="tidbit-detail" href="mailto:mollypuddister@gmail.com">mollypuddister@gmail.com</a>
+						</div>								
+
+						<!-- </div>									 -->
+					</aside>	
+
+				</div>
 			</section>
 
 		</article>

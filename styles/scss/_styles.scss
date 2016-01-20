@@ -449,12 +449,45 @@ aside {
 	#menu li a.nav-about {
 		color: $colour_coralred;
 	}
+
+	h1 {
+		font-size: 4em;
+
+		@include respond-to(desktop) {
+			font-size: 7.5em;
+		}
+
+		@include respond-to(small) {
+
+		}
+
+		&.chat {
+			@include respond-to(desktop) {
+				font-size: 6em;
+			}
+			@include respond-to(large) {
+				font-size: 6em;
+			}
+		}
+	}
 	
 	header {
 		display: flex;
 		flex-direction: column;
+		height: auto;
+
+		@include respond-to(desktop) {
+			height: 620px;
+		}
+
+		@include respond-to(small) {
+			height: auto;
+		}
 
 		@include respond-to(medium) {
+			flex-direction: row;
+		}
+		@include respond-to(large) {
 			flex-direction: row;
 		}
 		
@@ -464,45 +497,75 @@ aside {
 
 			@include respond-to(medium) {
 				flex: 0 0 50%;
+			}
+			@include respond-to(large) {
+				flex: 0 0 50%;
 			}			
 		}
 
 		#intro {
 			background: $colour_aquamarine;
 			padding-top: 8rem;
+			padding-bottom: 4rem;
+
+			@include respond-to(desktop) {
+				padding-bottom: 0;
+			}
+
+			@include respond-to(small) {
+				height: 450px;
+				padding-top: 9.5rem;
+			}
+
+			@include respond-to(medium) {
+				padding-top: 8rem;
+			}
 
 			@include respond-to(large) {
-				padding-top: 4rem;
+				padding-top: 10rem;
 			}
 
 			.container {
+				z-index: 100;
 	
 				@include respond-to(desktop) {
-					position: relative;					
-					z-index: 100;
+					position: absolute;						
 				}
 
 				@include respond-to(small) {
-					left: 30%;
+					width: 80%;
 				}
 				
 				@include respond-to(medium) {
-					left: 40%;
+					left: 20%;
 				}
 
 				@include respond-to(large) {
-					left: 50%;
+					max-width: 100%;
 				}
 				
 			}
+
+
 
 		}
 
 		#mugshot {
 			background: $colour_aquamarine url('../images/mugshot.jpg') no-repeat center center;
 			background-size: cover;
-			opacity: 0;
 			transition: opacity $speed*2;
+			height: 430px;
+
+			@include respond-to(desktop) {
+				opacity: 0;
+				height: auto;
+			}
+			
+			@include respond-to(small) {
+				opacity: 1;
+				height: 620px;				
+			}
+
 
 			&:hover {				
 				opacity: 1;
@@ -515,11 +578,9 @@ aside {
 	.text {
 		
 		@include respond-to(medium) {
-			// position: relative;	
-			// left: 50%;		
-			// width: 50%;
 			margin: 4rem 0;
 		}
+
 		@include respond-to(large) {
 			position: relative;	
 			left: 50%;		
@@ -536,6 +597,45 @@ aside {
 			}
 		}
 	}
+	
+	#contact {
+		background: $colour_aquamarine;
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+		margin-bottom: 0;
 
+		@include respond-to(desktop) {
+			background: transparent;
+		}
+
+		h5 {
+			margin-bottom: 0.5rem;
+		}
+
+		aside {
+			padding-top: 1rem;
+		}
+
+		.tidbit {
+			margin-top: 2rem;
+
+			@include respond-to(desktop) {
+				margin-top: 0;
+			}
+		}
+
+		.arrow {
+			@include size(1rem);
+			position: relative;
+			transform: rotate(-90deg);
+			left: 0.5rem;
+			top: 0.1rem;
+
+			polygon {
+				fill: $colour_mineshaft;
+			}
+		}
+
+	}
 
 }

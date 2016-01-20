@@ -215,13 +215,13 @@ h4 {
 h5 {
   font-size: 1.2em;
   line-height: 1;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
 @media only screen and (min-width: 767px) {
   /* line 74, scss/base/_typography.scss */
   h5 {
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 
@@ -687,82 +687,166 @@ aside .tidbit-detail {
   color: #fb3f3c;
 }
 /* line 453, scss/_styles.scss */
+#about h1 {
+  font-size: 4em;
+}
+@media only screen and (min-width: 767px) {
+  /* line 453, scss/_styles.scss */
+  #about h1 {
+    font-size: 7.5em;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 464, scss/_styles.scss */
+  #about h1.chat {
+    font-size: 6em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 464, scss/_styles.scss */
+  #about h1.chat {
+    font-size: 6em;
+  }
+}
+/* line 474, scss/_styles.scss */
 #about header {
   display: flex;
   flex-direction: column;
+  height: auto;
+}
+@media only screen and (min-width: 767px) {
+  /* line 474, scss/_styles.scss */
+  #about header {
+    height: 620px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 474, scss/_styles.scss */
+  #about header {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 453, scss/_styles.scss */
+  /* line 474, scss/_styles.scss */
   #about header {
     flex-direction: row;
   }
 }
-/* line 461, scss/_styles.scss */
+@media only screen and (min-width: 1600px) {
+  /* line 474, scss/_styles.scss */
+  #about header {
+    flex-direction: row;
+  }
+}
+/* line 494, scss/_styles.scss */
 #about header > section {
   margin: 0;
   flex: 1;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 461, scss/_styles.scss */
+  /* line 494, scss/_styles.scss */
   #about header > section {
     flex: 0 0 50%;
   }
 }
-/* line 470, scss/_styles.scss */
+@media only screen and (min-width: 1600px) {
+  /* line 494, scss/_styles.scss */
+  #about header > section {
+    flex: 0 0 50%;
+  }
+}
+/* line 506, scss/_styles.scss */
 #about header #intro {
   background: #56fce5;
   padding-top: 8rem;
-}
-@media only screen and (min-width: 1600px) {
-  /* line 470, scss/_styles.scss */
-  #about header #intro {
-    padding-top: 4rem;
-  }
+  padding-bottom: 4rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 478, scss/_styles.scss */
-  #about header #intro .container {
-    position: relative;
-    z-index: 100;
+  /* line 506, scss/_styles.scss */
+  #about header #intro {
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 478, scss/_styles.scss */
-  #about header #intro .container {
-    left: 30%;
+  /* line 506, scss/_styles.scss */
+  #about header #intro {
+    height: 450px;
+    padding-top: 9.5rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 478, scss/_styles.scss */
-  #about header #intro .container {
-    left: 40%;
+  /* line 506, scss/_styles.scss */
+  #about header #intro {
+    padding-top: 8rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 478, scss/_styles.scss */
-  #about header #intro .container {
-    left: 50%;
+  /* line 506, scss/_styles.scss */
+  #about header #intro {
+    padding-top: 10rem;
   }
 }
-/* line 501, scss/_styles.scss */
+/* line 528, scss/_styles.scss */
+#about header #intro .container {
+  z-index: 100;
+}
+@media only screen and (min-width: 767px) {
+  /* line 528, scss/_styles.scss */
+  #about header #intro .container {
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 528, scss/_styles.scss */
+  #about header #intro .container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1599px) {
+  /* line 528, scss/_styles.scss */
+  #about header #intro .container {
+    left: 20%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 528, scss/_styles.scss */
+  #about header #intro .container {
+    max-width: 100%;
+  }
+}
+/* line 553, scss/_styles.scss */
 #about header #mugshot {
   background: #56fce5 url("../images/mugshot.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0;
   transition: opacity 0.8s;
+  height: 430px;
 }
-/* line 507, scss/_styles.scss */
+@media only screen and (min-width: 767px) {
+  /* line 553, scss/_styles.scss */
+  #about header #mugshot {
+    opacity: 0;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 553, scss/_styles.scss */
+  #about header #mugshot {
+    opacity: 1;
+    height: 620px;
+  }
+}
+/* line 570, scss/_styles.scss */
 #about header #mugshot:hover {
   opacity: 1;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 515, scss/_styles.scss */
+  /* line 578, scss/_styles.scss */
   #about .text {
     margin: 4rem 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 515, scss/_styles.scss */
+  /* line 578, scss/_styles.scss */
   #about .text {
     position: relative;
     left: 50%;
@@ -771,14 +855,58 @@ aside .tidbit-detail {
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 530, scss/_styles.scss */
+  /* line 591, scss/_styles.scss */
   #about .text .container {
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 530, scss/_styles.scss */
+  /* line 591, scss/_styles.scss */
   #about .text .container {
     padding-left: 0;
   }
+}
+/* line 601, scss/_styles.scss */
+#about #contact {
+  background: #56fce5;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 767px) {
+  /* line 601, scss/_styles.scss */
+  #about #contact {
+    background: transparent;
+  }
+}
+/* line 611, scss/_styles.scss */
+#about #contact h5 {
+  margin-bottom: 0.5rem;
+}
+/* line 615, scss/_styles.scss */
+#about #contact aside {
+  padding-top: 1rem;
+}
+/* line 619, scss/_styles.scss */
+#about #contact .tidbit {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 767px) {
+  /* line 619, scss/_styles.scss */
+  #about #contact .tidbit {
+    margin-top: 0;
+  }
+}
+/* line 627, scss/_styles.scss */
+#about #contact .arrow {
+  width: 1rem;
+  height: 1rem;
+  position: a;
+  transform: rotate(-90deg);
+  left: 0.5rem;
+  top: 0.1rem;
+}
+/* line 634, scss/_styles.scss */
+#about #contact .arrow polygon {
+  fill: #2b2b2b;
 }
