@@ -23,11 +23,11 @@
 			<section class="text">
 				<div class="container slim">
 					<p>
-						My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+						My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
 					</p>
 
 					<p>If you don't know, now you know.</p>	
-					
+
 				</div>
 			</section>
 
@@ -37,7 +37,6 @@
 					<h1 class="chat">talk to me</h1>				
 					
 					<aside>
-						<!-- <div class="container slim"> -->
 						<div class="tidbit">
 							<h5><a href="https://twitter.com/mollypudd">Twitter<?php require 'images/arrow.svg';?></a></h5>
 						</div>
@@ -51,8 +50,8 @@
 							<a class="tidbit-detail" href="mailto:mollypuddister@gmail.com">mollypuddister@gmail.com</a>
 						</div>								
 
-						<!-- </div>									 -->
-					</aside>	
+					</aside>
+
 
 				</div>
 			</section>

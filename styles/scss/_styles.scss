@@ -92,7 +92,6 @@ nav {
 	
 	#menu {
 		z-index: 1000;
-		// height: 100%;
 		margin-top: 300px;
 
 		@include respond-to(desktop) {
@@ -114,15 +113,7 @@ nav {
 
 		}
 		
-		a {
-			color: $colour_sazerac;
-			transition: color $speed $delay/3;
-			
-			&:hover {
-				color: $colour_coralred;
-			}
-
-		}
+		a {	color: $colour_sazerac;	}
 		
 	}
 
@@ -419,6 +410,10 @@ aside {
 		padding-right: 3rem;
 		min-width: 200px;
 
+		&:last-child {
+			padding-right: 0;
+		}
+
 		> {
 			display: inline;
 
@@ -616,12 +611,13 @@ aside {
 			padding-top: 1rem;
 		}
 
-		.tidbit {
-			margin-top: 2rem;
+	}
 
-			@include respond-to(desktop) {
-				margin-top: 0;
-			}
+	.tidbit {
+		margin-top: 2rem;
+
+		@include respond-to(desktop) {
+			margin-top: 0;
 		}
 
 		.arrow {
@@ -636,6 +632,10 @@ aside {
 			}
 		}
 
+		a:hover polygon {
+			transition: fill $speed $delay/3;
+			fill: $colour_coralred;
+		}
 	}
 
 }

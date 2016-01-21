@@ -19,7 +19,7 @@
 		
 		<article class="section uno">
 			<div class="hero">				
-				<a href="project.php">
+				<a class="hero-link" href="project.php">
 					<h1>project tall</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>
@@ -28,7 +28,7 @@
 		</article>
 		<article class="section dos">
 			<div class="hero">				
-				<a href="project.php">
+				<a class="hero-link" href="project.php">
 					<h1>project dos</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>
@@ -37,7 +37,7 @@
 		</article>
 		<article class="section tres">
 			<div class="hero">				
-				<a href="project.php">
+				<a class="hero-link" href="project.php">
 					<h1>project tres</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>
