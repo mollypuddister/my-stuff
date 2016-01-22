@@ -4,22 +4,16 @@
 	
 	<?php require 'includes/header.php';?>
 	<?php require 'includes/nav.php';?>
-
+	
 	<div id="controls">
-		<a id="section-up"><?php require 'images/arrow.svg';?></a>
 		<a id="section-down"><?php require 'images/arrow.svg';?></a>	
 	</div>
-	
-
-
-	<!-- <a href=""><img id="section-down" src="images/arrow.svg"></a> -->
-
 
 	<main id="fullpage">
 		
 		<article class="section uno">
 			<div class="hero">				
-				<a class="hero-link" href="project.php">
+				<a class="hero_link" href="project.php">
 					<h1>project tall</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>
@@ -28,7 +22,7 @@
 		</article>
 		<article class="section dos">
 			<div class="hero">				
-				<a class="hero-link" href="project.php">
+				<a class="hero_link" href="project.php">
 					<h1>project dos</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>
@@ -37,7 +31,7 @@
 		</article>
 		<article class="section tres">
 			<div class="hero">				
-				<a class="hero-link" href="project.php">
+				<a class="hero_link" href="project.php">
 					<h1>project tres</h1>
 					<h4>2014</h4>
 					<span class="strip"></span>

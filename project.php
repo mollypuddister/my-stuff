@@ -10,7 +10,7 @@
 
 		<article class="uno">
 			<header>		
-				<div class="container slim title ">
+				<div class="container slim title">
 					<h1>contest</h1>
 					<h4>2014</h4>
 				</div>				
@@ -56,6 +56,9 @@
 				<figure> 
 					<img src="http://lorempixel.com/800/800/abstract/">
 				</figure>
+				<figure> 
+					<img src="http://lorempixel.com/800/800/abstract/">
+				</figure>
 			</section>
 
 			<section class="text">
@@ -71,7 +74,7 @@
 			</section>
 
 			<section class="next dos">
-				<a href="">
+				<a class="next_link" href="">
 					<div class="container slim">
 						<h4>on to the next one</h4>
 						<h2>project words</h2>

@@ -42,29 +42,5 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage();
 		});
-		
-		$('#fullpage').on('slid', '', checkitem);  // on caroussel move
-
-		$(document).ready(function(){               // on document ready
-		    checkitem();
-		});
-
-		function checkitem(){                   // check function
-		  var $this = 		$('#fullpage');
-		  var $controls = 	$('#controls');
-		  var $up = 		$('#section-up');
-		  var $down = 		$('#section-down');
-		  
-			if($('.fullpage-wrapper article:first').hasClass('active')) {
-				$up.hide();
-
-			} else if($('.fullpage-wrapper article:last-child').hasClass('active')) {
-				$down.hide();
-			}
-			// } else {
-			// 	$controls.children.show();
-			// } 
-		}
-
 
 	</script>

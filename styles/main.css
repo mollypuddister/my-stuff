@@ -94,33 +94,39 @@ a {
 }
 
 /* line 21, scss/base/_global.scss */
-a:hover:not(#logo):not(.hero-link) {
+a:hover:not(#logo):not(.hero_link):not(.next_link) {
   transition: color 0.4s 0.13333s;
   color: #fb3f3c;
 }
 
-/* line 40, scss/base/_global.scss */
+/* line 26, scss/base/_global.scss */
 img {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-/* line 46, scss/base/_global.scss */
+/* line 32, scss/base/_global.scss */
 .container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 46, scss/base/_global.scss */
+  /* line 32, scss/base/_global.scss */
   .container {
     padding: 0 4rem;
   }
 }
-/* line 55, scss/base/_global.scss */
+/* line 41, scss/base/_global.scss */
 .container.slim {
   max-width: 880px;
+}
+@media only screen and (min-width: 1600px) {
+  /* line 41, scss/base/_global.scss */
+  .container.slim {
+    max-width: 950px;
+  }
 }
 
 /* line 3, scss/base/_typography.scss */
@@ -131,7 +137,7 @@ html {
 @media only screen and (min-width: 1600px) {
   /* line 3, scss/base/_typography.scss */
   html {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -476,31 +482,31 @@ nav #meta p {
   display: block;
 }
 
-/* line 255, scss/_styles.scss */
+/* line 244, scss/_styles.scss */
 .arrow {
   width: 1.5rem;
   height: 1.5rem;
 }
-/* line 258, scss/_styles.scss */
+/* line 247, scss/_styles.scss */
 .arrow polygon {
   transition: fill 0.4s;
 }
-/* line 262, scss/_styles.scss */
+/* line 251, scss/_styles.scss */
 .arrow:hover polygon {
   fill: #2b2b2b;
 }
-/* line 266, scss/_styles.scss */
+/* line 255, scss/_styles.scss */
 #section-up .arrow {
   transform: rotate(180deg);
   margin-bottom: 0.5rem;
 }
 
-/* line 278, scss/_styles.scss */
+/* line 267, scss/_styles.scss */
 article > header {
   position: static;
   height: 620px;
 }
-/* line 282, scss/_styles.scss */
+/* line 271, scss/_styles.scss */
 article > header .title {
   position: relative;
   top: 50%;
@@ -508,41 +514,41 @@ article > header .title {
   padding-top: 3rem;
 }
 
-/* line 291, scss/_styles.scss */
+/* line 280, scss/_styles.scss */
 section {
   margin: 4rem 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 291, scss/_styles.scss */
+  /* line 280, scss/_styles.scss */
   section {
     margin: 4rem 0;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 291, scss/_styles.scss */
+  /* line 280, scss/_styles.scss */
   section {
     margin: 6rem 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 291, scss/_styles.scss */
+  /* line 280, scss/_styles.scss */
   section {
     margin: 8rem 0;
   }
 }
 @media only screen and (min-width: 767px) {
-  /* line 306, scss/_styles.scss */
+  /* line 295, scss/_styles.scss */
   section.text {
     margin: 6rem 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 306, scss/_styles.scss */
+  /* line 295, scss/_styles.scss */
   section.text {
     margin: 8rem 0;
   }
 }
-/* line 317, scss/_styles.scss */
+/* line 306, scss/_styles.scss */
 section.photo-grid {
   display: flex;
   flex-direction: column;
@@ -551,81 +557,81 @@ section.photo-grid {
   margin-right: 2rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 317, scss/_styles.scss */
+  /* line 306, scss/_styles.scss */
   section.photo-grid {
     flex-direction: row;
     margin-bottom: 4rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 317, scss/_styles.scss */
+  /* line 306, scss/_styles.scss */
   section.photo-grid {
     margin-left: 2.66667rem;
     margin-right: 2.66667rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 317, scss/_styles.scss */
+  /* line 306, scss/_styles.scss */
   section.photo-grid {
     margin: 0 2rem;
   }
 }
-/* line 340, scss/_styles.scss */
+/* line 329, scss/_styles.scss */
 section.photo-grid > figure {
   flex: 1;
   padding-bottom: 2rem;
 }
-/* line 344, scss/_styles.scss */
+/* line 333, scss/_styles.scss */
 section.photo-grid > figure:last-child {
   padding-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 340, scss/_styles.scss */
+  /* line 329, scss/_styles.scss */
   section.photo-grid > figure {
     padding: 0 1rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 340, scss/_styles.scss */
+  /* line 329, scss/_styles.scss */
   section.photo-grid > figure {
     padding: 0 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 340, scss/_styles.scss */
+  /* line 329, scss/_styles.scss */
   section.photo-grid > figure {
     padding: 0 2rem;
   }
 }
-/* line 363, scss/_styles.scss */
+/* line 352, scss/_styles.scss */
 section.photo-mat {
   padding: 4rem 0;
   background: #FFF5E2;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 363, scss/_styles.scss */
+  /* line 352, scss/_styles.scss */
   section.photo-mat {
     padding: 4rem 0;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 363, scss/_styles.scss */
+  /* line 352, scss/_styles.scss */
   section.photo-mat {
     padding: 6rem 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 363, scss/_styles.scss */
+  /* line 352, scss/_styles.scss */
   section.photo-mat {
     padding: 8rem 0;
   }
 }
-/* line 379, scss/_styles.scss */
+/* line 368, scss/_styles.scss */
 section.next {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 383, scss/_styles.scss */
+/* line 372, scss/_styles.scss */
 section.next a {
   position: relative;
   display: block;
@@ -633,7 +639,7 @@ section.next a {
   height: 400px;
   transition: background 0.8s;
 }
-/* line 391, scss/_styles.scss */
+/* line 380, scss/_styles.scss */
 section.next .container {
   position: relative;
   top: 50%;
@@ -641,185 +647,185 @@ section.next .container {
   padding-bottom: 2rem;
 }
 
-/* line 400, scss/_styles.scss */
+/* line 389, scss/_styles.scss */
 aside {
   padding-top: 3rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 400, scss/_styles.scss */
+  /* line 389, scss/_styles.scss */
   aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-/* line 409, scss/_styles.scss */
+/* line 398, scss/_styles.scss */
 aside .tidbit {
   padding-right: 3rem;
-  min-width: 200px;
+  min-width: 230px;
 }
-/* line 413, scss/_styles.scss */
+/* line 402, scss/_styles.scss */
 aside .tidbit:last-child {
   padding-right: 0;
 }
-/* line 417, scss/_styles.scss */
+/* line 406, scss/_styles.scss */
 aside .tidbit > {
   display: inline;
 }
 @media only screen and (min-width: 767px) {
-  /* line 417, scss/_styles.scss */
+  /* line 406, scss/_styles.scss */
   aside .tidbit > {
     display: block;
   }
 }
-/* line 427, scss/_styles.scss */
+/* line 416, scss/_styles.scss */
 aside .tidbit-detail {
   font-size: 1.5em;
 }
 @media only screen and (min-width: 767px) {
-  /* line 427, scss/_styles.scss */
+  /* line 416, scss/_styles.scss */
   aside .tidbit-detail {
     font-size: 0.9em;
   }
 }
 
-/* line 441, scss/_styles.scss */
+/* line 430, scss/_styles.scss */
 #about {
   transition: width 0.4s;
 }
-/* line 444, scss/_styles.scss */
+/* line 433, scss/_styles.scss */
 #about #menu li a.nav-about {
   color: #fb3f3c;
 }
-/* line 448, scss/_styles.scss */
+/* line 437, scss/_styles.scss */
 #about h1 {
   font-size: 4em;
 }
 @media only screen and (min-width: 767px) {
-  /* line 448, scss/_styles.scss */
+  /* line 437, scss/_styles.scss */
   #about h1 {
     font-size: 7.5em;
   }
 }
 @media only screen and (min-width: 767px) {
-  /* line 459, scss/_styles.scss */
+  /* line 448, scss/_styles.scss */
   #about h1.chat {
     font-size: 6em;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 459, scss/_styles.scss */
+  /* line 448, scss/_styles.scss */
   #about h1.chat {
     font-size: 6em;
   }
 }
-/* line 469, scss/_styles.scss */
+/* line 458, scss/_styles.scss */
 #about header {
   display: flex;
   flex-direction: column;
   height: auto;
 }
 @media only screen and (min-width: 767px) {
-  /* line 469, scss/_styles.scss */
+  /* line 458, scss/_styles.scss */
   #about header {
     height: 620px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 469, scss/_styles.scss */
+  /* line 458, scss/_styles.scss */
   #about header {
     height: auto;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 469, scss/_styles.scss */
+  /* line 458, scss/_styles.scss */
   #about header {
     flex-direction: row;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 469, scss/_styles.scss */
+  /* line 458, scss/_styles.scss */
   #about header {
     flex-direction: row;
   }
 }
-/* line 489, scss/_styles.scss */
+/* line 478, scss/_styles.scss */
 #about header > section {
   margin: 0;
   flex: 1;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 489, scss/_styles.scss */
+  /* line 478, scss/_styles.scss */
   #about header > section {
     flex: 0 0 50%;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 489, scss/_styles.scss */
+  /* line 478, scss/_styles.scss */
   #about header > section {
     flex: 0 0 50%;
   }
 }
-/* line 501, scss/_styles.scss */
+/* line 490, scss/_styles.scss */
 #about header #intro {
   background: #56fce5;
   padding-top: 8rem;
   padding-bottom: 4rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 501, scss/_styles.scss */
+  /* line 490, scss/_styles.scss */
   #about header #intro {
     padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 501, scss/_styles.scss */
+  /* line 490, scss/_styles.scss */
   #about header #intro {
     height: 450px;
     padding-top: 9.5rem;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 501, scss/_styles.scss */
+  /* line 490, scss/_styles.scss */
   #about header #intro {
     padding-top: 8rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 501, scss/_styles.scss */
+  /* line 490, scss/_styles.scss */
   #about header #intro {
     padding-top: 10rem;
   }
 }
-/* line 523, scss/_styles.scss */
-#about header #intro .container {
+/* line 512, scss/_styles.scss */
+#about header #intro .about_title {
   z-index: 100;
 }
 @media only screen and (min-width: 767px) {
-  /* line 523, scss/_styles.scss */
-  #about header #intro .container {
+  /* line 512, scss/_styles.scss */
+  #about header #intro .about_title {
     position: absolute;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 523, scss/_styles.scss */
-  #about header #intro .container {
+  /* line 512, scss/_styles.scss */
+  #about header #intro .about_title {
     width: 80%;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 523, scss/_styles.scss */
-  #about header #intro .container {
+  /* line 512, scss/_styles.scss */
+  #about header #intro .about_title {
     left: 20%;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 523, scss/_styles.scss */
-  #about header #intro .container {
+  /* line 512, scss/_styles.scss */
+  #about header #intro .about_title {
     max-width: 100%;
   }
 }
-/* line 548, scss/_styles.scss */
+/* line 535, scss/_styles.scss */
 #about header #mugshot {
   background: #56fce5 url("../images/mugshot.jpg") no-repeat center center;
   background-size: cover;
@@ -827,32 +833,32 @@ aside .tidbit-detail {
   height: 430px;
 }
 @media only screen and (min-width: 767px) {
-  /* line 548, scss/_styles.scss */
+  /* line 535, scss/_styles.scss */
   #about header #mugshot {
     opacity: 0;
     height: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 548, scss/_styles.scss */
+  /* line 535, scss/_styles.scss */
   #about header #mugshot {
     opacity: 1;
     height: 620px;
   }
 }
-/* line 565, scss/_styles.scss */
+/* line 552, scss/_styles.scss */
 #about header #mugshot:hover {
   opacity: 1;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 573, scss/_styles.scss */
-  #about .text {
+  /* line 560, scss/_styles.scss */
+  #about .about_text {
     margin: 4rem 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 573, scss/_styles.scss */
-  #about .text {
+  /* line 560, scss/_styles.scss */
+  #about .about_text {
     position: relative;
     left: 50%;
     width: 50%;
@@ -860,18 +866,18 @@ aside .tidbit-detail {
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-  /* line 586, scss/_styles.scss */
-  #about .text .container {
+  /* line 573, scss/_styles.scss */
+  #about .about_text .container {
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 1600px) {
-  /* line 586, scss/_styles.scss */
-  #about .text .container {
+  /* line 573, scss/_styles.scss */
+  #about .about_text .container {
     padding-left: 0;
   }
 }
-/* line 596, scss/_styles.scss */
+/* line 583, scss/_styles.scss */
 #about #contact {
   background: #56fce5;
   padding-top: 2rem;
@@ -879,31 +885,31 @@ aside .tidbit-detail {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 767px) {
-  /* line 596, scss/_styles.scss */
+  /* line 583, scss/_styles.scss */
   #about #contact {
     background: transparent;
   }
 }
-/* line 606, scss/_styles.scss */
+/* line 593, scss/_styles.scss */
 #about #contact h5 {
   margin-bottom: 0.5rem;
 }
-/* line 610, scss/_styles.scss */
+/* line 597, scss/_styles.scss */
 #about #contact aside {
   padding-top: 1rem;
 }
-/* line 616, scss/_styles.scss */
-#about .tidbit {
+/* line 603, scss/_styles.scss */
+#about .about_tidbit {
   margin-top: 2rem;
 }
 @media only screen and (min-width: 767px) {
-  /* line 616, scss/_styles.scss */
-  #about .tidbit {
+  /* line 603, scss/_styles.scss */
+  #about .about_tidbit {
     margin-top: 0;
   }
 }
-/* line 623, scss/_styles.scss */
-#about .tidbit .arrow {
+/* line 610, scss/_styles.scss */
+#about .about_tidbit .arrow {
   width: 1rem;
   height: 1rem;
   position: relative;
@@ -911,12 +917,12 @@ aside .tidbit-detail {
   left: 0.5rem;
   top: 0.1rem;
 }
-/* line 630, scss/_styles.scss */
-#about .tidbit .arrow polygon {
+/* line 617, scss/_styles.scss */
+#about .about_tidbit .arrow polygon {
   fill: #2b2b2b;
 }
-/* line 635, scss/_styles.scss */
-#about .tidbit a:hover polygon {
+/* line 622, scss/_styles.scss */
+#about .about_tidbit a:hover polygon {
   transition: fill 0.4s 0.13333s;
   fill: #fb3f3c;
 }

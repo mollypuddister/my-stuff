@@ -241,17 +241,6 @@ nav {
 
 }
 
-#section-down {
-	// @include alignment(fixed, null, 50%, translateX(-50%));
-	// position: absolute;
-	// bottom: 1rem;		
-	// z-index: 100;
-}
-
-#section-up .arrow {
-	// transform: rotate(180deg);
-}
-
 .arrow {
 	@include size(1.5rem);			
 
@@ -408,7 +397,7 @@ aside {
 
 	.tidbit {
 		padding-right: 3rem;
-		min-width: 200px;
+		min-width: 230px;
 
 		&:last-child {
 			padding-right: 0;
@@ -520,7 +509,7 @@ aside {
 				padding-top: 10rem;
 			}
 
-			.container {
+			.about_title {
 				z-index: 100;
 	
 				@include respond-to(desktop) {
@@ -540,8 +529,6 @@ aside {
 				}
 				
 			}
-
-
 
 		}
 
@@ -570,7 +557,7 @@ aside {
 
 	}
 
-	.text {
+	.about_text {
 		
 		@include respond-to(medium) {
 			margin: 4rem 0;
@@ -613,7 +600,7 @@ aside {
 
 	}
 
-	.tidbit {
+	.about_tidbit {
 		margin-top: 2rem;
 
 		@include respond-to(desktop) {
