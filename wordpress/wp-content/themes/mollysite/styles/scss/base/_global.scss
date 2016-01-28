@@ -1,0 +1,50 @@
+html {
+	box-sizing: border-box;
+	// font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-smoothing: subpixel-antialiased;
+	min-height: 100%;
+	color: $colour_mineshaft;
+}
+
+a {
+	color: $colour_mineshaft;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+a:hover:not(#logo):not(.hero_link):not(.next_link) {
+	transition: color $speed $delay/3;
+	color: $colour_coralred;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 $container-spacing_mb;
+
+	@include respond-to(desktop) {
+		padding: 0 $container-spacing_dt;
+	}
+
+	&.slim {
+		max-width: 880px;
+
+			@include respond-to(large) {
+				max-width: 950px;
+			}
+	}
+
+
+}

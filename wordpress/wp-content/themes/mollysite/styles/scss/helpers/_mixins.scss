@@ -1,0 +1,142 @@
+// media queries
+	@function get-media($key){
+		 
+		@return map-get($breakpoints, $key);
+
+	}
+
+	@mixin respond-to($query) {
+
+		@if $query == mobile {
+
+			@media #{ get-media(mobile) } { @content; }
+			
+
+		} @if $query == desktop {
+
+			@media #{ get-media(desktop) } { @content; }
+			
+
+		} @if $query == small {
+
+			@media #{ get-media(small) } { @content; }
+			
+
+		} @if $query == medium {
+
+			@media #{ get-media(medium) } { @content; }
+
+		} @if $query == large {
+
+			@media #{ get-media(large) } { @content; }
+
+		} @if $query == xlarge {
+
+			@media #{ get-media(xlarge) } { @content; }
+
+		} @if $query == retina {
+
+			@media #{ get-media(retina) } { @content; }
+
+		} @if $query == retina_tablet {
+
+			@media #{ get-media(retina_tablet) } { @content; }
+
+		} @if $query == touch {
+
+			@media #{ get-media(touch) } { @content; };
+
+		}	
+
+	}
+
+
+//size 
+	@mixin size($width, $height: $width) {
+		width: $width;
+		height: $height;
+	}
+
+//horizontal and vertical align
+	@mixin alignment($position, $top:null, $left:null, $transform...) {
+		position: $position;
+		top: $top;
+		left: $left;
+		transform: $transform;
+	}	
+
+
+//fonts
+	@each $font-face in GT-Sectra-Display-Super-Italic, GT-Walsheim-Bold  {
+		@font-face {
+				font-family: $font-face; font-style: normal; font-weight: normal;
+				src: url('../fonts/#{$font-face}.eot');
+				src: url('../fonts/#{$font-face}.eot?') format('eot'),
+					url('../fonts/#{$font-face}.woff') format('woff'),
+					url('../fonts/#{$font-face}.ttf')  format('truetype');
+		}
+	}
+
+	//mixin
+	@mixin display($font, $style: normal, $weight: normal) {
+		font-family: $font, Baskerville, Garamond, Georgia, "Times New Roman", serif;
+		font-style:  $style;
+		font-weight: $weight;
+	}
+
+	@mixin highlight($font, $style: normal, $weight: bold) {
+		font-family: $font, Helvetica, Arial, Segoe UI, sans-serif;
+		font-style:  $style;
+		font-weight: $weight;
+	}
+
+
+
+// ---------- control directives ----------
+
+// colour map
+
+	$colour_map: (
+
+		uno:		$colour_coralred,
+		dos:		$colour_aquamarine,
+		tres:		$colour_pizazz,
+		quattro:	$colour_sazerac,
+	);
+
+	// each key, value in object
+	@each $option, $bgcolour in $colour_map {
+		
+		#home article.#{$option} {
+			background-color: #{$bgcolour};
+		}
+
+		section.next.#{$option} a:hover {
+			background-color: #{$bgcolour};
+		}
+
+		.project_page article.#{$option} > header {
+			background-color: #{$bgcolour};
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

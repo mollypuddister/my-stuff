@@ -1,0 +1,83 @@
+$body: 'Mate', Georgia, serif;
+
+html {
+	font-size: 20px;
+	line-height: 1.5;
+
+	@include respond-to(large) {
+		font-size: 22px;
+	}
+}
+
+body {
+	font: 1em/1.5 $body;
+}
+
+h1, h2 { 
+	@include display(GT-Sectra-Display-Super-Italic, normal, normal); 
+	letter-spacing: -1px; 
+	text-transform: lowercase;
+}
+
+h3, h4, h5, #logo, nav ul li { 
+	@include highlight(GT-Walsheim-Bold, normal, normal); 
+	text-transform: uppercase; 
+}
+
+p {
+	font: 1.8em/1.5 $body;
+	color: $colour_text-body;
+	margin: 1rem 0 2rem;
+	@include respond-to(desktop) {
+		font: 1em/1.5 $body;
+	}
+
+}
+
+h1 {
+	font-size: 7.5em;
+	line-height: 1;
+	margin-bottom: 1.2rem;
+	padding-top: 1rem;
+
+	@include respond-to(small) {
+		font-size: 6em;
+	}
+
+	@include respond-to(medium) {
+		font-size: 7rem;
+	}
+
+	@include respond-to(desktop) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+h2 {
+	font-size: 5em;
+	line-height: 1;
+	margin: 1rem 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	line-height: 1;
+	margin: 0.5rem 0;
+}
+
+h4 {
+	font-size: 1.3em;
+	line-height: 1;
+	margin: 0.5rem 0;
+}
+
+h5 {
+	font-size: 1.2em;
+	line-height: 1;
+	margin-bottom: 0.2rem;
+
+	@include respond-to(desktop) {
+		font-size: 1em;
+		margin-bottom: 1rem;
+	}
+}
