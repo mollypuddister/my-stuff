@@ -25,7 +25,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
 
 		<!-- main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 
 

@@ -270,6 +270,7 @@ article {
 
 		.title {
 			@include alignment(relative, 50%, null, translateY(-50%));
+			@include alignment(relative, 50%, null, translateY(-50%));
 			padding-top: 3rem;
 		}
 

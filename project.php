@@ -1,6 +1,6 @@
 <?php require 'includes/head.php';?>
 
-<body class="project">
+<body class="project_page">
 	
 	<?php require 'includes/header.php';?>
 
