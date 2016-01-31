@@ -1,6 +1,6 @@
 <?php require 'includes/head.php';?>	
 
-<body id="home">
+<body>
 	
 	<?php require 'includes/header.php';?>
 	<?php require 'includes/nav.php';?>
@@ -9,7 +9,7 @@
 		<a id="section-down"><?php require 'images/arrow.svg';?></a>	
 	</div>
 
-	<main id="fullpage">
+	<main id="fullpage" class="home">
 		
 		<article class="section uno">
 			<div class="hero">				

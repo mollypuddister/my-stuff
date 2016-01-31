@@ -1,58 +1,38 @@
-<?php
+<?php get_header(); 
+
 /*
-Template Name: Home/Work Page
+	Template Name: Home/Work Page
 */
 
-//Display the header
-//get_header();
-//?>
+?>
 
-<?php require 'includes/head.php';?>	
-
-<body id="home">
-	
-	<?php require 'includes/header.php';?>
-	<?php require 'includes/nav.php';?>
-	
-	<div id="controls">
-		<a id="section-down"><?php require 'images/arrow.svg';?></a>	
-	</div>
-
-	<main id="fullpage">
+	<main id="fullpage" class="home">
+		<div id="controls">
+			<a id="section-down"><?php include 'images/arrow.svg';?></a>	
+		</div>
 		
-		<article class="section uno project_post">
+		<?php 
+			$args = array('post_type' => 'project');
+			$the_query = new WP_Query ($args);
+		?>
+
+		<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+		<article id="<?php echo $post->post_name;?>" class="section project_post">
 			<div class="hero">				
-				<a class="hero_link" href="project.php">
-					<h1>project tall</h1>
-					<h4>2014</h4>
+				<a class="hero_link" href="<?php the_permalink(); ?>">
+					<h1><?php the_title(); ?></h1>
+					<h4><?php echo get_post_meta($post->ID, 'year', true); ?>
+</h4>
 					<span class="strip"></span>
 				</a>				
-			</div>				
+			</div>	
+		
 		</article>
-		<article class="section dos project_post">
-			<div class="hero">				
-				<a class="hero_link" href="project.php">
-					<h1>project dos</h1>
-					<h4>2014</h4>
-					<span class="strip"></span>
-				</a>				
-			</div>				
-		</article>
-		<article class="section tres project_post">
-			<div class="hero">				
-				<a class="hero_link" href="project.php">
-					<h1>project tres</h1>
-					<h4>2014</h4>
-					<span class="strip"></span>
-				</a>				
-			</div>				
-		</article>
+
+		<?php endwhile; endif; ?>
+		
 		
 	</main>
 
-
-	<?php require 'includes/scripts.php';?>	
-
-</body>
-
-</html>
+<?php get_footer(); ?>

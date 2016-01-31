@@ -147,11 +147,10 @@ nav {
 //-------------------------------------------------//
 //	home page
 //-------------------------------------------------//
-#home {
 	
-	main {
-		@include size(100%);
-	}
+.home {
+	@include size(100%);
+
 
 	nav {
 		#menu li a.nav-work {
@@ -220,9 +219,8 @@ nav {
 		}		
 
 	}
-	
-	
 }
+
 
 #controls {
 	position: fixed;	
@@ -554,6 +552,10 @@ aside {
 				opacity: 1;
 			}
 
+		}
+
+		&:hover #mugshot {
+			opacity: 1;
 		}
 
 	}

@@ -1,11 +1,12 @@
-<?php require 'includes/head.php';?>
+<?php get_header(); 
 
-<body id="about">
-	
-	<?php require 'includes/header.php';?>
-	<?php require 'includes/nav.php';?>
+/*
+	Template Name: About Page
+*/
 
-	<main>
+?>
+
+	<main id="about">
 
 		<article>
 			<header>	
@@ -61,8 +62,4 @@
 
 	</main>
 
-	<?php require 'includes/scripts.php';?>	
-
-</body>
-
-</html>
+<?php get_footer(); ?>

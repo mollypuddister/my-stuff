@@ -1,12 +1,12 @@
-<?php require 'includes/head.php';?>
+<?php get_header(); 
 
-<body class="project_page">
-	
-	<?php require 'includes/header.php';?>
+/*
+	Template Name: Project
+*/
 
-	<?php require 'includes/nav.php';?>
+?>
 
-	<main>
+	<main class="project_page">
 
 		<article class="uno">
 			<header>		
@@ -87,8 +87,4 @@
 
 	</main>
 
-	<?php require 'includes/scripts.php';?>	
-
-</body>
-
-</html>
+<?php get_footer(); ?>
