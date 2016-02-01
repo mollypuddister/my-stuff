@@ -14,47 +14,34 @@
 				
 				<section class="text">
 					<div class="container slim">
-						<p>
-							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-						</p>
-						<aside>
-							<div class="tidbit agency">
-								<h5>Agency</h5>
-								<p class="tidbit-detail">Visible Media Inc.</p>
-							</div>
 
-							<div class="tidbit role">
-								<h5>My Role</h5>
-								<p class="tidbit-detail">UI UX, Project Management. A bunch of text if I did many things on the project to describe what I did.</p>
-							</div>
+							<!-- paragraph copy -->
+							<?php the_content(); ?>
+
+						<aside>
+
+							<!-- tidbit agency -->
+							<?php cf_agency(); ?>
+
+
+							<!-- tidbit role -->
+							<?php cf_role(); ?>
 							
 						</aside>
+
 					</div>
 
 				</section>
 
-				<section>
-					<div class="container">
-						<img src="http://lorempixel.com/1240/800/abstract/" alt="">
-					</div>
-				</section>
+				<?php acf_image(); ?>
 
-				<section class="photo-mat">
-					<div class="container">
-						<img src="http://lorempixel.com/1240/800/abstract/" alt="">
-					</div>
-				</section>
+				<?php acf_image_mat(); ?>
+
 
 				<section class="photo-grid">
-					<figure> 
-						<img src="http://lorempixel.com/800/1000/abstract/">
-					</figure>
-					<figure> 
-						<img src="http://lorempixel.com/800/800/abstract/">
-					</figure>
-					<figure> 
-						<img src="http://lorempixel.com/800/800/abstract/">
-					</figure>
+					
+					<?php acf_image_grid(); ?>
+					
 				</section>
 
 				<section class="text">
