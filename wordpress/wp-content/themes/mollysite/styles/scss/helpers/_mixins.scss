@@ -94,32 +94,40 @@
 
 // ---------- control directives ----------
 
-// colour map
+// colour/bg map
 
-	$colour_map: (
+	$uno_bg: url('');
+	$dos_bg: url('../images/mugshot.jpg');
 
-		uno:		$colour_coralred,
-		dos:		$colour_aquamarine,
-		tres:		$colour_pizazz,
-		quattro:	$colour_sazerac,
+
+	$colourbg_map: (
+		// (uno, $colour_coralred, $uno_bg),
+		(another-one, $colour_coralred, $uno_bg),
+		(contest, $colour_aquamarine ),
+		(tres, $colour_pizazz),
+		(quattro, $colour_sazerac),
+
 	);
 
 	// each key, value in object
-	@each $option, $bgcolour in $colour_map {
+	@each $project, $bgcolour, $imagepath in $colourbg_map {
 		
-		#home article.#{$option} {
+		.home article##{$project} {
+			background-color: $bgcolour;
+			background-image: $imagepath;
+			background-size: cover;
+		}
+
+		section.next.#{$project} a:hover {
 			background-color: #{$bgcolour};
 		}
 
-		section.next.#{$option} a:hover {
-			background-color: #{$bgcolour};
-		}
-
-		.project_page article.#{$option} > header {
+		.project_page article.#{$project} > header {
 			background-color: #{$bgcolour};
 		}
 
 	}
+
 
 
 

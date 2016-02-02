@@ -1,11 +1,12 @@
-<?php require 'includes/head.php';?>
+<?php get_header(); 
 
-<body id="about">
-	
-	<?php require 'includes/header.php';?>
-	<?php require 'includes/nav.php';?>
+/*
+	Template Name: About Page
+*/
 
-	<main>
+?>
+
+	<main id="about">
 
 		<article>
 			<header>	
@@ -38,11 +39,11 @@
 					
 					<aside>
 						<div class="tidbit about_tidbit">
-							<h5><a href="https://twitter.com/mollypudd">Twitter<?php require 'images/arrow.svg';?></a></h5>
+							<h5><a href="https://twitter.com/mollypudd">Twitter<?php include '../images/arrow.svg';?></a></h5>
 						</div>
 
 						<div class="tidbit about_tidbit">
-							<h5><a href="https://www.linkedin.com/in/molly-puddister-87257720">LinkedIn<?php require 'images/arrow.svg';?></a></h5>
+							<h5><a href="https://www.linkedin.com/in/molly-puddister-87257720">LinkedIn<?php include '../images/arrow.svg';?></a></h5>
 						</div>
 
 						<div class="tidbit about_tidbit">
@@ -61,8 +62,4 @@
 
 	</main>
 
-	<?php require 'includes/scripts.php';?>	
-
-</body>
-
-</html>
+<?php get_footer(); ?>

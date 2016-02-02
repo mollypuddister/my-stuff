@@ -111,6 +111,10 @@ nav {
 				text-align: right;
 			}
 
+			&.current-menu-item  a {
+				color: $colour_coralred;
+			}	
+
 		}
 		
 		a {	color: $colour_sazerac;	}
@@ -147,16 +151,10 @@ nav {
 //-------------------------------------------------//
 //	home page
 //-------------------------------------------------//
-#home {
+.home {
 	
 	main {
 		@include size(100%);
-	}
-
-	nav {
-		#menu li a.nav-work {
-			color: $colour_coralred;
-		}
 	}
 
 	article {
@@ -431,10 +429,6 @@ aside {
 #about {
 	transition: width $speed;
 
-	#menu li a.nav-about {
-		color: $colour_coralred;
-	}
-
 	h1 {
 		font-size: 4em;
 
@@ -554,6 +548,10 @@ aside {
 				opacity: 1;
 			}
 
+		}
+
+		&:hover #mugshot {
+			opacity: 1;
 		}
 
 	}

@@ -13,6 +13,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Mate:400,400italic' rel='stylesheet' type='text/css'>
 	
 	<!-- styles -->
+
+	<!-- html5 reset -->
+		<link rel="stylesheet" type="text/css" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
+
 	
 		<!-- vendor styles -->
 			<!-- slide push menu -->
@@ -21,9 +25,7 @@
 			<!-- full page scroll -->
 			<link rel="stylesheet" type="text/css" href="styles/vendor/fullPage.js-master/jquery.fullPage.css" />
 
-		<!-- html5 reset -->
-		<link rel="stylesheet" type="text/css" href="styles/vendor/html5-doctor-reset-stylesheet.min.css">
-
+		
 		<!-- main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 

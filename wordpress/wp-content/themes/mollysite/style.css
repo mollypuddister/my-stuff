@@ -1,8 +1,8 @@
 /*!
-Theme Name: Molly Site
-Theme URI:
-Description: The 2010 default theme for WordPress.
-Author: mollypuddister
+Theme Name: Molly's Site
+Theme URI: http://mollypuddister.com
+Description: 2016 Portfolio Theme
+Author: Molly Puddister
 Author URI: http://mollypuddister.com
 */
 @font-face {
@@ -17,26 +17,30 @@ Author URI: http://mollypuddister.com
   font-weight: normal;
   src: url("../fonts/GT-Walsheim-Bold.eot");
   src: url("../fonts/GT-Walsheim-Bold.eot?") format("eot"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/GT-Walsheim-Bold.ttf") format("truetype"); }
-#home article.uno {
+.home article#another-one {
+  background-color: #fb3f3c;
+  background-image: url("");
+  background-size: cover; }
+
+section.next.another-one a:hover {
   background-color: #fb3f3c; }
 
-section.next.uno a:hover {
+.project_page article.another-one > header {
   background-color: #fb3f3c; }
 
-.project_page article.uno > header {
-  background-color: #fb3f3c; }
+.home article#contest {
+  background-color: #56fce5;
+  background-size: cover; }
 
-#home article.dos {
+section.next.contest a:hover {
   background-color: #56fce5; }
 
-section.next.dos a:hover {
+.project_page article.contest > header {
   background-color: #56fce5; }
 
-.project_page article.dos > header {
-  background-color: #56fce5; }
-
-#home article.tres {
-  background-color: #ff9600; }
+.home article#tres {
+  background-color: #ff9600;
+  background-size: cover; }
 
 section.next.tres a:hover {
   background-color: #ff9600; }
@@ -44,8 +48,9 @@ section.next.tres a:hover {
 .project_page article.tres > header {
   background-color: #ff9600; }
 
-#home article.quattro {
-  background-color: #FFF5E2; }
+.home article#quattro {
+  background-color: #FFF5E2;
+  background-size: cover; }
 
 section.next.quattro a:hover {
   background-color: #FFF5E2; }
@@ -238,6 +243,8 @@ nav {
           padding: 0 4rem;
           font-size: 2em;
           text-align: right; } }
+      nav #menu li.current-menu-item a {
+        color: #fb3f3c; }
     nav #menu a {
       color: #FFF5E2; }
   nav #meta {
@@ -258,29 +265,27 @@ nav {
         nav #meta p {
           font-size: 0.6em; } }
 
-#home main {
+.home main {
   width: 100%;
   height: 100%; }
-#home nav #menu li a.nav-work {
-  color: #fb3f3c; }
-#home article {
+.home article {
   display: flex;
   height: 100%;
   align-items: center; }
-#home .hero {
+.home .hero {
   position: relative;
   flex: 1;
   width: 100%;
   z-index: 1;
   margin: 2rem 2rem 0; }
   @media only screen and (min-width: 767px) {
-    #home .hero {
+    .home .hero {
       margin: 4rem 4rem 0; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #home .hero {
+    .home .hero {
       margin: 5rem 4rem 0; } }
   @media only screen and (min-width: 767px) {
-    #home .hero .strip {
+    .home .hero .strip {
       width: 100%;
       height: 2px;
       display: block;
@@ -290,14 +295,14 @@ nav {
       z-index: -1;
       background: #2b2b2b;
       transition: width 0.4s 0.4s, height 0.4s, background 0.8s; } }
-  #home .hero a:hover > * {
+  .home .hero a:hover > * {
     transition: color 0.4s;
     color: white; }
     @media only screen and (min-width: 767px) {
-      #home .hero a:hover > * {
+      .home .hero a:hover > * {
         color: inherit; } }
   @media only screen and (min-width: 767px) {
-    #home .hero a:hover .strip {
+    .home .hero a:hover .strip {
       width: 80%;
       height: 80%;
       background: white;
@@ -438,8 +443,6 @@ aside {
 
 #about {
   transition: width 0.4s; }
-  #about #menu li a.nav-about {
-    color: #fb3f3c; }
   #about h1 {
     font-size: 4em; }
     @media only screen and (min-width: 767px) {
@@ -522,6 +525,8 @@ aside {
           height: 620px; } }
       #about header #mugshot:hover {
         opacity: 1; }
+    #about header:hover #mugshot {
+      opacity: 1; }
   @media only screen and (min-width: 1025px) and (max-width: 1599px) {
     #about .about_text {
       margin: 4rem 0; } }
