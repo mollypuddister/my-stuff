@@ -5,11 +5,12 @@
 */
 
 ?>
+	
+	<div id="controls">
+		<a id="section-down"><?php include '../images/arrow.svg'; ?></a>
+	</div>
 
-	<main id="fullpage" class="home">
-		<div id="controls">
-			<a id="section-down"><?php include '../images/arrow.svg'; ?></a>
-		</div>
+	<main id="fullpage" class="home">		
 		
 		<?php 
 			$args = array('post_type' => 'project');
