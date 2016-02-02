@@ -1,0 +1,570 @@
+/*!
+Theme Name: Molly Site
+Theme URI:
+Description: The 2010 default theme for WordPress.
+Author: mollypuddister
+Author URI: http://mollypuddister.com
+*/
+@font-face {
+  font-family: GT-Sectra-Display-Super-Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GT-Sectra-Display-Super-Italic.eot");
+  src: url("../fonts/GT-Sectra-Display-Super-Italic.eot?") format("eot"), url("../fonts/GT-Sectra-Display-Super-Italic.woff") format("woff"), url("../fonts/GT-Sectra-Display-Super-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: GT-Walsheim-Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GT-Walsheim-Bold.eot");
+  src: url("../fonts/GT-Walsheim-Bold.eot?") format("eot"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/GT-Walsheim-Bold.ttf") format("truetype"); }
+#home article.uno {
+  background-color: #fb3f3c; }
+
+section.next.uno a:hover {
+  background-color: #fb3f3c; }
+
+.project_page article.uno > header {
+  background-color: #fb3f3c; }
+
+#home article.dos {
+  background-color: #56fce5; }
+
+section.next.dos a:hover {
+  background-color: #56fce5; }
+
+.project_page article.dos > header {
+  background-color: #56fce5; }
+
+#home article.tres {
+  background-color: #ff9600; }
+
+section.next.tres a:hover {
+  background-color: #ff9600; }
+
+.project_page article.tres > header {
+  background-color: #ff9600; }
+
+#home article.quattro {
+  background-color: #FFF5E2; }
+
+section.next.quattro a:hover {
+  background-color: #FFF5E2; }
+
+.project_page article.quattro > header {
+  background-color: #FFF5E2; }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-smoothing: subpixel-antialiased;
+  min-height: 100%;
+  color: #2b2b2b; }
+
+a {
+  color: #2b2b2b;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover:not(#logo):not(.hero_link):not(.next_link) {
+  transition: color 0.4s 0.13333s;
+  color: #fb3f3c; }
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top; }
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+  @media only screen and (min-width: 767px) {
+    .container {
+      padding: 0 4rem; } }
+  .container.slim {
+    max-width: 880px; }
+    @media only screen and (min-width: 1600px) {
+      .container.slim {
+        max-width: 950px; } }
+
+html {
+  font-size: 20px;
+  line-height: 1.5; }
+  @media only screen and (min-width: 1600px) {
+    html {
+      font-size: 22px; } }
+
+body {
+  font: 1em/1.5 "Mate", Georgia, serif; }
+
+h1, h2 {
+  font-family: GT-Sectra-Display-Super-Italic, Baskerville, Garamond, Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -1px;
+  text-transform: lowercase; }
+
+h3, h4, h5, #logo, nav ul li {
+  font-family: GT-Walsheim-Bold, Helvetica, Arial, Segoe UI, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+p {
+  font: 1.8em/1.5 "Mate", Georgia, serif;
+  color: #555555;
+  margin: 1rem 0 2rem; }
+  @media only screen and (min-width: 767px) {
+    p {
+      font: 1em/1.5 "Mate", Georgia, serif; } }
+
+h1 {
+  font-size: 7.5em;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  padding-top: 1rem; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+      font-size: 6em; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+    h1 {
+      font-size: 7rem; } }
+  @media only screen and (min-width: 767px) {
+    h1 {
+      margin-bottom: 1.5rem; } }
+
+h2 {
+  font-size: 5em;
+  line-height: 1;
+  margin: 1rem 0; }
+
+h3 {
+  font-size: 1.6em;
+  line-height: 1;
+  margin: 0.5rem 0; }
+
+h4 {
+  font-size: 1.3em;
+  line-height: 1;
+  margin: 0.5rem 0; }
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1;
+  margin-bottom: 0.2rem; }
+  @media only screen and (min-width: 767px) {
+    h5 {
+      font-size: 1em;
+      margin-bottom: 1rem; } }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; }
+  header a, header button {
+    position: fixed;
+    margin: 2.5rem; }
+    @media only screen and (min-width: 767px) {
+      header a, header button {
+        margin: 4rem; } }
+    header a#logo, header button#logo {
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    header a.menu-toggle, header button.menu-toggle {
+      top: 0;
+      right: 0;
+      z-index: 100000; }
+      header a.menu-toggle .burger, header button.menu-toggle .burger {
+        width: 36px;
+        height: 7px;
+        position: relative;
+        margin: 14px 0;
+        background: #2b2b2b; }
+        header a.menu-toggle .burger:before, header a.menu-toggle .burger:after, header button.menu-toggle .burger:before, header button.menu-toggle .burger:after {
+          width: 36px;
+          height: 7px;
+          position: absolute;
+          display: block;
+          content: '';
+          background: #2b2b2b;
+          transition: top 0.2s; }
+        header a.menu-toggle .burger:before, header button.menu-toggle .burger:before {
+          top: -14px; }
+        header a.menu-toggle .burger:after, header button.menu-toggle .burger:after {
+          top: 14px; }
+      header a.menu-toggle:hover .burger:before, header button.menu-toggle:hover .burger:before {
+        top: -16px; }
+      header a.menu-toggle:hover .burger:after, header button.menu-toggle:hover .burger:after {
+        top: 16px; }
+      header a.menu-toggle.close .burger, header button.menu-toggle.close .burger {
+        background: transparent; }
+        header a.menu-toggle.close .burger:before, header a.menu-toggle.close .burger:after, header button.menu-toggle.close .burger:before, header button.menu-toggle.close .burger:after {
+          background: #FFF5E2;
+          top: 0; }
+        header a.menu-toggle.close .burger:before, header button.menu-toggle.close .burger:before {
+          transform: rotate(-45deg); }
+        header a.menu-toggle.close .burger:after, header button.menu-toggle.close .burger:after {
+          transform: rotate(45deg); }
+
+nav {
+  width: 80% 100%;
+  height: 80% 100%;
+  z-index: 10000;
+  overflow: hidden;
+  background: black; }
+  @media only screen and (min-width: 767px) {
+    nav {
+      width: 196px; } }
+  nav #menu {
+    z-index: 1000;
+    margin-top: 300px; }
+    @media only screen and (min-width: 767px) {
+      nav #menu {
+        margin-top: 230px; } }
+    nav #menu li {
+      padding: 0 2rem;
+      font-size: 3.5em;
+      line-height: 1.2;
+      text-align: left;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 767px) {
+        nav #menu li {
+          padding: 0 4rem;
+          font-size: 2em;
+          text-align: right; } }
+    nav #menu a {
+      color: #FFF5E2; }
+  nav #meta {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    padding: 0 2rem;
+    text-align: left; }
+    @media only screen and (min-width: 767px) {
+      nav #meta {
+        right: 0;
+        padding: 0 4rem;
+        text-align: right; } }
+    nav #meta p {
+      margin: 0;
+      font-size: 1em; }
+      @media only screen and (min-width: 767px) {
+        nav #meta p {
+          font-size: 0.6em; } }
+
+#home main {
+  width: 100%;
+  height: 100%; }
+#home nav #menu li a.nav-work {
+  color: #fb3f3c; }
+#home article {
+  display: flex;
+  height: 100%;
+  align-items: center; }
+#home .hero {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  margin: 2rem 2rem 0; }
+  @media only screen and (min-width: 767px) {
+    #home .hero {
+      margin: 4rem 4rem 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #home .hero {
+      margin: 5rem 4rem 0; } }
+  @media only screen and (min-width: 767px) {
+    #home .hero .strip {
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background: #2b2b2b;
+      transition: width 0.4s 0.4s, height 0.4s, background 0.8s; } }
+  #home .hero a:hover > * {
+    transition: color 0.4s;
+    color: white; }
+    @media only screen and (min-width: 767px) {
+      #home .hero a:hover > * {
+        color: inherit; } }
+  @media only screen and (min-width: 767px) {
+    #home .hero a:hover .strip {
+      width: 80%;
+      height: 80%;
+      background: white;
+      transition: width 0.4s, height 0.4s 0.4s, background 0.8s; } }
+
+#controls {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  z-index: 100;
+  margin-right: 2rem; }
+  @media only screen and (min-width: 767px) {
+    #controls {
+      margin-right: 4rem; } }
+  #controls a {
+    display: block; }
+
+.arrow {
+  width: 1.5rem;
+  height: 1.5rem; }
+  .arrow polygon {
+    transition: fill 0.4s; }
+  .arrow:hover polygon {
+    fill: #2b2b2b; }
+  #section-up .arrow {
+    transform: rotate(180deg);
+    margin-bottom: 0.5rem; }
+
+article > header {
+  position: static;
+  height: 620px; }
+  article > header .title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 3rem; }
+
+section {
+  margin: 4rem 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    section {
+      margin: 4rem 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+    section {
+      margin: 6rem 0; } }
+  @media only screen and (min-width: 1600px) {
+    section {
+      margin: 8rem 0; } }
+  @media only screen and (min-width: 767px) {
+    section.text {
+      margin: 6rem 0; } }
+  @media only screen and (min-width: 1600px) {
+    section.text {
+      margin: 8rem 0; } }
+  section.photo-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    @media only screen and (min-width: 767px) {
+      section.photo-grid {
+        flex-direction: row;
+        margin-bottom: 4rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      section.photo-grid {
+        margin-left: 2.66667rem;
+        margin-right: 2.66667rem; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+      section.photo-grid {
+        margin: 0 2rem; } }
+    section.photo-grid > figure {
+      flex: 1;
+      padding-bottom: 2rem; }
+      section.photo-grid > figure:last-child {
+        padding-bottom: 0; }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        section.photo-grid > figure {
+          padding: 0 1rem; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+        section.photo-grid > figure {
+          padding: 0 2rem; } }
+      @media only screen and (min-width: 1600px) {
+        section.photo-grid > figure {
+          padding: 0 2rem; } }
+  section.photo-mat {
+    padding: 4rem 0;
+    background: #FFF5E2; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      section.photo-mat {
+        padding: 4rem 0; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+      section.photo-mat {
+        padding: 6rem 0; } }
+    @media only screen and (min-width: 1600px) {
+      section.photo-mat {
+        padding: 8rem 0; } }
+  section.next {
+    margin-bottom: 0;
+    padding: 0; }
+    section.next a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 400px;
+      transition: background 0.8s; }
+    section.next .container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: 2rem; }
+
+aside {
+  padding-top: 3rem; }
+  @media only screen and (min-width: 767px) {
+    aside {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; } }
+  aside .tidbit {
+    padding-right: 3rem;
+    min-width: 230px; }
+    aside .tidbit:last-child {
+      padding-right: 0; }
+    aside .tidbit > {
+      display: inline; }
+      @media only screen and (min-width: 767px) {
+        aside .tidbit > {
+          display: block; } }
+  aside .tidbit-detail {
+    font-size: 1.5em; }
+    @media only screen and (min-width: 767px) {
+      aside .tidbit-detail {
+        font-size: 0.9em; } }
+
+#about {
+  transition: width 0.4s; }
+  #about #menu li a.nav-about {
+    color: #fb3f3c; }
+  #about h1 {
+    font-size: 4em; }
+    @media only screen and (min-width: 767px) {
+      #about h1 {
+        font-size: 7.5em; } }
+    @media only screen and (min-width: 767px) {
+      #about h1.chat {
+        font-size: 6em; } }
+    @media only screen and (min-width: 1600px) {
+      #about h1.chat {
+        font-size: 6em; } }
+  #about header {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    @media only screen and (min-width: 767px) {
+      #about header {
+        height: 620px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      #about header {
+        height: auto; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+      #about header {
+        flex-direction: row; } }
+    @media only screen and (min-width: 1600px) {
+      #about header {
+        flex-direction: row; } }
+    #about header > section {
+      margin: 0;
+      flex: 1; }
+      @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+        #about header > section {
+          flex: 0 0 50%; } }
+      @media only screen and (min-width: 1600px) {
+        #about header > section {
+          flex: 0 0 50%; } }
+    #about header #intro {
+      background: #56fce5;
+      padding-top: 8rem;
+      padding-bottom: 4rem; }
+      @media only screen and (min-width: 767px) {
+        #about header #intro {
+          padding-bottom: 0; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        #about header #intro {
+          height: 450px;
+          padding-top: 9.5rem; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+        #about header #intro {
+          padding-top: 8rem; } }
+      @media only screen and (min-width: 1600px) {
+        #about header #intro {
+          padding-top: 10rem; } }
+      #about header #intro .about_title {
+        z-index: 100; }
+        @media only screen and (min-width: 767px) {
+          #about header #intro .about_title {
+            position: absolute; } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          #about header #intro .about_title {
+            width: 80%; } }
+        @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+          #about header #intro .about_title {
+            left: 20%; } }
+        @media only screen and (min-width: 1600px) {
+          #about header #intro .about_title {
+            max-width: 100%; } }
+    #about header #mugshot {
+      background: #56fce5 url("../images/mugshot.jpg") no-repeat center center;
+      background-size: cover;
+      transition: opacity 0.8s;
+      height: 430px; }
+      @media only screen and (min-width: 767px) {
+        #about header #mugshot {
+          opacity: 0;
+          height: auto; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        #about header #mugshot {
+          opacity: 1;
+          height: 620px; } }
+      #about header #mugshot:hover {
+        opacity: 1; }
+  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+    #about .about_text {
+      margin: 4rem 0; } }
+  @media only screen and (min-width: 1600px) {
+    #about .about_text {
+      position: relative;
+      left: 50%;
+      width: 50%;
+      margin: 4rem 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+    #about .about_text .container {
+      padding-left: 0; } }
+  @media only screen and (min-width: 1600px) {
+    #about .about_text .container {
+      padding-left: 0; } }
+  #about #contact {
+    background: #56fce5;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 767px) {
+      #about #contact {
+        background: transparent; } }
+    #about #contact h5 {
+      margin-bottom: 0.5rem; }
+    #about #contact aside {
+      padding-top: 1rem; }
+  #about .about_tidbit {
+    margin-top: 2rem; }
+    @media only screen and (min-width: 767px) {
+      #about .about_tidbit {
+        margin-top: 0; } }
+    #about .about_tidbit .arrow {
+      width: 1rem;
+      height: 1rem;
+      position: relative;
+      transform: rotate(-90deg);
+      left: 0.5rem;
+      top: 0.1rem; }
+      #about .about_tidbit .arrow polygon {
+        fill: #2b2b2b; }
+    #about .about_tidbit a:hover polygon {
+      transition: fill 0.4s 0.13333s;
+      fill: #fb3f3c; }
+
+/*# sourceMappingURL=style.css.map */
