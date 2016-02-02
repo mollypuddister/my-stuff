@@ -8,7 +8,7 @@
 
 	<main id="fullpage" class="home">
 		<div id="controls">
-			<a id="section-down"><?php include 'images/arrow.svg';?></a>	
+			<a id="section-down"><?php include '../images/arrow.svg'; ?></a>
 		</div>
 		
 		<?php 
@@ -22,8 +22,7 @@
 			<div class="hero">				
 				<a class="hero_link" href="<?php the_permalink(); ?>">
 					<h1><?php the_title(); ?></h1>
-					<h4><?php echo get_post_meta($post->ID, 'year', true); ?>
-</h4>
+					<h4><?php echo get_post_meta($post->ID, 'year', true); ?></h4>
 					<span class="strip"></span>
 				</a>				
 			</div>	

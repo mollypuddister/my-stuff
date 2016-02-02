@@ -4,7 +4,9 @@
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<article id="<?php echo $post->post_name;?>" class="uno">
+			<?php $custom_class = get_post_meta($post->ID, 'post-class'); ?>
+
+			<article id="<?php echo $post->post_name;?>" <?php post_class($custom_class); ?>>
 				<header>		
 					<div class="container slim title">
 						<h1><?php the_title(); ?></h1>
@@ -15,17 +17,13 @@
 				<section class="text">
 					<div class="container slim">
 
-							<!-- paragraph copy -->
 							<?php the_content(); ?>
 
 						<aside>
 
-							<!-- tidbit agency -->
-							<?php cf_agency(); ?>
+							<?php cf_agency(); /* tidbit agency */ ?>
 
-
-							<!-- tidbit role -->
-							<?php cf_role(); ?>
+							<?php cf_role(); /* tidbit role */ ?>
 							
 						</aside>
 
@@ -33,42 +31,96 @@
 
 				</section>
 
-				<?php acf_image(); ?>
+				<?php acf_image(); /* regular image */ ?>
 
-				<?php acf_image_mat(); ?>
+				<?php acf_image_mat(); /* matted image */ ?>
 
 
 				<section class="photo-grid">
+					<?php /* photo grid - 1st image */
+
+						$image = get_field('image-grid_first');
+
+						if( !empty($image) ): ?>
+						<figure> 
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+						</figure>
+					<?php endif; ?>
+
+					<?php /* photo grid - 2nd image */
+
+						$image = get_field('image-grid_middle');
+
+						if( !empty($image) ): ?>
+						<figure> 
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+						</figure>
+					<?php endif; ?>
+
+					<?php /* photo grid - 3rd image */
+
+						$image = get_field('image-grid_last');
+
+						if( !empty($image) ): ?>
+						<figure> 
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+						</figure>
+					<?php endif; ?>
 					
-					<?php acf_image_grid(); ?>
-					
 				</section>
 
-				<section class="text">
-					<div class="container slim">
-						<p>
-							My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-						</p>
-					</div>
-				</section>
 
-				<section>
-					<img src="http://lorempixel.com/1240/800/abstract/">
-				</section>
+				<?php acf_text(); /* body copy */ ?>
 
-				<section class="next dos">
-					<a class="next_link" href="">
-						<div class="container slim">
-							<h4>on to the next one</h4>
-							<h2>project words</h2>
-						</div>
-					</a>
-				</section>
+				<?php acf_image_full(); /* full width photo */ ?>
+				
+				
 
 			</article>
 
-		<?php endwhile; endif; ?>
-		
+		<?php endwhile; endif; ?>	
+
+		<?php /* next post */		
+			
+			$custom_class = get_post_meta($post->ID, 'post-class');
+			$next_post = get_next_post();
+
+			if( get_adjacent_post(false, '', false) ) { 
+
+				$next_title = strip_tags(str_replace('"', '', $next_post->post_title));
+
+					echo 
+					'<section class="next '. get_post_meta($next_post->ID,'post-class',true) .'">
+					
+
+						<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="next_link">
+							<div class="container slim">
+								<h4>on to the next one</h4>
+								<h2>'. $next_title . '</h2>
+							</div>
+						</a>
+
+					</section>';
+
+			} else { 
+				$last = new WP_Query('posts_per_page=1&order=ASC&post_type=project'); $last->the_post();
+
+					echo '<section class="next '. get_post_meta($post->ID,'post-class',true) .'">
+					
+
+						<a rel="next" href="' . get_permalink() . '" title="'. $post->post_title .'" class="next_link">
+							<div class="container slim">
+								<h4>on to the next one</h4>
+								<h2>'. $post->post_title . '</h2>
+							</div>
+						</a>
+
+					</section>';
+
+				wp_reset_query();
+			};
+
+		?>	
 
 	</main>
 

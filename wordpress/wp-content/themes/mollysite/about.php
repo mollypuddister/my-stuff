@@ -39,11 +39,11 @@
 					
 					<aside>
 						<div class="tidbit about_tidbit">
-							<h5><a href="https://twitter.com/mollypudd">Twitter<?php require 'images/arrow.svg';?></a></h5>
+							<h5><a href="https://twitter.com/mollypudd">Twitter<?php include '../images/arrow.svg';?></a></h5>
 						</div>
 
 						<div class="tidbit about_tidbit">
-							<h5><a href="https://www.linkedin.com/in/molly-puddister-87257720">LinkedIn<?php require 'images/arrow.svg';?></a></h5>
+							<h5><a href="https://www.linkedin.com/in/molly-puddister-87257720">LinkedIn<?php include '../images/arrow.svg';?></a></h5>
 						</div>
 
 						<div class="tidbit about_tidbit">

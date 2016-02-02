@@ -17,28 +17,28 @@ Author URI: http://mollypuddister.com
   font-weight: normal;
   src: url("../fonts/GT-Walsheim-Bold.eot");
   src: url("../fonts/GT-Walsheim-Bold.eot?") format("eot"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/GT-Walsheim-Bold.ttf") format("truetype"); }
-.home article.uno {
+.home article#another-one {
   background-color: #fb3f3c;
   background-image: url("");
   background-size: cover; }
 
-section.next.uno a:hover {
+section.next.another-one a:hover {
   background-color: #fb3f3c; }
 
-.project_page article.uno > header {
+.project_page article.another-one > header {
   background-color: #fb3f3c; }
 
-.home article.dos {
+.home article#contest {
   background-color: #56fce5;
   background-size: cover; }
 
-section.next.dos a:hover {
+section.next.contest a:hover {
   background-color: #56fce5; }
 
-.project_page article.dos > header {
+.project_page article.contest > header {
   background-color: #56fce5; }
 
-.home article.tres {
+.home article#tres {
   background-color: #ff9600;
   background-size: cover; }
 
@@ -48,7 +48,7 @@ section.next.tres a:hover {
 .project_page article.tres > header {
   background-color: #ff9600; }
 
-.home article.quattro {
+.home article#quattro {
   background-color: #FFF5E2;
   background-size: cover; }
 
@@ -243,6 +243,8 @@ nav {
           padding: 0 4rem;
           font-size: 2em;
           text-align: right; } }
+      nav #menu li.current-menu-item a {
+        color: #fb3f3c; }
     nav #menu a {
       color: #FFF5E2; }
   nav #meta {
@@ -266,8 +268,6 @@ nav {
 .home main {
   width: 100%;
   height: 100%; }
-.home nav #menu li a.nav-work {
-  color: #fb3f3c; }
 .home article {
   display: flex;
   height: 100%;
@@ -443,8 +443,6 @@ aside {
 
 #about {
   transition: width 0.4s; }
-  #about #menu li a.nav-about {
-    color: #fb3f3c; }
   #about h1 {
     font-size: 4em; }
     @media only screen and (min-width: 767px) {

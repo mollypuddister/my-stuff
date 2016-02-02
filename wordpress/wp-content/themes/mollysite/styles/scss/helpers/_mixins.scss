@@ -101,8 +101,9 @@
 
 
 	$colourbg_map: (
-		(uno, $colour_coralred, $uno_bg),
-		(dos, $colour_aquamarine),
+		// (uno, $colour_coralred, $uno_bg),
+		(another-one, $colour_coralred, $uno_bg),
+		(contest, $colour_aquamarine ),
 		(tres, $colour_pizazz),
 		(quattro, $colour_sazerac),
 
@@ -111,11 +112,10 @@
 	// each key, value in object
 	@each $project, $bgcolour, $imagepath in $colourbg_map {
 		
-		.home article.#{$project} {
+		.home article##{$project} {
 			background-color: $bgcolour;
 			background-image: $imagepath;
 			background-size: cover;
-
 		}
 
 		section.next.#{$project} a:hover {
