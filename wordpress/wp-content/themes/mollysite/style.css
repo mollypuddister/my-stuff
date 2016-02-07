@@ -25,38 +25,36 @@ Author URI: http://mollypuddister.com
 section.next.another-one a:hover {
   background-color: #fb3f3c; }
 
-.project_page article.another-one > header {
-  background-color: #fb3f3c; }
-
-.home article#contest {
-  background-color: #56fce5;
+.project_page article#another-one > header {
+  background-color: #fb3f3c;
+  background-image: url("");
   background-size: cover; }
 
-section.next.contest a:hover {
-  background-color: #56fce5; }
-
-.project_page article.contest > header {
-  background-color: #56fce5; }
-
-.home article#tres {
-  background-color: #ff9600;
+.home article#reorder-app {
+  background-color: #0064d2;
+  background-image: url("../images/projects/project_reorder_header.jpg");
   background-size: cover; }
 
-section.next.tres a:hover {
-  background-color: #ff9600; }
+section.next.reorder-app a:hover {
+  background-color: #0064d2; }
 
-.project_page article.tres > header {
-  background-color: #ff9600; }
-
-.home article#quattro {
-  background-color: #FFF5E2;
+.project_page article#reorder-app > header {
+  background-color: #0064d2;
+  background-image: url("../images/projects/project_reorder_header.jpg");
   background-size: cover; }
 
-section.next.quattro a:hover {
-  background-color: #FFF5E2; }
+.home article#sweepstakes {
+  background-color: #f4d689;
+  background-image: url("../images/projects/project_sweepstakes_header.jpg");
+  background-size: cover; }
 
-.project_page article.quattro > header {
-  background-color: #FFF5E2; }
+section.next.sweepstakes a:hover {
+  background-color: #f4d689; }
+
+.project_page article#sweepstakes > header {
+  background-color: #f4d689;
+  background-image: url("../images/projects/project_sweepstakes_header.jpg");
+  background-size: cover; }
 
 html {
   box-sizing: border-box;
@@ -83,7 +81,7 @@ img {
   vertical-align: top; }
 
 .container {
-  max-width: 1600px;
+  max-width: 1424px;
   margin: 0 auto;
   padding: 0 2rem; }
   @media only screen and (min-width: 767px) {
@@ -94,6 +92,18 @@ img {
     @media only screen and (min-width: 1600px) {
       .container.slim {
         max-width: 950px; } }
+
+.hide-mobile {
+  display: none; }
+  @media only screen and (min-width: 767px) {
+    .hide-mobile {
+      display: block; } }
+
+.hide-desktop {
+  display: block; }
+  @media only screen and (min-width: 767px) {
+    .hide-desktop {
+      display: none; } }
 
 html {
   font-size: 20px;
@@ -295,18 +305,12 @@ nav {
       z-index: -1;
       background: #2b2b2b;
       transition: width 0.4s 0.4s, height 0.4s, background 0.8s; } }
+  .home .hero a {
+    display: block; }
+    .home .hero a > * {
+      transition: color 0.4s; }
   .home .hero a:hover > * {
-    transition: color 0.4s;
     color: white; }
-    @media only screen and (min-width: 767px) {
-      .home .hero a:hover > * {
-        color: inherit; } }
-  @media only screen and (min-width: 767px) {
-    .home .hero a:hover .strip {
-      width: 80%;
-      height: 80%;
-      background: white;
-      transition: width 0.4s, height 0.4s 0.4s, background 0.8s; } }
 
 #controls {
   position: fixed;
@@ -342,6 +346,9 @@ article > header {
     top: 50%;
     transform: translateY(-50%);
     padding-top: 3rem; }
+  @media only screen and (min-width: 767px) {
+    article > header h1 {
+      white-space: nowrap; } }
 
 section {
   margin: 4rem 0; }
@@ -364,6 +371,7 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     margin-left: 2rem;
     margin-right: 2rem; }
     @media only screen and (min-width: 767px) {
@@ -391,9 +399,11 @@ section {
       @media only screen and (min-width: 1600px) {
         section.photo-grid > figure {
           padding: 0 2rem; } }
+      section.photo-grid > figure > img {
+        width: auto; }
   section.photo-mat {
     padding: 4rem 0;
-    background: #FFF5E2; }
+    background: #EDEDED; }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       section.photo-mat {
         padding: 4rem 0; } }

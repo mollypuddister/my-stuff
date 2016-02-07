@@ -65,6 +65,38 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 	}
 
+		//mobile only image
+		function acf_image_mobile($post_ID) {
+		
+		$image = get_field('image-mobile');
+
+			if( !empty($image) ) {
+				echo
+				'<section>
+					<div class="container">
+						<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
+					</div>
+				</section>';
+			}
+
+		}
+
+		//desktop only image
+		function acf_image_desktop($post_ID) {
+		
+		$image = get_field('image-desktop');
+
+			if( !empty($image) ) {
+				echo
+				'<section>
+					<div class="container">
+						<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
+					</div>
+				</section>';
+			}
+
+		}
+
 	// matted image - has background
 	function acf_image_mat($post_ID) {
 		
@@ -110,6 +142,20 @@ if ( function_exists( 'register_nav_menus' ) ) {
 			}
 
 	}
+
+	// video
+	// function acf_image_full($post_ID) {
+		
+	// 	$image = get_field('image-full');
+
+	// 		if( !empty($image) ) {
+	// 			echo
+	// 			'<section>
+	// 				<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
+	// 			</section>';
+	// 		}
+
+	// }
 
 
 ?>

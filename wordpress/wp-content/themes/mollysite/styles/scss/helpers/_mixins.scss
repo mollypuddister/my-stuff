@@ -97,15 +97,24 @@
 // colour/bg map
 
 	$uno_bg: url('');
-	$dos_bg: url('../images/mugshot.jpg');
+	// $dos_bg: url('../images/mugshot.jpg');
+
+	//reorder
+	$reorder_hero: url('../images/projects/project_reorder_hero.jpg');
+	$reorder_header: url('../images/projects/project_reorder_header.jpg');
+
+	$sweepstakes_hero: url('../images/projects/project_sweepstakes_hero.jpg');
+	$sweepstakes_header: url('../images/projects/project_sweepstakes_header.jpg');
+
 
 
 	$colourbg_map: (
-		// (uno, $colour_coralred, $uno_bg),
 		(another-one, $colour_coralred, $uno_bg),
-		(contest, $colour_aquamarine ),
-		(tres, $colour_pizazz),
-		(quattro, $colour_sazerac),
+
+		(reorder-app, $colour_reorder, $reorder_header),
+		(sweepstakes, $colour_sweepstakes, $sweepstakes_header),
+
+
 
 	);
 
@@ -122,8 +131,11 @@
 			background-color: #{$bgcolour};
 		}
 
-		.project_page article.#{$project} > header {
+		.project_page article##{$project} > header {
 			background-color: #{$bgcolour};
+			background-image: $imagepath;
+			background-size: cover;
+
 		}
 
 	}

@@ -24,7 +24,7 @@
 				<a class="hero_link" href="<?php the_permalink(); ?>">
 					<h1><?php the_title(); ?></h1>
 					<h4><?php echo get_post_meta($post->ID, 'year', true); ?></h4>
-					<span class="strip"></span>
+					<!-- <span class="strip"></span> -->
 				</a>				
 			</div>	
 		

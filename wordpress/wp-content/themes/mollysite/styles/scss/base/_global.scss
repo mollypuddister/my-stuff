@@ -30,7 +30,7 @@ img {
 }
 
 .container {
-	max-width: 1600px;
+	max-width: 1424px;
 	margin: 0 auto;
 	padding: 0 $container-spacing_mb;
 
@@ -47,4 +47,20 @@ img {
 	}
 
 
+}
+
+.hide-mobile {
+	display: none;
+
+	@include respond-to(desktop) {
+		display: block;
+	}
+}
+
+.hide-desktop {
+	display: block;
+
+	@include respond-to(desktop) {
+		display: none;
+	}
 }

@@ -33,7 +33,38 @@
 
 				<?php acf_image(); /* regular image */ ?>
 
+				<div class="hide-mobile">
+
+					<?php acf_image_desktop(); /* regular image for desktop */ ?>
+
+				</div>
+
+				<div class="hide-desktop">
+
+					<?php acf_image_mobile(); /* regular image for mobile */ ?>
+
+				</div>
+
 				<?php acf_image_mat(); /* matted image */ ?>
+
+
+				<?php /* video */
+
+					$video = get_field('video');
+
+					if( !empty($video) ): ?>
+					<section>
+						<div class="container">
+							<video width="100%" height="auto" autoplay="autoplay" loop="loop">
+								<source src="<?php echo $video['url']; ?>" type="video/mp4">
+								<!-- <source src="movie.ogg" type="video/ogg"> -->
+								Your browser does not support the video tag.
+							</video>
+
+						</div>
+					</section>
+					
+				<?php endif; ?>
 
 
 				<section class="photo-grid">
@@ -65,7 +96,7 @@
 						<figure> 
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 						</figure>
-					<?php endif; ?>
+					<?php endif; ?>					
 					
 				</section>
 
