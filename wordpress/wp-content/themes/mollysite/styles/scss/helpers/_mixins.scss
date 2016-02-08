@@ -96,23 +96,26 @@
 
 // colour/bg map
 
-	$uno_bg: url('');
-	// $dos_bg: url('../images/mugshot.jpg');
 
 	//reorder
 	$reorder_hero: url('../images/projects/project_reorder_hero.jpg');
 	$reorder_header: url('../images/projects/project_reorder_header.jpg');
 
+	//ebay sweepstakes
 	$sweepstakes_hero: url('../images/projects/project_sweepstakes_hero.jpg');
 	$sweepstakes_header: url('../images/projects/project_sweepstakes_header.jpg');
+
+	//NBC IDS app
+	$ids_header: url('../images/projects/project_ids_header.jpg');
 
 
 
 	$colourbg_map: (
-		(another-one, $colour_coralred, $uno_bg),
 
 		(reorder-app, $colour_reorder, $reorder_header),
 		(sweepstakes, $colour_sweepstakes, $sweepstakes_header),
+		(ids-app, $colour_ids, $ids_header),
+
 
 
 

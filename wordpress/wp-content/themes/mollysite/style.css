@@ -17,19 +17,6 @@ Author URI: http://mollypuddister.com
   font-weight: normal;
   src: url("../fonts/GT-Walsheim-Bold.eot");
   src: url("../fonts/GT-Walsheim-Bold.eot?") format("eot"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/GT-Walsheim-Bold.ttf") format("truetype"); }
-.home article#another-one {
-  background-color: #fb3f3c;
-  background-image: url("");
-  background-size: cover; }
-
-section.next.another-one a:hover {
-  background-color: #fb3f3c; }
-
-.project_page article#another-one > header {
-  background-color: #fb3f3c;
-  background-image: url("");
-  background-size: cover; }
-
 .home article#reorder-app {
   background-color: #0064d2;
   background-image: url("../images/projects/project_reorder_header.jpg");
@@ -54,6 +41,19 @@ section.next.sweepstakes a:hover {
 .project_page article#sweepstakes > header {
   background-color: #f4d689;
   background-image: url("../images/projects/project_sweepstakes_header.jpg");
+  background-size: cover; }
+
+.home article#ids-app {
+  background-color: #df0024;
+  background-image: url("../images/projects/project_ids_header.jpg");
+  background-size: cover; }
+
+section.next.ids-app a:hover {
+  background-color: #df0024; }
+
+.project_page article#ids-app > header {
+  background-color: #df0024;
+  background-image: url("../images/projects/project_ids_header.jpg");
   background-size: cover; }
 
 html {
@@ -150,6 +150,23 @@ h1 {
   @media only screen and (min-width: 767px) {
     h1 {
       margin-bottom: 1.5rem; } }
+
+#sweepstakes h1 {
+  font-size: 7.5em;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  padding-top: 1rem;
+  font-size: 15vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #sweepstakes h1 {
+      font-size: 6em; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
+    #sweepstakes h1 {
+      font-size: 7em; } }
+  @media only screen and (min-width: 767px) {
+    #sweepstakes h1 {
+      margin-bottom: 1.5rem;
+      font-size: 7.5em; } }
 
 h2 {
   font-size: 5em;
