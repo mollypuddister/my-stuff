@@ -108,6 +108,8 @@
 	//NBC IDS app
 	$ids_header: url('../images/projects/project_ids_header.jpg');
 
+	$moda_header: url('../images/projects/project_moda_header.jpg');
+
 
 
 	$colourbg_map: (
@@ -115,6 +117,8 @@
 		(reorder-app, $colour_reorder, $reorder_header),
 		(sweepstakes, $colour_sweepstakes, $sweepstakes_header),
 		(ids-app, $colour_ids, $ids_header),
+		(ebay-moda, $colour_moda, $moda_header),
+
 
 
 

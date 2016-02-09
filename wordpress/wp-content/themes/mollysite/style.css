@@ -56,6 +56,19 @@ section.next.ids-app a:hover {
   background-image: url("../images/projects/project_ids_header.jpg");
   background-size: cover; }
 
+.home article#ebay-moda {
+  background-color: #76b4c1;
+  background-image: url("../images/projects/project_moda_header.jpg");
+  background-size: cover; }
+
+section.next.ebay-moda a:hover {
+  background-color: #76b4c1; }
+
+.project_page article#ebay-moda > header {
+  background-color: #76b4c1;
+  background-image: url("../images/projects/project_moda_header.jpg");
+  background-size: cover; }
+
 html {
   box-sizing: border-box;
   height: 100%;
