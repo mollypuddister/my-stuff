@@ -57,16 +57,29 @@ section.next.ids-app a:hover {
   background-size: cover; }
 
 .home article#ebay-moda {
-  background-color: #76b4c1;
+  background-color: #98c5e8;
   background-image: url("../images/projects/project_moda_header.jpg");
   background-size: cover; }
 
 section.next.ebay-moda a:hover {
-  background-color: #76b4c1; }
+  background-color: #98c5e8; }
 
 .project_page article#ebay-moda > header {
-  background-color: #76b4c1;
+  background-color: #98c5e8;
   background-image: url("../images/projects/project_moda_header.jpg");
+  background-size: cover; }
+
+.home article#ivano-frankivsk {
+  background-color: #ff3633;
+  background-image: url("../images/projects/project_if_header.png");
+  background-size: cover; }
+
+section.next.ivano-frankivsk a:hover {
+  background-color: #ff3633; }
+
+.project_page article#ivano-frankivsk > header {
+  background-color: #ff3633;
+  background-image: url("../images/projects/project_if_header.png");
   background-size: cover; }
 
 html {
@@ -376,9 +389,6 @@ article > header {
     top: 50%;
     transform: translateY(-50%);
     padding-top: 3rem; }
-  @media only screen and (min-width: 767px) {
-    article > header h1 {
-      white-space: nowrap; } }
 
 section {
   margin: 4rem 0; }

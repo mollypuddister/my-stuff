@@ -23,7 +23,11 @@
 
 							<?php cf_agency(); /* tidbit agency */ ?>
 
+							<?php cf_awards(); /* tidbit awards */ ?>
+
 							<?php cf_role(); /* tidbit role */ ?>
+
+
 							
 						</aside>
 
@@ -65,6 +69,19 @@
 					</section>
 					
 				<?php endif; ?>
+
+<!-- 				<?php /* video embedded */
+
+					$video //= get_field('video-embed');
+
+					//if( !empty($video) ): ?> -->
+					<section>
+						<div class="container slim">
+							<?php the_field('video-embed') ?>
+						</div>
+					</section>
+					
+				<!-- <?php //endif; ?> -->
 
 
 				<section class="photo-grid">

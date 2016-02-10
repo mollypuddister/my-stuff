@@ -281,7 +281,7 @@ article {
 
 		h1 {
 			@include respond-to(desktop) {
-				white-space: nowrap;
+				// white-space: nowrap;
 			}
 
 		}
@@ -289,6 +289,8 @@ article {
 	}		
 
 }
+
+
 
 section {
 	margin: $container-spacing_mb*2 0;

@@ -49,6 +49,21 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		}
 	}
 
+	//tidbit agency
+	function cf_awards($post_ID) {
+
+		global $wpdb;
+		if(!wp_is_post_revision($post_ID)) {
+
+			$cf = get_post_meta( get_the_ID(), 'awards', true );
+
+			if( ! empty( $cf ) ) {
+				echo '<div class="tidbit awards"><h5>Awards</h5><p class="tidbit-detail">'. $cf .'</p></div>';
+			}
+
+		}
+	}
+
 	//regular image - fits into container
 	function acf_image($post_ID) {
 		
@@ -143,19 +158,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 	}
 
-	// video
-	// function acf_image_full($post_ID) {
-		
-	// 	$image = get_field('image-full');
-
-	// 		if( !empty($image) ) {
-	// 			echo
-	// 			'<section>
-	// 				<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
-	// 			</section>';
-	// 		}
-
-	// }
+	
 
 
 ?>
