@@ -48,12 +48,16 @@ h1 {
 		font-size: 7rem;
 	}
 
+	@include respond-to(large) {
+		font-size: 7.2em;
+	}
+
 	@include respond-to(desktop) {
 		margin-bottom: 1.5rem;
 	}
 }
 
-#sweepstakes h1 {
+#sweepstakes h1, #ivano-frankivsk h1 {
 	font-size: 7.5em;
 	line-height: 1;
 	margin-bottom: 1.2rem;

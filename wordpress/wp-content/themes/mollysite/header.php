@@ -33,6 +33,14 @@
 	<!-- modernizr -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+	<style>
+		.js #fouc {display: none; }
+	</style>
+	<script>
+		document.documentElement.className = 'js';
+	</script>
+
+
 <body>
 
 	<header>
@@ -55,10 +63,7 @@
 		)); ?>
 
 		<div id="meta">
-			<p>	Copyright 2016 
-				<br/>Designed & Developed 
-				<br/>by Molly Puddister
-			</p>
+			<p>Website design and development <span>&#169;</span> 2016 Molly Puddister</p>
 		</div>
 			
 	</nav><!-- /c-menu push-right -->

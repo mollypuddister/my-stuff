@@ -173,24 +173,27 @@ h1 {
   @media only screen and (min-width: 1025px) and (max-width: 1599px) {
     h1 {
       font-size: 7rem; } }
+  @media only screen and (min-width: 1600px) {
+    h1 {
+      font-size: 7.2em; } }
   @media only screen and (min-width: 767px) {
     h1 {
       margin-bottom: 1.5rem; } }
 
-#sweepstakes h1 {
+#sweepstakes h1, #ivano-frankivsk h1 {
   font-size: 7.5em;
   line-height: 1;
   margin-bottom: 1.2rem;
   padding-top: 1rem;
   font-size: 15vw; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #sweepstakes h1 {
+    #sweepstakes h1, #ivano-frankivsk h1 {
       font-size: 6em; } }
   @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-    #sweepstakes h1 {
+    #sweepstakes h1, #ivano-frankivsk h1 {
       font-size: 7em; } }
   @media only screen and (min-width: 767px) {
-    #sweepstakes h1 {
+    #sweepstakes h1, #ivano-frankivsk h1 {
       margin-bottom: 1.5rem;
       font-size: 7.5em; } }
 
@@ -302,21 +305,22 @@ nav {
       color: #FFF5E2; }
   nav #meta {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3.5rem;
     left: 0;
-    padding: 0 2rem;
-    text-align: left; }
+    padding: 0 2rem; }
     @media only screen and (min-width: 767px) {
       nav #meta {
         right: 0;
-        padding: 0 4rem;
-        text-align: right; } }
+        padding: 0 4rem; } }
     nav #meta p {
       margin: 0;
-      font-size: 1em; }
+      font-size: 1em;
+      color: rgba(255, 245, 226, 0.3); }
       @media only screen and (min-width: 767px) {
         nav #meta p {
-          font-size: 0.6em; } }
+          font-size: 0.8em; } }
+      nav #meta p span {
+        vertical-align: -0.2em; }
 
 .home main {
   width: 100%;
@@ -348,10 +352,8 @@ nav {
       z-index: -1;
       background: #2b2b2b;
       transition: width 0.4s 0.4s, height 0.4s, background 0.8s; } }
-  .home .hero a {
-    display: block; }
-    .home .hero a > * {
-      transition: color 0.4s; }
+  .home .hero a > * {
+    transition: color 0.4s; }
   .home .hero a:hover > * {
     color: white; }
 
@@ -389,6 +391,11 @@ article > header {
     top: 50%;
     transform: translateY(-50%);
     padding-top: 3rem; }
+article h1 {
+  display: inline-block; }
+@media only screen and (min-width: 767px) {
+  article#reorder-app h1 {
+    white-space: nowrap; } }
 
 section {
   margin: 4rem 0; }
@@ -490,6 +497,19 @@ aside {
     @media only screen and (min-width: 767px) {
       aside .tidbit-detail {
         font-size: 0.9em; } }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+  .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 #about {
   transition: width 0.4s; }

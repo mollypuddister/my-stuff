@@ -19,6 +19,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 
 // ----- custom fields ----- 
+
+	remove_filter ('acf_the_content', 'wpautop'); //removes default editing like <p> on field
+
 	//tidbit agency
 	function cf_agency($post_ID) {
 
@@ -49,19 +52,17 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		}
 	}
 
+
 	//tidbit agency
-	function cf_awards($post_ID) {
+	function acf_awards($post_ID) {
+		
+		$acf = get_field('awards');
 
-		global $wpdb;
-		if(!wp_is_post_revision($post_ID)) {
-
-			$cf = get_post_meta( get_the_ID(), 'awards', true );
-
-			if( ! empty( $cf ) ) {
-				echo '<div class="tidbit awards"><h5>Awards</h5><p class="tidbit-detail">'. $cf .'</p></div>';
+			if( !empty($acf) ) {
+				echo
+				'<div class="tidbit awards"><h5>Awards</h5><p class="tidbit-detail">'. $acf .'</p></div>';
 			}
 
-		}
 	}
 
 	//regular image - fits into container

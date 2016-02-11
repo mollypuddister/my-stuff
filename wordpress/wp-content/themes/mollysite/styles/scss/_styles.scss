@@ -123,26 +123,32 @@ nav {
 
 	#meta {
 		position: absolute;
-		bottom: 2rem;
+		bottom: 3.5rem;
 		left: 0;
 		padding: 0 2rem;	
-		text-align: left;
+		// text-align: ;
 
 		@include respond-to(desktop) {
 			right: 0;
 			padding: 0 4rem;
-			text-align: right;
+			// text-align: right;
 		}
 
 		p {
 			margin: 0;	
 			font-size: 1em;
+			color: rgba($colour_sazerac, 0.3);
 
 			@include respond-to(desktop) {
-				font-size: 0.6em;
+				font-size: 0.8em;
+			}
+
+			span {
+				vertical-align: -0.2em;
 			}
 
 		}
+
 	}
 
 }
@@ -197,7 +203,7 @@ nav {
 		}	
 
 		a { 
-			display: block; 
+			// display: block; 
 
 			> * {
 				transition: color $speed;
@@ -279,14 +285,17 @@ article {
 			padding-top: 3rem;
 		}
 
-		h1 {
-			@include respond-to(desktop) {
-				// white-space: nowrap;
-			}
+	}
 
+	h1 {
+		display: inline-block;
+	}
+
+	&#reorder-app h1{
+		@include respond-to(desktop) {
+			white-space: nowrap;
 		}
-
-	}		
+	}
 
 }
 
@@ -438,13 +447,33 @@ aside {
 	.tidbit-detail {
 		font-size: 1.5em;
 
-
 		@include respond-to(desktop) {
 			font-size: 0.9em;
 		}
 	}			
 
 }
+
+
+//vimeo embed container for responsive video
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+
+	iframe, object, embed {
+		position: absolute; 
+		top: 0;
+		left: 0; 
+		width: 100%; 
+		height: 100%;
+	}
+
+} 
+
+
 
 //-------------------------------------------------//
 //	specific to about page

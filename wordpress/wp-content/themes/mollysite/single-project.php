@@ -23,12 +23,10 @@
 
 							<?php cf_agency(); /* tidbit agency */ ?>
 
-							<?php cf_awards(); /* tidbit awards */ ?>
+							<?php acf_awards(); /* tidbit awards */ ?>
 
 							<?php cf_role(); /* tidbit role */ ?>
 
-
-							
 						</aside>
 
 					</div>
