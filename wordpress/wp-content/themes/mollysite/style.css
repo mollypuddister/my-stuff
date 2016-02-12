@@ -473,6 +473,7 @@ section {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      padding-top: 2rem;
       padding-bottom: 2rem; }
 
 aside {
@@ -597,26 +598,10 @@ aside {
         opacity: 1; }
     #about header:hover #mugshot {
       opacity: 1; }
-  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-    #about .about_text {
-      margin: 4rem 0; } }
-  @media only screen and (min-width: 1600px) {
-    #about .about_text {
-      position: relative;
-      left: 50%;
-      width: 50%;
-      margin: 4rem 0; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1599px) {
-    #about .about_text .container {
-      padding-left: 0; } }
-  @media only screen and (min-width: 1600px) {
-    #about .about_text .container {
-      padding-left: 0; } }
   #about #contact {
     background: #56fce5;
     padding-top: 2rem;
-    padding-bottom: 4rem;
-    margin-bottom: 0; }
+    padding-bottom: 4rem; }
     @media only screen and (min-width: 767px) {
       #about #contact {
         background: transparent; } }

@@ -410,6 +410,7 @@ section {
 
 		.container {
 			@include alignment(relative, 50%, null, translateY(-50%));
+			padding-top: 2rem;
 			padding-bottom: 2rem;
 		}
 
@@ -608,34 +609,34 @@ aside {
 
 	}
 
-	.about_text {
+	// .about_text {
 		
-		@include respond-to(medium) {
-			margin: 4rem 0;
-		}
+	// 	@include respond-to(medium) {
+	// 		margin: 4rem 0;
+	// 	}
 
-		@include respond-to(large) {
-			position: relative;	
-			left: 50%;		
-			width: 50%;
-			margin: 4rem 0;
-		}
+	// 	@include respond-to(large) {
+	// 		position: relative;	
+	// 		left: 50%;		
+	// 		width: 50%;
+	// 		margin: 4rem 0;
+	// 	}
 
-		.container {
-			@include respond-to(medium) {
-				padding-left: 0;
-			}
-			@include respond-to(large) {
-				padding-left: 0;
-			}
-		}
-	}
+	// 	.container {
+	// 		@include respond-to(medium) {
+	// 			padding-left: 0;
+	// 		}
+	// 		@include respond-to(large) {
+	// 			padding-left: 0;
+	// 		}
+	// 	}
+	// }
 	
 	#contact {
 		background: $colour_aquamarine;
 		padding-top: 2rem;
 		padding-bottom: 4rem;
-		margin-bottom: 0;
+		// margin-bottom: 0;
 
 		@include respond-to(desktop) {
 			background: transparent;

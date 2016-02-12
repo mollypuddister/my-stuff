@@ -140,7 +140,7 @@
 					
 
 						<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="next_link">
-							<div class="container slim">
+							<div class="container">
 								<h4>on to the next one</h4>
 								<h2>'. $next_title . '</h2>
 							</div>
@@ -155,7 +155,7 @@
 					
 
 						<a rel="next" href="' . get_permalink() . '" title="'. $post->post_title .'" class="next_link">
-							<div class="container slim">
+							<div class="container">
 								<h4>on to the next one</h4>
 								<h2>'. $post->post_title . '</h2>
 							</div>
