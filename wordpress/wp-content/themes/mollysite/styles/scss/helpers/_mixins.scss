@@ -98,19 +98,19 @@
 
 
 	//reorder
-	$reorder_hero: url('../images/projects/project_reorder_hero.jpg');
-	$reorder_header: url('../images/projects/project_reorder_header.jpg');
+	// $reorder_hero: url('images/projects/project_reorder_hero.jpg');
+	$reorder_header: url('images/projects/project_reorder_header.jpg');
 
 	//ebay sweepstakes
-	$sweepstakes_hero: url('../images/projects/project_sweepstakes_hero.jpg');
-	$sweepstakes_header: url('../images/projects/project_sweepstakes_header.jpg');
+	// $sweepstakes_hero: url('images/projects/project_sweepstakes_hero.jpg');
+	$sweepstakes_header: url('images/projects/project_sweepstakes_header.png');
 
 	//NBC IDS app
-	$ids_header: url('../images/projects/project_ids_header.jpg');
+	$ids_header: url('images/projects/project_ids_header.jpg');
 
-	$moda_header: url('../images/projects/project_moda_header.jpg');
+	$moda_header: url('images/projects/project_moda_header.jpg');
 
-	$if_header: url('../images/projects/project_if_header.png');
+	$if_header: url('images/projects/project_if_header.png');
 
 
 
@@ -135,6 +135,7 @@
 
 		section.next.#{$project} a:hover {
 			background-color: #{$bgcolour};
+			color: white;
 		}
 
 		.project_page article##{$project} > header {

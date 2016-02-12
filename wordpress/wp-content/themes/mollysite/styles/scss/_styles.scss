@@ -281,7 +281,6 @@ article {
 
 		.title {
 			@include alignment(relative, 50%, null, translateY(-50%));
-			@include alignment(relative, 50%, null, translateY(-50%));
 			padding-top: 3rem;
 		}
 
@@ -291,7 +290,7 @@ article {
 		display: inline-block;
 	}
 
-	&#reorder-app h1{
+	&#reorder-app h1, #ebay-moda h1{
 		@include respond-to(desktop) {
 			white-space: nowrap;
 		}
@@ -581,7 +580,7 @@ aside {
 		}
 
 		#mugshot {
-			background: $colour_aquamarine url('../images/mugshot.jpg') no-repeat center center;
+			background: $colour_aquamarine url('images/mugshot.jpg') no-repeat center center;
 			background-size: cover;
 			transition: opacity $speed*2;
 			height: 430px;
