@@ -23,8 +23,10 @@
 
 							<?php cf_agency(); /* tidbit agency */ ?>
 
+							<?php acf_awards(); /* tidbit awards */ ?>
+
 							<?php cf_role(); /* tidbit role */ ?>
-							
+
 						</aside>
 
 					</div>
@@ -33,7 +35,51 @@
 
 				<?php acf_image(); /* regular image */ ?>
 
+				<div class="hide-mobile">
+
+					<?php acf_image_desktop(); /* regular image for desktop */ ?>
+
+				</div>
+
+				<div class="hide-desktop">
+
+					<?php acf_image_mobile(); /* regular image for mobile */ ?>
+
+				</div>
+
 				<?php acf_image_mat(); /* matted image */ ?>
+
+
+				<?php /* video */
+
+					$video = get_field('video');
+
+					if( !empty($video) ): ?>
+					<section>
+						<div class="container">
+							<video width="100%" height="auto" autoplay="autoplay" loop="loop">
+								<source src="<?php echo $video['url']; ?>" type="video/mp4">
+								<!-- <source src="movie.ogg" type="video/ogg"> -->
+								Your browser does not support the video tag.
+							</video>
+
+						</div>
+					</section>
+					
+				<?php endif; ?>
+
+<!-- 				<?php /* video embedded */
+
+					$video //= get_field('video-embed');
+
+					//if( !empty($video) ): ?> -->
+					<section>
+						<div class="container slim">
+							<?php the_field('video-embed') ?>
+						</div>
+					</section>
+					
+				<!-- <?php //endif; ?> -->
 
 
 				<section class="photo-grid">
@@ -65,7 +111,7 @@
 						<figure> 
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 						</figure>
-					<?php endif; ?>
+					<?php endif; ?>					
 					
 				</section>
 
@@ -94,7 +140,7 @@
 					
 
 						<a rel="next" href="' . get_permalink($next_post->ID) . '" title="' . $next_title. '" class="next_link">
-							<div class="container slim">
+							<div class="container">
 								<h4>on to the next one</h4>
 								<h2>'. $next_title . '</h2>
 							</div>
@@ -109,7 +155,7 @@
 					
 
 						<a rel="next" href="' . get_permalink() . '" title="'. $post->post_title .'" class="next_link">
-							<div class="container slim">
+							<div class="container">
 								<h4>on to the next one</h4>
 								<h2>'. $post->post_title . '</h2>
 							</div>

@@ -39,6 +39,7 @@ h1 {
 	line-height: 1;
 	margin-bottom: 1.2rem;
 	padding-top: 1rem;
+	font-size: 15vw;
 
 	@include respond-to(small) {
 		font-size: 6em;
@@ -48,8 +49,14 @@ h1 {
 		font-size: 7rem;
 	}
 
+	@include respond-to(large) {
+		font-size: 7.2em;
+	}
+
 	@include respond-to(desktop) {
 		margin-bottom: 1.5rem;
+		font-size: 7.5em;
+
 	}
 }
 
@@ -66,7 +73,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.3em;
+	font-size: 1.6em;
 	line-height: 1;
 	margin: 0.5rem 0;
 }

@@ -19,6 +19,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 
 // ----- custom fields ----- 
+
+	remove_filter ('acf_the_content', 'wpautop'); //removes default editing like <p> on field
+
 	//tidbit agency
 	function cf_agency($post_ID) {
 
@@ -49,6 +52,19 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		}
 	}
 
+
+	//tidbit agency
+	function acf_awards($post_ID) {
+		
+		$acf = get_field('awards');
+
+			if( !empty($acf) ) {
+				echo
+				'<div class="tidbit awards"><h5>Awards</h5><p class="tidbit-detail">'. $acf .'</p></div>';
+			}
+
+	}
+
 	//regular image - fits into container
 	function acf_image($post_ID) {
 		
@@ -64,6 +80,38 @@ if ( function_exists( 'register_nav_menus' ) ) {
 			}
 
 	}
+
+		//mobile only image
+		function acf_image_mobile($post_ID) {
+		
+		$image = get_field('image-mobile');
+
+			if( !empty($image) ) {
+				echo
+				'<section>
+					<div class="container">
+						<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
+					</div>
+				</section>';
+			}
+
+		}
+
+		//desktop only image
+		function acf_image_desktop($post_ID) {
+		
+		$image = get_field('image-desktop');
+
+			if( !empty($image) ) {
+				echo
+				'<section>
+					<div class="container">
+						<img src="'. $image['url'] .'" alt="'. $image['alt'] .'" />
+					</div>
+				</section>';
+			}
+
+		}
 
 	// matted image - has background
 	function acf_image_mat($post_ID) {
@@ -110,6 +158,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 			}
 
 	}
+
+	
 
 
 ?>
