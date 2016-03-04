@@ -10,7 +10,7 @@ header {
 	
 	a, button {
 		position: fixed;
-		margin: 2.5rem;
+		margin: 2.5rem; 
 		
 			@include respond-to(desktop) {
 				margin: 4rem;
@@ -354,6 +354,7 @@ section {
 		> figure {
 			flex: 1;
 			padding-bottom: $container-spacing_mb;
+			text-align: center;
 
 			&:last-child {
 				padding-bottom: 0;

@@ -27,7 +27,6 @@ Author URI: http://mollypuddister.com
 
 section.next.reorder-app a:hover {
   background-color: #0064d2;
-  color: white;
 }
 
 .project_page article#reorder-app > header {
@@ -44,7 +43,6 @@ section.next.reorder-app a:hover {
 
 section.next.sweepstakes a:hover {
   background-color: #f3d688;
-  color: white;
 }
 
 .project_page article#sweepstakes > header {
@@ -61,7 +59,6 @@ section.next.sweepstakes a:hover {
 
 section.next.ids-app a:hover {
   background-color: #df0024;
-  color: white;
 }
 
 .project_page article#ids-app > header {
@@ -71,18 +68,17 @@ section.next.ids-app a:hover {
 }
 
 .home article#ebay-moda {
-  background-color: #98c5e8;
+  background-color: #4476ff;
   background-image: url("images/projects/project_moda_header.jpg");
   background-size: cover;
 }
 
 section.next.ebay-moda a:hover {
-  background-color: #98c5e8;
-  color: white;
+  background-color: #4476ff;
 }
 
 .project_page article#ebay-moda > header {
-  background-color: #98c5e8;
+  background-color: #4476ff;
   background-image: url("images/projects/project_moda_header.jpg");
   background-size: cover;
 }
@@ -95,7 +91,6 @@ section.next.ebay-moda a:hover {
 
 section.next.ivano-frankivsk a:hover {
   background-color: #ff3633;
-  color: white;
 }
 
 .project_page article#ivano-frankivsk > header {
@@ -235,7 +230,6 @@ h1 {
 @media only screen and (min-width: 767px) {
   h1 {
     margin-bottom: 1.5rem;
-    font-size: 7.5em;
   }
 }
 
@@ -556,6 +550,7 @@ section.photo-grid {
 section.photo-grid > figure {
   flex: 1;
   padding-bottom: 2rem;
+  text-align: center;
 }
 section.photo-grid > figure:last-child {
   padding-bottom: 0;
