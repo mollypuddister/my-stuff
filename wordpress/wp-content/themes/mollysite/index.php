@@ -12,7 +12,7 @@
 			<a id="section-down"><?php include '../images/arrow.svg'; ?></a>
 		</div>
 
-		<main id="fullpage" class="home">		
+		<main id="fullpage" class="home">
 			
 			<?php 
 				$args = array('post_type' => 'project');
@@ -24,8 +24,12 @@
 			<article id="<?php echo $post->post_name;?>" class="section project_post">
 				<div class="hero">				
 					<a class="hero_link" href="<?php the_permalink(); ?>">
-						<h1><?php the_title(); ?></h1>
-						<h4><?php echo get_post_meta($post->ID, 'year', true); ?></h4>
+						<h1><?php the_title(); ?></span></h1>
+						<h5 class="cta">
+							<!-- <?php echo get_post_meta($post->ID, 'year', true); ?> -->
+							Go see
+							<!-- <span id="project-go"><?php include 'images/arrow.svg';?> -->
+						</h5>
 						<!-- <span class="strip"></span> -->
 					</a>				
 				</div>	

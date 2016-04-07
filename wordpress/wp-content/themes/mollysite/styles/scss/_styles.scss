@@ -6,11 +6,28 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;	
-	height: 0;
+	height: 0;	
+
+	#tagline {
+		display: block;
+		position: absolute;
+		z-index: 1000;
+		margin: 5.5rem 2rem 2rem;
+
+		font: 1.6em/1 $body;
+		color: $colour_mineshaft;
+
+			@include respond-to(desktop) {
+				margin: 6rem 4rem 2rem;
+				font: 1em/1.5 $body;
+				color: rgba($colour_mineshaft, 0.8);
+			}
+
+	}
 	
 	a, button {
 		position: fixed;
-		margin: 2.5rem; 
+		margin: 2rem; 
 		
 			@include respond-to(desktop) {
 				margin: 4rem;
@@ -20,7 +37,8 @@ header {
 		&#logo {
 			top: 0;
 			left: 0;
-			z-index: 1;			
+			z-index: 1;	
+			max-width: 65%;		
 		}
 
 		&.menu-toggle {
@@ -167,6 +185,7 @@ nav {
 		display: flex;
 		height: 100%;
 		align-items: center;
+		margin-bottom: -2rem;
 		// background: url('http://lorempixel.com/1240/800/abstract/') no-repeat center center fixed;
 		// background-size: cover;
 		
@@ -177,14 +196,16 @@ nav {
 		flex: 1;
 		width: 100%;
 		z-index: 1;
-		margin: 2rem 2rem 0;
+		margin: 0 2rem;
 
-		@include respond-to(desktop) {
-			margin: 4rem 4rem 0;
-		}
+			@include respond-to(desktop) {
+				margin: 0 4rem;
+			}
 
-		@include respond-to(small) {
-			margin: 5rem 4rem 0;
+		&:last-child {
+			@include respond-to(desktop) {
+				margin: 2rem 4rem 0;
+			}
 		}
 
 		.strip {
@@ -203,10 +224,13 @@ nav {
 		}	
 
 		a { 
-			// display: block; 
 
 			> * {
 				transition: color $speed;
+			}
+
+			.cta {
+				transition: color $speed*2 ease-out, border $speed*2 ease-out;
 			}
 
 		}
@@ -214,20 +238,17 @@ nav {
 		a:hover {
 			> *{
 				color: white;
-
-				// @include respond-to(desktop) {
-				// 	color: inherit;
-				// }
 			}
 
-			// .strip {
-							
-			// 	@include respond-to(desktop) {
-			// 		@include size(80%, 80%);
-			// 		background: white;
-			// 		transition: width $speed, height $speed $delay, background $speed*2;
-			// 	}	
-			// }
+			.cta {
+				border: 2px solid white;
+			}
+		}
+
+		.cta {
+			display: inline-block;
+			border: 2px solid $colour_mineshaft;
+			padding: 0.5rem;
 		}		
 
 	}
@@ -238,12 +259,12 @@ nav {
 #controls {
 	position: fixed;	
 	bottom: 3rem;
-	right: 0;
+	left: 0;
 	z-index: 100;
-	margin-right: $container-spacing_mb;
+	margin-left: $container-spacing_mb;
 
 	@include respond-to(desktop) {
-		margin-right: $container-spacing_dt;
+		margin-left: $container-spacing_dt;
 	}
 
 	a {
@@ -267,6 +288,16 @@ nav {
 		transform: rotate(180deg);
 		margin-bottom: 0.5rem;
 	}
+
+	#project-go & {
+		transform: rotate(-90deg) translateY(-10%);
+
+
+		polygon {
+			fill: $colour_mineshaft;
+		}
+
+	}
 	
 }
 
@@ -286,9 +317,9 @@ article {
 
 	}
 
-	h1 {
-		display: inline-block;
-	}
+	// h1 {
+	// 	display: inline-block;
+	// }
 
 	&#reorder-app h1, #ebay-moda h1{
 		@include respond-to(desktop) {
@@ -481,6 +512,8 @@ aside {
 //-------------------------------------------------//
 #about {
 	transition: width $speed;
+
+	#tagline { display: none; }
 
 	h1 {
 		font-size: 4em;

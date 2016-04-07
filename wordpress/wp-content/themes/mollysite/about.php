@@ -31,7 +31,7 @@
 						Currently, I work at <a href="http://www.visiblemedia.com/" target="_blank">Visible Media</a> for clients like eBay, Disney, and DHX Media. 
 					</p>
 					<p>
-						Also – hip hop, apostrophes, foodie, beerie, Glenda (my architectural life partner), National Geographic, euchre – Dutch or otherwise.  
+						I like the things I like: hip hop, apostrophes, travel, cooking, beer, Glenda (my architectural life partner), National Geographic, Fast Co., euchre – Dutch or otherwise.  
 					</p>	
 
 					<p>If you don&#8217;t know, now you know.</p>	

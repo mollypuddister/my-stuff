@@ -242,11 +242,10 @@ h2 {
 h3 {
   font-size: 1.6em;
   line-height: 1;
-  margin: 0.5rem 0;
 }
 
 h4 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1;
   margin: 0.5rem 0;
 }
@@ -270,9 +269,24 @@ header {
   width: 100%;
   height: 0;
 }
+header #tagline {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  margin: 5.5rem 2rem 2rem;
+  font: 1.6em/1 "Mate", Georgia, serif;
+  color: #2b2b2b;
+}
+@media only screen and (min-width: 767px) {
+  header #tagline {
+    margin: 6rem 4rem 2rem;
+    font: 1em/1.5 "Mate", Georgia, serif;
+    color: rgba(43, 43, 43, 0.8);
+  }
+}
 header a, header button {
   position: fixed;
-  margin: 2.5rem;
+  margin: 2rem;
 }
 @media only screen and (min-width: 767px) {
   header a, header button {
@@ -283,6 +297,7 @@ header a#logo, header button#logo {
   top: 0;
   left: 0;
   z-index: 1;
+  max-width: 65%;
 }
 header a.menu-toggle, header button.menu-toggle {
   top: 0;
@@ -406,22 +421,23 @@ nav #meta p span {
   display: flex;
   height: 100%;
   align-items: center;
+  margin-bottom: -2rem;
 }
 .home .hero {
   position: relative;
   flex: 1;
   width: 100%;
   z-index: 1;
-  margin: 2rem 2rem 0;
+  margin: 0 2rem;
 }
 @media only screen and (min-width: 767px) {
   .home .hero {
-    margin: 4rem 4rem 0;
+    margin: 0 4rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .home .hero {
-    margin: 5rem 4rem 0;
+@media only screen and (min-width: 767px) {
+  .home .hero:last-child {
+    margin: 2rem 4rem 0;
   }
 }
 @media only screen and (min-width: 767px) {
@@ -440,20 +456,31 @@ nav #meta p span {
 .home .hero a > * {
   transition: color 0.4s;
 }
+.home .hero a .cta {
+  transition: color 0.8s ease-out, border 0.8s ease-out;
+}
 .home .hero a:hover > * {
   color: white;
+}
+.home .hero a:hover .cta {
+  border: 2px solid white;
+}
+.home .hero .cta {
+  display: inline-block;
+  border: 2px solid #2b2b2b;
+  padding: 0.5rem;
 }
 
 #controls {
   position: fixed;
   bottom: 3rem;
-  right: 0;
+  left: 0;
   z-index: 100;
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 @media only screen and (min-width: 767px) {
   #controls {
-    margin-right: 4rem;
+    margin-left: 4rem;
   }
 }
 #controls a {
@@ -474,6 +501,12 @@ nav #meta p span {
   transform: rotate(180deg);
   margin-bottom: 0.5rem;
 }
+#project-go .arrow {
+  transform: rotate(-90deg) translateY(-10%);
+}
+#project-go .arrow polygon {
+  fill: #2b2b2b;
+}
 
 article > header {
   position: static;
@@ -484,9 +517,6 @@ article > header .title {
   top: 50%;
   transform: translateY(-50%);
   padding-top: 3rem;
-}
-article h1 {
-  display: inline-block;
 }
 @media only screen and (min-width: 767px) {
   article#reorder-app h1, article #ebay-moda h1 {
@@ -662,6 +692,9 @@ aside .tidbit-detail {
 
 #about {
   transition: width 0.4s;
+}
+#about #tagline {
+  display: none;
 }
 #about h1 {
   font-size: 4em;

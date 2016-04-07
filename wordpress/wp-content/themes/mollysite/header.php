@@ -63,6 +63,8 @@
 
 	<header>
 		<h3><a id="logo" href="<?php echo site_url( '/' ); ?>">Molly Puddister</a></h3>
+		<p id="tagline">A collection of my best work.</p>
+
 
 		<button id="c-button--slide-right" class="menu-toggle" href="#">
 			<div class="burger"></div>
